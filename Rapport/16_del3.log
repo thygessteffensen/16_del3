@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  13 NOV 2017 09:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  13 NOV 2017 11:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1569,7 +1569,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count339
-
+ (./analyseSecondary.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1579,21 +1579,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-(./16_del3.aux) ) 
+(./designSecondaray.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] (./16_del3.aux) ) 
 Here is how much of TeX's memory you used:
- 37194 strings out of 492990
- 889182 string characters out of 6136334
+ 37204 strings out of 492990
+ 889357 string characters out of 6136334
  1010225 words of memory out of 5000000
- 40155 multiletter control sequences out of 15000+600000
- 536329 words of font info for 46 fonts, out of 8000000 for 9000
+ 40158 multiletter control sequences out of 15000+600000
+ 537228 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,96p,10489b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-12.pfb>
-Output written on 16_del3.pdf (1 page, 12667 bytes).
+<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
+pfb>
+Output written on 16_del3.pdf (2 pages, 21747 bytes).
 PDF statistics:
- 15 PDF objects out of 1000 (max. 8388607)
- 10 compressed objects within 1 object stream
+ 22 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

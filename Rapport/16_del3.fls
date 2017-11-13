@@ -381,7 +381,15 @@ INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT analyseSecondary.tex
+INPUT analyseSecondary.tex
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 OUTPUT 16_del3.pdf
 INPUT c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT designSecondaray.tex
+INPUT designSecondaray.tex
 INPUT 16_del3.aux
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb

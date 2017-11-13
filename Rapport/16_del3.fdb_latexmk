@@ -1,7 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1510563472 "c:\Users\thyge\OneDrive\Dokumenter\Skolemappen\DTU\Diplom Softwareteknologi\1. semester\16_del3\Rapport\16_del3.tex" "16_del3.pdf" "16_del3" 1510563474
-  "16_del3.aux" 1510563474 336 09cc9358f963f9777f894df51264c638 ""
-  "16_del3.tex" 1510563472 1105 20fadfff90202a347e3d3b924cfbff38 ""
+["pdflatex"] 1510568143 "c:\Users\thyge\OneDrive\Dokumenter\Skolemappen\DTU\Diplom Softwareteknologi\1. semester\16_del3\Rapport\16_del3.tex" "16_del3.pdf" "16_del3" 1510568144
+  "16_del3.aux" 1510568144 548 0cd0b8a63e9b78c7efbe25ce74c97539 ""
+  "16_del3.tex" 1510568142 1092 5596a9229308d5ee1d8949edfcea0478 ""
+  "analyseSecondary.tex" 1510568068 41 1034e5e3f8f6a73833cfa52ac85ea5e3 ""
   "c:/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1506802161 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1506801579 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1506801579 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -19,12 +20,14 @@
   "c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1506801813 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1506801813 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
   "c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmss8.tfm" 1506801813 1296 d77f431d10d47c8ea2cc18cf45346274 ""
+  "c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm" 1506801813 1272 e2d13f0df30bf3ad990bb9d028e37f34 ""
   "c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1506801813 1124 6c73e740cf17375f03eec0ee63599741 ""
   "c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1506801813 1116 933a60c408fc0a863a92debe84b2d294 ""
   "c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1506801813 1120 8b7d695260f3cff42e636090a8002094 ""
   "c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1506801813 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm" 1506801813 768 d7b9a2629a0c353102ad947dc9221d49 ""
   "c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1506801580 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1506801580 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1506802638 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2017/texmf-dist/tex/generic/babel-danish/danish.ldf" 1506801640 4927 0f24cb8b4fbb6a57e169ccdacdab4a7e ""
   "c:/texlive/2017/texmf-dist/tex/generic/babel/babel.def" 1506801635 63182 d50acfe1dcec1adcd53f6d86f95c5e79 ""
@@ -234,8 +237,9 @@
   "c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1506803444 2437530 13029676e82936e3486a788987a8ae66 ""
   "c:/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1506803532 4126646 f14bb7b2c0b1aa86e9fed690e201a2bb ""
   "c:/texlive/2017/texmf.cnf" 1506803430 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "c:\Users\thyge\OneDrive\Dokumenter\Skolemappen\DTU\Diplom Softwareteknologi\1. semester\16_del3\Rapport\16_del3.tex" 1510563472 1105 20fadfff90202a347e3d3b924cfbff38 ""
+  "c:\Users\thyge\OneDrive\Dokumenter\Skolemappen\DTU\Diplom Softwareteknologi\1. semester\16_del3\Rapport\16_del3.tex" 1510568142 1092 5596a9229308d5ee1d8949edfcea0478 ""
+  "designSecondaray.tex" 1510568139 16 7bef2288cf1cd37a753232c63778dc4f ""
   (generated)
   "16_del3.aux"
-  "16_del3.pdf"
   "16_del3.log"
+  "16_del3.pdf"
