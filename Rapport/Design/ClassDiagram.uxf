@@ -13,15 +13,12 @@
 Package::FatClass
 GameController
 --
--id: Long
-_-ClassAttribute: Long_
+- Playres : String[]
 --
-#Operation(i: int): int
-/+AbstractOperation()/
+
 --
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
+*Responsibilities:*
+- GameFlow </panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
