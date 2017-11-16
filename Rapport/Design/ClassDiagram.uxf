@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>510</x>
-      <y>200</y>
+      <x>700</x>
+      <y>100</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -13,7 +13,7 @@
 Package::FatClass
 GameController
 --
-- Playres : String[]
+- Players : String[]
 --
 
 --
@@ -24,8 +24,8 @@ GameController
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>920</x>
-      <y>200</y>
+      <x>1110</x>
+      <y>100</y>
       <w>280</w>
       <h>320</h>
     </coordinates>
@@ -56,8 +56,8 @@ Indeholder og administerer playerattributer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>710</x>
-      <y>270</y>
+      <x>900</x>
+      <y>170</y>
       <w>230</w>
       <h>50</h>
     </coordinates>
@@ -70,8 +70,8 @@ adminAttri &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1360</x>
-      <y>290</y>
+      <x>1560</x>
+      <y>190</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -86,28 +86,29 @@ super(player)
 + changeBalance(int chBal) : void
 + getBalance : int
 --
-*Responsibilities:*</panel_attributes>
+*Responsibilities:*
+Holde styr på spillernes balance</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1190</x>
-      <y>310</y>
-      <w>190</w>
+      <x>1380</x>
+      <y>210</y>
+      <w>200</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1
 adminMoney &gt;</panel_attributes>
-    <additional_attributes>170.0;70.0;10.0;10.0</additional_attributes>
+    <additional_attributes>180.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>330</y>
+      <x>240</x>
+      <y>230</y>
       <w>210</w>
       <h>220</h>
     </coordinates>
@@ -124,14 +125,15 @@ Wallet
 + getSum() : int
 --
 *Responsibilities:*
-- Vlrdier af øjenen</panel_attributes>
+- Værdier af øjnene
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
-      <y>320</y>
+      <x>440</x>
+      <y>220</y>
       <w>280</w>
       <h>210</h>
     </coordinates>
@@ -144,8 +146,8 @@ rollDice &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>120</y>
+      <x>580</x>
+      <y>20</y>
       <w>190</w>
       <h>100</h>
     </coordinates>
@@ -155,8 +157,8 @@ rollDice &gt;</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>360</x>
-      <y>100</y>
+      <x>550</x>
+      <y>0</y>
       <w>100</w>
       <h>70</h>
     </coordinates>
@@ -167,8 +169,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>570</x>
-      <y>580</y>
+      <x>760</x>
+      <y>480</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -176,19 +178,21 @@ style=wordwrap</panel_attributes>
 Package::Player
 assignFieldEffect
 --
-
+- propertyID[] : int
 --
-+ 
++ getPropertyID
+- setPropertyID
 --
 *Responsibilities:*
-- Bestemme hvad der skal ske*</panel_attributes>
+- Bestemme hvad der skal ske*
+Har ID på alle grundene</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>590</x>
-      <y>380</y>
+      <x>780</x>
+      <y>280</y>
       <w>110</w>
       <h>220</h>
     </coordinates>
@@ -201,14 +205,14 @@ m2=01
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>150</x>
-      <y>750</y>
+      <x>340</x>
+      <y>650</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
 Package::Player
-propertieField
+propertyField
 --
 
 --
@@ -221,8 +225,8 @@ propertieField
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>550</x>
-      <y>920</y>
+      <x>740</x>
+      <y>820</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -230,9 +234,9 @@ propertieField
 Package::Player
 chanceCardField
 --
-
+-chanceCard[] : int
 --
-
++getChanceCard
 --
 *Responsibilities:*
 - Håndterer chance kort</panel_attributes>
@@ -241,8 +245,8 @@ chanceCardField
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>990</x>
-      <y>650</y>
+      <x>1180</x>
+      <y>550</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -250,12 +254,12 @@ chanceCardField
 Package::Player
 specialFields
 --
-
+-specialField[] : int
 --
-
++ getSpecialField
 --
 *Responsibilities:*
-- håndterer specialegrunde
+- Håndterer specialegrunde
 	Start
 	Fængsel
 	osv</panel_attributes>
@@ -264,8 +268,8 @@ specialFields
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>660</y>
+      <x>960</x>
+      <y>560</y>
       <w>240</w>
       <h>100</h>
     </coordinates>
@@ -278,8 +282,8 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>760</y>
+      <x>840</x>
+      <y>660</y>
       <w>40</w>
       <h>180</h>
     </coordinates>
@@ -292,8 +296,8 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
-      <y>690</y>
+      <x>540</x>
+      <y>590</y>
       <w>240</w>
       <h>140</h>
     </coordinates>
