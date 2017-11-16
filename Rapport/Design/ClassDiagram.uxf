@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>700</x>
+      <x>610</x>
       <y>100</y>
       <w>210</w>
       <h>190</h>
@@ -24,7 +24,7 @@ GameController
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1110</x>
+      <x>1020</x>
       <y>100</y>
       <w>280</w>
       <h>320</h>
@@ -56,7 +56,7 @@ Indeholder og administerer playerattributer
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>900</x>
+      <x>810</x>
       <y>170</y>
       <w>230</w>
       <h>50</h>
@@ -70,7 +70,7 @@ adminAttri &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1560</x>
+      <x>1470</x>
       <y>190</y>
       <w>210</w>
       <h>190</h>
@@ -93,7 +93,7 @@ Holde styr på spillernes balance</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1380</x>
+      <x>1290</x>
       <y>210</y>
       <w>200</w>
       <h>90</h>
@@ -107,7 +107,7 @@ adminMoney &gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>240</x>
+      <x>150</x>
       <y>230</y>
       <w>210</w>
       <h>220</h>
@@ -132,7 +132,7 @@ Wallet
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
+      <x>350</x>
       <y>220</y>
       <w>280</w>
       <h>210</h>
@@ -146,7 +146,7 @@ rollDice &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
+      <x>490</x>
       <y>20</y>
       <w>190</w>
       <h>100</h>
@@ -157,7 +157,7 @@ rollDice &gt;</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>550</x>
+      <x>460</x>
       <y>0</y>
       <w>100</w>
       <h>70</h>
@@ -169,7 +169,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
+      <x>670</x>
       <y>480</y>
       <w>210</w>
       <h>190</h>
@@ -180,8 +180,12 @@ assignFieldEffect
 --
 - propertyID[] : int
 --
-+ getPropertyID
-- setPropertyID
+//+ getPropertyID
+//- setPropertyID
+// Ikke enig her...
+// Ser mere dette som en fieldController ;-)
+// Tænker id'et svarer til feltnr.
+
 --
 *Responsibilities:*
 - Bestemme hvad der skal ske*
@@ -191,7 +195,7 @@ Har ID på alle grundene</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>690</x>
       <y>280</y>
       <w>110</w>
       <h>220</h>
@@ -205,7 +209,7 @@ m2=01
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>340</x>
+      <x>250</x>
       <y>650</y>
       <w>210</w>
       <h>190</h>
@@ -225,7 +229,7 @@ propertyField
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>740</x>
+      <x>650</x>
       <y>820</y>
       <w>210</w>
       <h>190</h>
@@ -236,7 +240,7 @@ chanceCardField
 --
 -chanceCard[] : int
 --
-+getChanceCard
++getChanceCard() : void
 --
 *Responsibilities:*
 - Håndterer chance kort</panel_attributes>
@@ -245,9 +249,9 @@ chanceCardField
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1180</x>
+      <x>1090</x>
       <y>550</y>
-      <w>210</w>
+      <w>240</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
@@ -256,7 +260,7 @@ specialFields
 --
 -specialField[] : int
 --
-+ getSpecialField
++ getSpecialField(int fieldID) : void
 --
 *Responsibilities:*
 - Håndterer specialegrunde
@@ -268,7 +272,7 @@ specialFields
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>960</x>
+      <x>870</x>
       <y>560</y>
       <w>240</w>
       <h>100</h>
@@ -282,7 +286,7 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
+      <x>750</x>
       <y>660</y>
       <w>40</w>
       <h>180</h>
@@ -296,7 +300,7 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
+      <x>450</x>
       <y>590</y>
       <w>240</w>
       <h>140</h>
