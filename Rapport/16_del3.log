@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  19 NOV 2017 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  19 NOV 2017 15:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1186,49 +1186,49 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count303
  (./forside.tex
-<fig/gruppeBilleder/mfager.png, id=44, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/mfager.png, id=40, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/mfager.png Graphic file (type png)
 <use fig/gruppeBilleder/mfager.png>
 Package pdftex.def Info: fig/gruppeBilleder/mfager.png  used on input line 7. o
 n input line 7.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 7
 .
-<fig/gruppeBilleder/milishia.png, id=45, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/milishia.png, id=41, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/milishia.png Graphic file (type png)
 <use fig/gruppeBilleder/milishia.png>
 Package pdftex.def Info: fig/gruppeBilleder/milishia.png  used on input line 7.
  on input line 7.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 7
 .
-<fig/gruppeBilleder/nicki.png, id=46, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/nicki.png, id=42, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/nicki.png Graphic file (type png)
 <use fig/gruppeBilleder/nicki.png>
 Package pdftex.def Info: fig/gruppeBilleder/nicki.png  used on input line 8. on
  input line 8.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 8
 .
-<fig/gruppeBilleder/semi.png, id=47, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/semi.png, id=43, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/semi.png Graphic file (type png)
 <use fig/gruppeBilleder/semi.png>
 Package pdftex.def Info: fig/gruppeBilleder/semi.png  used on input line 9. on 
 input line 9.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 9
 .
-<fig/gruppeBilleder/simon.png, id=48, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/simon.png, id=44, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/simon.png Graphic file (type png)
 <use fig/gruppeBilleder/simon.png>
 Package pdftex.def Info: fig/gruppeBilleder/simon.png  used on input line 10. o
 n input line 10.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 1
 0.
-<fig/gruppeBilleder/thyge.png, id=49, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/thyge.png, id=45, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/thyge.png Graphic file (type png)
 <use fig/gruppeBilleder/thyge.png>
 Package pdftex.def Info: fig/gruppeBilleder/thyge.png  used on input line 11. o
 n input line 11.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 1
 1.
-<fig/dtu/DTU_small.png, id=50, 180.675pt x 180.675pt>
+<fig/dtu/DTU_small.png, id=46, 180.675pt x 180.675pt>
 File: fig/dtu/DTU_small.png Graphic file (type png)
 <use fig/dtu/DTU_small.png>
 Package pdftex.def Info: fig/dtu/DTU_small.png  used on input line 24. on input
@@ -1248,12 +1248,7 @@ Package babel Info: Redefining danish shorthand "~
 {c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./fig/gruppeBil
 leder/mfager.png> <./fig/gruppeBilleder/milishia.png> <./fig/gruppeBilleder/nic
 ki.png> <./fig/gruppeBilleder/semi.png> <./fig/gruppeBilleder/simon.png> <./fig
-/gruppeBilleder/thyge.png> <./fig/dtu/DTU_small.png>]) (./timeregnskab.tex
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-)
+/gruppeBilleder/thyge.png> <./fig/dtu/DTU_small.png>]) (./timeregnskab.tex)
 (./analyseSecondary.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1261,7 +1256,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<fig/dtu/dtu.png, id=61, 1063.975pt x 478.78876pt>
+<fig/dtu/dtu.png, id=57, 1063.975pt x 478.78876pt>
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 1. on input line 1
@@ -1363,24 +1358,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `16_del3.out' has not changed.
-(rerunfilecheck)             Checksum: 3574CD94961966F08C5BEBF700506EB3;566.
+(rerunfilecheck)             Checksum: 46BBE4E8252E304AB6353630C4C0FABD;518.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 19817 strings out of 492990
- 366946 string characters out of 6136334
+ 19816 strings out of 492990
+ 366936 string characters out of 6136334
  425412 words of memory out of 5000000
- 23143 multiletter control sequences out of 15000+600000
+ 23142 multiletter control sequences out of 15000+600000
  541557 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,14n,72p,10489b,774s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on 16_del3.pdf (4 pages, 333511 bytes).
+Output written on 16_del3.pdf (4 pages, 333469 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  14 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
