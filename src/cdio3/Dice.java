@@ -10,7 +10,7 @@ public class Dice
 	
 	/**
 	 * Bruger Random klassen til at slå med en terning
-	 * @return Summen af terningen
+	 * @return Summen af terningen.
 	 */
 	public void roll()
 	{
