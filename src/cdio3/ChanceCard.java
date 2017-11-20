@@ -78,12 +78,12 @@ public class ChanceCard extends FieldEffect{
 	public int getMoveTo() {
 		// 24 felter
 		moveTo[1] = 25 - location; // Ryk hen til start
-		moveTo[2] = location + 5; // Rykker fem felter frem
-		moveTo[5] = location + 1; // Ryk et felt frem
+		moveTo[2] = 5; // Rykker fem felter frem
+		moveTo[5] = 1; // Ryk et felt frem
 		// Farve kort:
 		// Farve felterne afventer vi
 		moveTo[10] = 24 - location; // Flytter brikken til strandpromonaden
-		moveTo[17] = 11 - location; // Flytter brikken til skateparken
+		moveTo[17] = 25 - location + 10; // Flytter brikken til skateparken
 		
 		return moveTo[card];
 	}
@@ -146,8 +146,7 @@ public class ChanceCard extends FieldEffect{
 	
 	private void setCardMessage() {
 //		for (int i = 0; i < numberOfCards; i++) {
-//			cardMessage[i] = reader.getString("cc1", "chanceCardsText"); // Metoden endnu ikke implemtereret
-//			cardMessage[i] = "test " + i;
+//			cardMessage[i] = reader.getString("CC"+i, "chanceCardsText"); // Metoden endnu ikke implemtereret
 //		}
 		cardMessage[0] = "Et kort til";
 		cardMessage[1] = "Ryk frem til start";
