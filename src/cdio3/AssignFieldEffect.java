@@ -1,79 +1,37 @@
 package cdio3;
 
 public class AssignFieldEffect {
+	boolean jail = false;
+	private int propertyValue = 0;
 	switch(Player.getPlayerLocation) {
 	case 0: start {
-		Player.wallet.changeBalance += 2;
+		if (Player.getPlayerLocation > 24) {
+			Player.wallet.changeBalance += 2;
+			Player.setPlayerLocatio -= 24;
+		}
+	}
 		break;
 	}
-	case 1: {
-		
+	case 1: case 2: case 4 case 5:
+		propertyValue = 1;
 		break;
-	}
-	case 2: {
-		
+	case 7: case 8: case 10: case 11:
+		propertyValue = 2;
 		break;
-	}
-	case 3: case 9: case 15: case 21: {
-		ChanceKort;
+	case 13: case 14: case 16: case 17:
+		propertyValue = 3;
 		break;
-	}
-	case 4: {
-		
+	case 19: case 20:
+		propertyValue = 4;
 		break;
-	}
-	case 5: {
-		
+	 case 22: case 23:
+		 propertyValue = 5;
+		 break;
+	case 3: case 9: case 15: case 21:
+		chanceKort;
 		break;
-	}
-	case 6: {
-		
-		break;
-	}
-	case 7: {
-		
-		break;
-	}
-	case 8: {
-		
-		break;
-	}
-	case 10: {
-		
-		break;
-	}
-	case 11: {
-		
-		break;
-	}
-	case 12: {
-		
-		break;
-	}
-	case 13: {
-		
-		break;
-	}
-	case 14: {
-		
-		break;
-	}
-	case 16: {
-		
-		break;
-	}
-	case 17: {
-		
-		break;
-	}
-	case 18: {
-		Jail
-		break;
-	}
-	case 19: {
-		
-	}
-}
+	case 18:
+		jail = true;
 
 
 }
