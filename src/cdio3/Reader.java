@@ -6,7 +6,6 @@ import java.io.IOException;
 
 public class Reader {
 	static String lang = "lang_DK";
-	int movieCount;
 	String[][] database;
 	/**
 	 * Reader sætter sproget (lang) 
@@ -26,7 +25,7 @@ public class Reader {
 		String file = lang;
 		String line;
 		String line1 = null;
-		BufferedReader fileReader = new BufferedReader (new FileReader (file)); //Skal lukkes på et tidspunkt
+		BufferedReader fileReader = new BufferedReader (new FileReader (file));
 		while((line = fileReader.readLine()) !=null) {
 			if (line.equals(id)) line1 = fileReader.readLine();
 		}
