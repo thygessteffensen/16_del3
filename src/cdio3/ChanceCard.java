@@ -12,6 +12,7 @@ public class ChanceCard extends FieldEffect{
 	private String[] cardMessage = new String[numberOfCards]; // chancekort beskeden bliver "loadet" ved start.
 	private int[] moveTo = new int[numberOfCards]; // angiver hvor mange felter man skal flytte for at komme chance stedet hen (start, 5 felter, skaterpark)
 	private int[] balanceChange = new int[numberOfCards]; // ændringen af balancen, enten negativ eller positiv
+	Reader reader = new Reader();
 	
 //----------------------------------------------------------------------------------
 	//                         Den tager udgangspunkt i 
@@ -162,28 +163,10 @@ public class ChanceCard extends FieldEffect{
 	 * - NB: Afventer reader.
 	 */
 	private void setCardMessage() {
-//		for (int i = 0; i < numberOfCards; i++) {
-//			cardMessage[i] = reader.getString("CC"+i, "chanceCardsText"); // Metoden endnu ikke implemtereret
-//		}
-		cardMessage[0] = "Et kort til";
-		cardMessage[1] = "Ryk frem til start";
-		cardMessage[2] = "Fem felter frem";
-		cardMessage[3] = "0";
-		cardMessage[4] = "1 felt frem";
-		cardMessage[5] = "Et chancekort til";
-		cardMessage[6] = "-2 m";
-		cardMessage[7] = "0";
-		cardMessage[8] = "0";
-		cardMessage[9] = "0";
-		cardMessage[10] = "Strandpromanaden 24";
-		cardMessage[11] = "et kort til";
-		cardMessage[12] = "et kort til";
-		cardMessage[13] = "0";
-		cardMessage[14] = "0";
-		cardMessage[15] = "+2 m";
-		cardMessage[16] = "0";
-		cardMessage[17] = "Ryk frem til 11";
+		for (int i = 1; i <= numberOfCards; i++) 
+			cardMessage[i] = reader.getString("CC"+i, "chanceCardsText"); 
 	}
+	
 
 
 //----------------------------------------------------------------------------------
