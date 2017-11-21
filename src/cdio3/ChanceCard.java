@@ -1,5 +1,6 @@
 package cdio3;
 
+import java.io.IOException;
 import java.util.Random;
 
 public class ChanceCard extends FieldEffect{
@@ -22,8 +23,9 @@ public class ChanceCard extends FieldEffect{
 	
 	/**
 	 * Konstruktør. 
+	 * @throws IOException 
 	 */
-	public ChanceCard() {
+	public ChanceCard() throws IOException {
 		setCardMessage(); // Tilføjer den aktuelle tekst til kortet
 		allCardFalse(); // Sætter alle kort til false.
 		setExtraCard(); // Sætter felter til true, til der hvor man må trække et ekstra kort.
@@ -161,8 +163,9 @@ public class ChanceCard extends FieldEffect{
 	/**
 	 * Loader alle tekst strenge til et array
 	 * - NB: Afventer reader.
+	 * @throws IOException 
 	 */
-	private void setCardMessage() {
+	private void setCardMessage() throws IOException {
 		for (int i = 1; i <= numberOfCards; i++) 
 			cardMessage[i] = reader.getString("CC"+i, "chanceCardsText"); 
 	}
