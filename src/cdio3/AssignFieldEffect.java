@@ -5,9 +5,9 @@ public class AssignFieldEffect {
 	private int propertyValue = 0;
 	switch(Player.getPlayerLocation) {
 	case 0: start {
-		if (Player.getPlayerLocation > 24) {
+		if (Player.getPlayerLocation > 23) {
 			Player.wallet.changeBalance += 2;
-			Player.setPlayerLocatio -= 24;
+			Player.setPlayerLocation -= 24;
 		}
 	}
 		break;
@@ -28,10 +28,12 @@ public class AssignFieldEffect {
 		 propertyValue = 5;
 		 break;
 	case 3: case 9: case 15: case 21:
-		chanceKort;
+		ChanceKort.chanceKort();
 		break;
 	case 18:
 		jail = true;
+		//Player.jail(true)
+	default: break;
 
 
 }
