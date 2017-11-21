@@ -2,20 +2,20 @@ package cdio3;
 
 public class Player 
 {
-	private Brik brik = new Brik();
-	private int brikNum
+	private Piece piece = new Piece();
+	private String piece
 	private int alder; 
 	private Wallet wallet = new Wallet();
 	public int currentField = -1; 
 	
-	public Player() {
+	public Player(String piece) {
 	}
 	
 	/**
 	 * brik
 	 */
-	public Brik getBrik(){
-		return brik;
+	public Piece getPiece(){
+		return piece;
 	}
 	
 //	/**
