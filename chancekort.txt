@@ -39,7 +39,7 @@ Chance 14:
 Chance 15:
 	null
 	Punkt eller mørkeblåt
-Chance 16:
+Chance 16:{
 	+2m
 Chance 17:
 	null
