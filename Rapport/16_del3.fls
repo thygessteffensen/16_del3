@@ -1,8 +1,8 @@
-PWD c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport
+PWD c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/1. semester/16_del3/Rapport
 INPUT c:/texlive/2017/texmf.cnf
 INPUT c:/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex
+INPUT c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/1. semester/16_del3/Rapport/16_del3.tex
 OUTPUT 16_del3.log
 INPUT c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -246,17 +246,12 @@ INPUT site2.tex
 INPUT site2.tex
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT fig/TROver.jpg
+INPUT ./fig/TROver.jpg
+INPUT ./fig/TROver.jpg
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-<<<<<<< HEAD
-INPUT fig/dtu/domainmodel.jpg
-INPUT ./fig/dtu/domainmodel.jpg
-INPUT ./fig/dtu/domainmodel.jpg
-INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT fig/dtu/dtu.png
-INPUT ./fig/dtu/dtu.png
-=======
 INPUT 16_del3.toc
 INPUT 16_del3.toc
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
@@ -266,6 +261,10 @@ INPUT ./fig/dtu/dtu.png
 INPUT analyseSecondary.tex
 INPUT analyseSecondary.tex
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT UseCases.tex
+INPUT UseCases.tex
+INPUT fig/dtu/dtu.png
+INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
@@ -277,15 +276,10 @@ INPUT ./fig/UC-cdio3.jpg
 INPUT ./fig/UC-cdio3.jpg
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-INPUT fig/dtu/dtu.png
-INPUT ./fig/dtu/dtu.png
->>>>>>> 1302cb58a29f8fab790c4f11e6a8c16de395ccb7
 INPUT designSecondaray.tex
 INPUT designSecondaray.tex
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-<<<<<<< HEAD
-=======
 INPUT fig/Designklassediagram(3).jpg
 INPUT ./fig/Designklassediagram(3).jpg
 INPUT ./fig/Designklassediagram(3).jpg
@@ -297,13 +291,17 @@ INPUT ./fig/dtu/dtu.png
 INPUT fig/SSD.jpg
 INPUT ./fig/SSD.jpg
 INPUT ./fig/SSD.jpg
+INPUT fig/dtu/domainmodel.jpg
+INPUT ./fig/dtu/domainmodel.jpg
+INPUT ./fig/dtu/domainmodel.jpg
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
->>>>>>> 1302cb58a29f8fab790c4f11e6a8c16de395ccb7
+INPUT fig/dtu/dtu.png
+INPUT ./fig/dtu/dtu.png
 INPUT 16_del3.aux
 INPUT ./16_del3.out
 INPUT ./16_del3.out

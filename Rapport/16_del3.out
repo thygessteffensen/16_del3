@@ -1,21 +1,10 @@
 \BOOKMARK [1][-]{section.1}{Analyse}{}% 1
-<<<<<<< HEAD
-\BOOKMARK [2][-]{subsection.1.1}{UseCases}{section.1}% 2
-\BOOKMARK [1][-]{section.2}{Design}{}% 3
-\BOOKMARK [2][-]{subsection.2.1}{Klasse diagram}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.2}{Sekvensdiagram}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.3}{Dom\346nemodel}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.4}{Klasse diagram}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.5}{Sekvensdiagram}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.6}{Dom\346nemodel}{section.2}% 9
-=======
 \BOOKMARK [2][-]{subsection.1.1}{Kravliste}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{UseCases}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{UseCase-Diagram}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.3}{UseCase diagram}{section.1}% 4
 \BOOKMARK [2][-]{subsection.1.4}{GRASP}{section.1}% 5
 \BOOKMARK [1][-]{section.2}{Design}{}% 6
 \BOOKMARK [2][-]{subsection.2.1}{Klasse diagram}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.2}{Sekvensdiagram}{section.2}% 8
 \BOOKMARK [2][-]{subsection.2.3}{System sekvensdiagram}{section.2}% 9
 \BOOKMARK [2][-]{subsection.2.4}{Dom\346nemodel}{section.2}% 10
->>>>>>> 1302cb58a29f8fab790c4f11e6a8c16de395ccb7
