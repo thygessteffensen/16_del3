@@ -8,7 +8,7 @@ public class Player
 	private Wallet wallet = new Wallet();
 	public int currentField = -1; 
 	
-	public Player() {
+	public Player( HER INSKUDSPARAMETER) {
 	}
 	
 	/**
