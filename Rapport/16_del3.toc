@@ -9,3 +9,9 @@
 \contentsline {subsection}{\numberline {2.2}Sekvensdiagram}{10}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}System sekvensdiagram}{10}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Dom\IeC {\ae }nemodel}{10}{subsection.2.4}
+\contentsline {section}{\numberline {3}Dokumentation}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Forklar hvad arv er}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Forklar hvad abtract betyder}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Fort\IeC {\ae }l hvad det hedder hvis alle fieldklasserne har en landOnField metode der g\IeC {\o }r noget forskelligt}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Dokumentation for test med screenshots}{11}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Dokumentation for overholdt GRASP}{11}{subsection.3.5}

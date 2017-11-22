@@ -294,6 +294,10 @@ INPUT ./fig/SSD.jpg
 INPUT fig/dtu/domainmodel.jpg
 INPUT ./fig/dtu/domainmodel.jpg
 INPUT ./fig/dtu/domainmodel.jpg
+INPUT dokumentation.tex
+INPUT dokumentation.tex
+INPUT fig/dtu/dtu.png
+INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
