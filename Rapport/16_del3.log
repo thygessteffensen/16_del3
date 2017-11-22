@@ -1,13 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  21 NOV 2017 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.2)  22 NOV 2017 13:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/
-1. semester/16_del3/Rapport/16_del3.tex"
-
-(c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/1.
- semester/16_del3/Rapport/16_del3.tex
+**c:/Users/mathi/16_del3/Rapport/16_del3.tex
+(c:/Users/mathi/16_del3/Rapport/16_del3.tex
 LaTeX2e <2017-04-15>
 Babel <3.13> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -1675,12 +1672,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
  ) 
 Here is how much of TeX's memory you used:
  19908 strings out of 492990
- 368180 string characters out of 6136334
+ 367959 string characters out of 6136334
  431412 words of memory out of 5000000
  23175 multiletter control sequences out of 15000+600000
  541864 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,72p,10489b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,72p,10414b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>

@@ -1,8 +1,8 @@
-PWD c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/1. semester/16_del3/Rapport
+PWD c:/Users/mathi/16_del3/Rapport
 INPUT c:/texlive/2017/texmf.cnf
 INPUT c:/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/1. semester/16_del3/Rapport/16_del3.tex
+INPUT c:/Users/mathi/16_del3/Rapport/16_del3.tex
 OUTPUT 16_del3.log
 INPUT c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
