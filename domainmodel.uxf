@@ -9,9 +9,9 @@
       <w>210</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>_:brikker_
+    <panel_attributes>_:Brikker_
 --
-Farve
+farve
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -23,11 +23,11 @@ Farve
       <w>210</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>_:spiller_
+    <panel_attributes>_:Spiller_
 --
-Navn
-Farve
-Pung</panel_attributes>
+navn
+farve
+pung</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -40,7 +40,7 @@ Pung</panel_attributes>
     </coordinates>
     <panel_attributes>_:terninger_
 --
-Værdi</panel_attributes>
+værdi</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -51,7 +51,7 @@ Værdi</panel_attributes>
       <w>210</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>_:money_
+    <panel_attributes>_:penge_
 --
 Sedler</panel_attributes>
     <additional_attributes/>
@@ -64,7 +64,7 @@ Sedler</panel_attributes>
       <w>210</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>_:juniorMonopoly_
+    <panel_attributes>_:Juniormonopoly_
 --
 </panel_attributes>
     <additional_attributes/>
@@ -77,22 +77,10 @@ Sedler</panel_attributes>
       <w>210</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>_:bræt_
+    <panel_attributes>_:Bræt_
 --
 Felter</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>310</x>
-      <y>210</y>
-      <w>340</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>m1=1
-m2=1</panel_attributes>
-    <additional_attributes>10.0;10.0;320.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -103,7 +91,8 @@ m2=1</panel_attributes>
       <h>170</h>
     </coordinates>
     <panel_attributes>m1=1
-m2=1</panel_attributes>
+m2=1
+Indeholder</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0;90.0;90.0;90.0;150.0</additional_attributes>
   </element>
   <element>
@@ -115,7 +104,8 @@ m2=1</panel_attributes>
       <h>170</h>
     </coordinates>
     <panel_attributes>m1=1
-m2=4</panel_attributes>
+m2=4
+Indeholder</panel_attributes>
     <additional_attributes>10.0;150.0;10.0;90.0;80.0;90.0;80.0;10.0</additional_attributes>
   </element>
   <element>
@@ -128,7 +118,7 @@ m2=4</panel_attributes>
     </coordinates>
     <panel_attributes>m1=1
 m2=1
-</panel_attributes>
+Indeholder</panel_attributes>
     <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -136,13 +126,13 @@ m2=1
     <coordinates>
       <x>750</x>
       <y>460</y>
-      <w>80</w>
+      <w>100</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>m1=20
 m2=1
-</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;50.0;60.0;50.0;60.0;10.0</additional_attributes>
+Indeholder</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;50.0;80.0;50.0;80.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -153,7 +143,8 @@ m2=1
       <h>80</h>
     </coordinates>
     <panel_attributes>m1=90
-m2=1</panel_attributes>
+m2=1
+Indeholder</panel_attributes>
     <additional_attributes>10.0;10.0;50.0;10.0;50.0;50.0;130.0;50.0</additional_attributes>
   </element>
   <element>
@@ -165,20 +156,23 @@ m2=1</panel_attributes>
       <h>100</h>
     </coordinates>
     <panel_attributes>m1=2..4
-m2=1..90</panel_attributes>
+m2=1..90
+
+Har -&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0;140.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>200</x>
-      <y>150</y>
+      <y>140</y>
       <w>820</w>
-      <h>60</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>m1=1
-m2=1</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0;800.0;10.0;800.0;40.0</additional_attributes>
+m2=1
+Har -&gt;</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;20.0;800.0;20.0;800.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -188,9 +182,9 @@ m2=1</panel_attributes>
       <w>210</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>_:chanceKort_
+    <panel_attributes>_:Chancekort_
 --
-Effekt
+effekt
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -202,10 +196,10 @@ Effekt
       <w>210</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>_:solgteSkilte
+    <panel_attributes>_:Solgteskilte
 --
-Hundeskilte
-Katteskilte
+hundeskilte
+katteskilte
 skibskilte
 bilskilte
 
@@ -215,13 +209,14 @@ bilskilte
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>940</x>
+      <x>920</x>
       <y>460</y>
-      <w>90</w>
+      <w>110</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>m1=1
-m2=48</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0;60.0;50.0;60.0;100.0</additional_attributes>
+m2=48
+Indeholder</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;80.0;50.0;80.0;100.0</additional_attributes>
   </element>
 </diagram>
