@@ -15,7 +15,7 @@ public class Reader {
 		String file = textFile;
 		String line;
 		String line1 = null;
-		BufferedReader fileReader = new BufferedReader (new FileReader (file));
+		BufferedReader fileReader = new BufferedReader (new FileReader ("textFiles/" + file));
 		while((line = fileReader.readLine()) !=null) {
 			if (line.equals(id)) line1 = fileReader.readLine();
 		}
