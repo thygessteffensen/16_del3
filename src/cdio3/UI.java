@@ -43,7 +43,25 @@ public class UI {
 		gui.setDice(d1, d2);
 	}
 	
+	/**
+	 * Danner en dropdownmenu, hvor i man kan vælge mellem strengene
+	 * i Streng arrayet. Der retuneres en streg
+	 * @param Message Besked til spilleren
+	 * @param opt Stiring[] med valgmuligheder.
+	 * @return
+	 */
+	public String dropDown(String Message, String[] opt) {
+		return gui.getUserSelection(Message, opt);
+	}
 	
+	/**
+	 * Modtag bruger respons
+	 * @param msg Besked til spilleren
+	 * @param button Tekst til knappen.
+	 */
+	public void getUserResponse(String msg, String button) {
+		gui.getUserButtonPressed(msg, button);
+	}
 
 
 }
