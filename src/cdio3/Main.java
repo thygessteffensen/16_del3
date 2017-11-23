@@ -13,11 +13,11 @@ public class Main {
 		playerCount = Integer.parseInt(ui.dropDown("test", optPlayer));
 		//		ui.getUserResponse(reader.getString("startPenge"+(playerCount-1), "velkommen"), "OK!");
 		ui.getUserResponse("startPenge"+(2-1), "OK!");
-		player = new Player[playerCount-1];
+		player = new Player[playerCount];
 
 		for (int i = 0; i < player.length ; i++) {
 			// availible pieces
-			player[i].setPiece(ui.dropDown(reder.getString("vælgBrik","velkommen"), optPiece));
+			//player[i].setPiece(ui.dropDown(reder.getString("vælgBrik","velkommen"), optPiece));
 		}
 
 
