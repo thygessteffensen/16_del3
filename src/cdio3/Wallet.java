@@ -11,12 +11,14 @@ public class Wallet extends Player{
 		this.balance = balance;
 	}
 
-
 	public int getBalance() { // Getter til balance
 		return balance;
 	}
-
-	public void setBalance(int balance) { // Setter til balance
+	/* Sætter ikke balance, men checker derimod om en spillers konto er under 0
+	 * Enten skal metode navnet ændres til CheckPlayerLost ellers så skal den ændres til
+	 * at sætte en spillers konto til parameteren.
+	 */
+	public void setBalance(int balance) {
 		if (balance < 0)
 			playerLost = true;
 		
