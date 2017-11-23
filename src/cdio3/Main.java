@@ -22,6 +22,9 @@ public class Main {
 		ui.getUserResponse(reader.getString("startPenge"+(playerCount-1), "velkommen"), "OK!");
 		player = new Player[playerCount];
 		
+//--------------------------------------------------------------------------------------------------------------------
+//                                              Spillere tilføjes
+//--------------------------------------------------------------------------------------------------------------------
 	
 		/**
 		 * Tilføjer spiller med brik og så'n
@@ -31,12 +34,32 @@ public class Main {
 			optPiece = availiblePieces(taken, optPiece);
 			taken = ui.dropDown(reader.getString("vælgBrik","velkommen"), optPiece);
 			player[i] = new Player(taken, playerCount);
-			ui.addPlayer(playerCount, i, player[i].getPiece(), 20);
+			player[i].wallet = new Wallet(taken, playerCount, 20);
+			ui.addPlayer(playerCount, i, player[i].getPiece(), player[i].wallet.getBalance());
 		}
-			
 		
-		
+//--------------------------------------------------------------------------------------------------------------------
+//                                              Spillet påbegyndes:
+//--------------------------------------------------------------------------------------------------------------------
 
+		for (int i = 0; i < optPlayer.length; i++) {
+			while(player[i].wallet.getPlayerLost()) {
+				// Tilføj gameplay her:
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 	public static String[] availiblePieces(String taken, String[] opt) {
