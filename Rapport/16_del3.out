@@ -13,4 +13,7 @@
 \BOOKMARK [2][-]{subsection.3.2}{Forklar hvad abtract betyder}{section.3}% 13
 \BOOKMARK [2][-]{subsection.3.3}{Fort\346l hvad det hedder hvis alle fieldklasserne har en landOnField metode der g\370r noget forskelligt}{section.3}% 14
 \BOOKMARK [2][-]{subsection.3.4}{Dokumentation for test med screenshots}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.5}{Dokumentation for overholdt GRASP}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.5}{JUnit test}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.6}{Positiv negativ test}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.7}{Black- og Whitebox test}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.8}{Dokumentation for overholdt GRASP}{section.3}% 19
