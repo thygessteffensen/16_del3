@@ -298,6 +298,14 @@ INPUT dokumentation.tex
 INPUT dokumentation.tex
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
+INPUT fig/JUnitTestDice.jpg
+INPUT ./fig/JUnitTestDice.jpg
+INPUT ./fig/JUnitTestDice.jpg
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT fig/dtu/dtu.png
+INPUT ./fig/dtu/dtu.png
+INPUT fig/dtu/dtu.png
+INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
@@ -312,3 +320,4 @@ INPUT ./16_del3.out
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
