@@ -5,6 +5,7 @@ import java.io.IOException;
 public class Main {
 	static UI ui;
 	static Player[] player; // Player array der indeholder referrencer til player objekter.
+	static Wallet wallet;
 	static Reader reader = new Reader();
 	
 	
@@ -17,33 +18,35 @@ public class Main {
 		
 		String[] optPlayer = {"2", "3", "4"};
 		int playerCount;
-		//		playerCount = Integer.parseInt(ui.dropDown(reader.getString("spillerAntal", "velkommen"), {"2", "3", "4"));
-		playerCount = Integer.parseInt(ui.dropDown("test", optPlayer));
-		//		ui.getUserResponse(reader.getString("startPenge"+(playerCount-1), "velkommen"), "OK!");
-		ui.getUserResponse("startPenge"+(2-1), "OK!");
+		playerCount = Integer.parseInt(ui.dropDown(reader.getString("spillerAntal", "velkommen"), optPlayer));
+		ui.getUserResponse(reader.getString("startPenge"+(playerCount-1), "velkommen"), "OK!");
 		player = new Player[playerCount];
 		
-		String taken = null;
+	
+		/**
+		 * Tilføjer spiller med brik og så'n
+		 */
+		String taken = "none";
 		for (int i = 0; i < player.length ; i++) {
 			optPiece = availiblePieces(taken, optPiece);
-			player[i].setPiece(ui.dropDown(reader.getString("vælgBrik","velkommen"), optPiece));
+			taken = ui.dropDown(reader.getString("vælgBrik","velkommen"), optPiece);
+			player[i] = new Player(taken, playerCount);
+			ui.addPlayer(playerCount, i, player[i].getPiece(), 20);
 		}
+			
+		
+		
 
 
 	}
 	public static String[] availiblePieces(String taken, String[] opt) {
 		String[] ap = new String[opt.length];
 		String temp = "";
-		for (int i = 0; i < opt.length; i++) {
-			if(!taken.equals(opt[i])) {
+		for (int i = 0; i < opt.length; i++)
+			if(!taken.equals(opt[i]))
 				temp += opt[i] + " ";
-			}
-			
-			
-			
-		}
-
-		return opt;
+		ap = temp.split(" ");
+		return ap;
 	}
 }
 

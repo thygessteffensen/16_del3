@@ -21,17 +21,17 @@ public class UI {
 	}
 	
 	/**
-	 * Tilføjer antal spillere til pladen.
+	 * Tilføjer spillere til GUI_Player, såvel som på pladen
 	 * @param playerCount Antal spillere
-	 * @param name String[] med navne
-	 * @param balance itn[] med balance
+	 * @param i tælleren
+	 * @param name Spilleres brik navn
+	 * @param balance Spillerens balance
 	 */
-	public void addPlayer(int playerCount, String[] name, int[] balance) {
+	public void addPlayer(int playerCount, int i, String name, int balance) {
 		player = new GUI_Player[playerCount];
-		for (int i = 0; i < playerCount; i++) {
-			player[i] = new GUI_Player(name[i], balance[i]);
-			gui.addPlayer(player[i]);
-		}
+		player[i] = new GUI_Player(name, balance);
+		gui.addPlayer(player[i]);
+	
 	}
 	
 	/**

@@ -3,10 +3,10 @@ package cdio3;
 public class Player 
 {
 	private String piece;
-	private Wallet wallet;
+	Wallet wallet;
 
 	public Player(String piece, int playerCount) {
-		wallet = new Wallet(playerCount);
+		wallet = new Wallet();
 		this.piece = piece;
 	}
 		/**
@@ -24,13 +24,6 @@ public class Player
 			this.piece = piece;
 		}	
 
-		/**
-		 * Wallet
-		 * @return
-		 */
-		public int getWallet() {
-			return wallet.getBalance();
-		}
-
+		
 	
 }
