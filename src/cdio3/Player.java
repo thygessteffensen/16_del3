@@ -29,7 +29,7 @@ public class Player
 		 * @return
 		 */
 		public int getWallet() {
-			return wallet.getBalance();;
+			return wallet.getBalance();
 		}
 
 	
