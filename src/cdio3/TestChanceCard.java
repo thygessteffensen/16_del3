@@ -7,7 +7,7 @@ public class TestChanceCard {
 	static ChanceCard cc = new ChanceCard();
 	public static void main(String[] args) {
 	int lok;
-		for (int i = 0; i < 15; i++) {
+		for (int i = 0; i < 40; i++) {
 			lok = ran.nextInt(18)-1;
 			cc.initChanceCard(lok);
 			System.out.println("Kort: " + cc.card);

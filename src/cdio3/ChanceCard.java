@@ -1,19 +1,19 @@
 package cdio3;
 
+import java.io.IOException;
 import java.util.Random;
 
 public class ChanceCard extends FieldEffect{
-	Random ran = new Random();
-	int numberOfCards = 18;
-	int location;
-	int card;
-	private boolean[] taken = new boolean[numberOfCards]; // Hvis kortet er blevet taget, bliver den true.
-	private boolean[] extraCard = new boolean[numberOfCards]; //Er true ved de steder, hvor chancekortet må trækkes en gang til
-	private String[] cardMessage = new String[numberOfCards]; // 
-	private int[] moveTo = new int[numberOfCards]; // flytter brikken hen til: start, næste farve, fem felter frem.
-	private int[] balanceChange = new int[numberOfCards]; // balance ændring
-	
-	
+	Random ran = new Random(); 
+	int numberOfCards = 18; //Antal af chance kort
+	int location; //Indeholder spillerens aktuelle lokation.
+	int card; // Indeholder det chancekort nummer som er aktuelt for denne session.
+	private boolean[] taken = new boolean[numberOfCards]; // Holder styr på taget/ikke taget stakken
+	private boolean[] extraCard = new boolean[numberOfCards]; // true hvis spilleren må trække et kort til.
+	private String[] cardMessage = new String[numberOfCards]; // chancekort beskeden bliver "loadet" ved start.
+	private int[] moveTo = new int[numberOfCards]; // angiver hvor mange felter man skal flytte for at komme chance stedet hen (start, 5 felter, skaterpark)
+	private int[] balanceChange = new int[numberOfCards]; // ændringen af balancen, enten negativ eller positiv
+	Reader reader = new Reader();
 	
 //----------------------------------------------------------------------------------
 	//                         Den tager udgangspunkt i 
@@ -23,8 +23,9 @@ public class ChanceCard extends FieldEffect{
 	
 	/**
 	 * Konstruktør. 
+	 * @throws IOException 
 	 */
-	public ChanceCard() {
+	public ChanceCard() throws IOException {
 		setCardMessage(); // Tilføjer den aktuelle tekst til kortet
 		allCardFalse(); // Sætter alle kort til false.
 		setExtraCard(); // Sætter felter til true, til der hvor man må trække et ekstra kort.
@@ -33,7 +34,7 @@ public class ChanceCard extends FieldEffect{
 	}
 
 	/**
-	 * Giver spilleren et kort.
+	 * Giver spilleren et kort og initialisere lokationen
 	 * @param location
 	 */
 	public void initChanceCard(int location) {
@@ -43,10 +44,11 @@ public class ChanceCard extends FieldEffect{
 
 	/**
 	 * Vælger et kort, hvis dette kort allerede er
-	 * blivet taget, finder det et nyt kort osv.
+	 * blivet taget, finder den et nyt kort osv.
 	 * @return
 	 */
 	private int getCard() {
+		checkPile();
 		int card = ran.nextInt(numberOfCards)-1;
 		do {
 			if(card >= numberOfCards-1) 
@@ -59,6 +61,19 @@ public class ChanceCard extends FieldEffect{
 
 		return card;
 	}
+	
+	/**
+	 * Checker om der er flere ledige kort
+	 */
+	private void checkPile() {
+		int falseCounter = 0;
+		for (int i = 0; i < numberOfCards; i++) 
+			if(taken[i] == false)
+				falseCounter++;
+		if(falseCounter == 0) 
+			allCardFalse();
+	}
+	
 //----------------------------------------------------------------------------------
 	//                              getters
 //----------------------------------------------------------------------------------
@@ -72,7 +87,7 @@ public class ChanceCard extends FieldEffect{
 	}
 	
 	/**
-	 * Retunerer int location spiller skal stå på.
+	 * Retunerer antal felter spilleren skal rykke
 	 * @return int
 	 */
 	public int getMoveTo() {
@@ -97,13 +112,14 @@ public class ChanceCard extends FieldEffect{
 	}
 	
 	/**
-	 * Retunerer den streng spiller skal se.
+	 * Retunerer den streng spillerne skal se.
 	 * @return String
 	 */
 	public String getCardMessage() {
 		return cardMessage[card];
 	}
 
+	
 //----------------------------------------------------------------------------------
 	//                              setters
 //----------------------------------------------------------------------------------
@@ -123,7 +139,7 @@ public class ChanceCard extends FieldEffect{
 	}
 
 	/**
-	 * Indeholder værdier der skal ændre balancen.
+	 * Indeholder værdi der skal ændre balancen.
 	 */
 	private void setBalanceChange() {
 		for(int i = 0; i<numberOfCards; i++) {
@@ -135,7 +151,7 @@ public class ChanceCard extends FieldEffect{
 	}
 
 	/**
-	 * Giver en værdi 
+	 * Giver en værdi brikken skal rykke.
 	 * @param location
 	 */
 	private void setMoveTo() {
@@ -144,29 +160,16 @@ public class ChanceCard extends FieldEffect{
 		}
 	}	
 	
-	private void setCardMessage() {
-//		for (int i = 0; i < numberOfCards; i++) {
-//			cardMessage[i] = reader.getString("CC"+i, "chanceCardsText"); // Metoden endnu ikke implemtereret
-//		}
-		cardMessage[0] = "Et kort til";
-		cardMessage[1] = "Ryk frem til start";
-		cardMessage[2] = "Fem felter frem";
-		cardMessage[3] = "0";
-		cardMessage[4] = "1 felt frem";
-		cardMessage[5] = "Et chancekort til";
-		cardMessage[6] = "-2 m";
-		cardMessage[7] = "0";
-		cardMessage[8] = "0";
-		cardMessage[9] = "0";
-		cardMessage[10] = "Strandpromanaden 24";
-		cardMessage[11] = "et kort til";
-		cardMessage[12] = "et kort til";
-		cardMessage[13] = "0";
-		cardMessage[14] = "0";
-		cardMessage[15] = "+2 m";
-		cardMessage[16] = "0";
-		cardMessage[17] = "Ryk frem til 11";
+	/**
+	 * Loader alle tekst strenge til et array
+	 * - NB: Afventer reader.
+	 * @throws IOException 
+	 */
+	private void setCardMessage() throws IOException {
+		for (int i = 1; i <= numberOfCards; i++) 
+			cardMessage[i] = reader.getString("CC"+i, "chanceCardsText"); 
 	}
+	
 
 
 //----------------------------------------------------------------------------------
@@ -174,11 +177,17 @@ public class ChanceCard extends FieldEffect{
 //----------------------------------------------------------------------------------
 
 	/**
-	 * Sætter alle kort til false, i den forstand af de endnu ikke er brugt.
+	 * Sætter alle kort til false, i den forstand at de endnu ikke er brugt.
 	 */
 	private void allCardFalse() {
 		for(int i = 0; i<numberOfCards; i++) {
 			taken[i] = false;
+		}
+	}
+	
+	private void allCardTrue() {
+		for(int i = 0; i<numberOfCards; i++) {
+			taken[i] = true;
 		}
 	}
 }
