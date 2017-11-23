@@ -7,12 +7,17 @@
             \item Spillerne skal slå terninger på skift
             \item Der skal udskrives en tekst der omhandler det aktuelle felt, når spilleren lander på et felt
             \item Hver felt skal have en effekt for spilleren
-            \item Spillerne starter med en balance på 30.000
+            \item Spillerne starter med en balance på:
+            \begin{enumerate}
+                \item 20, hvis der er 4 spillere.
+                \item 18, hvis der er 3 spillere.
+                \item 16, hvis der er 2 spillere.
+            \end{enumerate}
             %Efter de nye regler så starter spillerne med hhv. 20, 18 eller 16 Matadollars, alt efter om der er 2, 3 eller 4 spillere.
-            \item Spillet slutter når alle undtagen en spiller er bankerot, altså når deres balance er nået 0
+            \item Spillet slutter når den første spiller har mistet alle sine penge.
             %Efter de nye regler så er der når den første spille går bankerot
-            \item Spillerne skal kunne gå flere omgange rundt på spillepladen
-            \item Spillet skal kunne kører på DTU’s databarer
+            \item Spillerne skal kunne gå flere omgange rundt på spillepladen.
+            \item Spillet skal kunne køre på DTU’s databarer.
         \end{enumerate}
 
 %---------------------------------------------------------------------------
@@ -29,7 +34,7 @@
     \end{figure}
 
 \subsection{GRASP}
-    GRASP står for General Responsibility Assignment Software Patterns. GRASP bruges til at give det rigtige ansvar til de forskellige klasser der bliver oprettet under udviklingen af et program. GRASP indeholder 9 patterns. Patterns bliver brugt til at strukturere et problem, samt at finde en passende løsning. De 9 patterns er:
+    GRASP står for \textit{General Responsibility Assignment Software Patterns}. GRASP bruges til at give det rigtige ansvar til de forskellige klasser, der bliver oprettet under udviklingen af et program. GRASP indeholder 9 patterns. Patterns bliver brugt til at strukturere et problem, samt at finde en passende løsning. De 9 patterns er:
         \begin{enumerate}
             \item Creator
             \item Information expert

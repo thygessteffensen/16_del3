@@ -5,18 +5,18 @@
         \hline
             UseCase Section: Start af spil & Comment\\
         \hline
-            Scope & Monopoly spil af IOOuterActive\\
+            Scope & Monopoly Junior spil af IOOuterActive\\
         \hline
             Level & User-goal\\
         \hline
             Primær Aktør & IOOuterActive\\
         \hline
             Stakeholder og interessenter
-            & IOOuterActive er interesseret i at spillerne skal kunne starte spillet\\
+            & IOOuterActive er interesseret i at spillerne skal kunne starte spillet.\\
         \hline
-            Forudsætninger & Spillet er installeret på enheden\\
+            Forudsætninger & Spillet er installeret på enheden.\\
         \hline
-            Success guaranti & Spillet starter og spillerne bliver sendt videre til opsætning\\
+            Success guaranti & Spillet starter og spillerne bliver sendt videre til opsætning.\\
         \hline
     \end{tabular}
 \end{center}
@@ -27,17 +27,17 @@
         \hline
             UseCase Section: Opsætning af spil & Comment\\
         \hline
-            Scope & Monopoly spil af IOOuterActive\\
+            Scope & Monopoly Junior spil af IOOuterActive\\
         \hline
             Level & User-goal\\
         \hline
             Primær Aktør & Spillerne\\
         \hline
-            Stakeholder og interessenter & Spillerne er interesserede i at kunne vælge antal spillere og deres brikker\\
+            Stakeholder og interessenter & Spillerne er interesserede i at kunne vælge antal spillere og deres brikker.\\
         \hline
-            Forudsætninger & Spillet er startet op, og spillerne har nu mulighed for at vælge antal spillere og ønskede brikker\\
+            Forudsætninger & Spillet er startet op og spillerne har nu mulighed for at vælge antal spillere og ønskede brikker.\\
         \hline
-            Success guaranti & Der er blevet valgt antallet af spillere, og hver spiller har valgt sin brik, herefter er spillet klar til at blive spillet\\
+            Success guaranti & Der er blevet valgt antallet af spillere og hver spiller har valgt sin brik, herefter er spillet klar til at blive spillet.\\
         \hline
     \end{tabular}
 \end{center}
@@ -49,47 +49,49 @@ Fully dressed UseCase:
         \hline
             UseCase Section: Spillerne slår med terningerne & Comment\\
         \hline
-            Scope & Monopoly spil af IOOuterActive\\
+            Scope & Monopoly Junior spil af IOOuterActive\\
         \hline
             Level & User-goal\\
         \hline
             Primær Aktør & Spillerne\\
         \hline
-            Stakeholder og interessenter & Spillerne er interesseret i at kunne trykke på en knap, og få et billede af to terninger med tilfældige værdier\\
+            Stakeholder og interessenter & Spillerne er interesseret i at kunne trykke på en knap, og få et billede af en terning med tilfældige værdier.\\
         \hline
-            Forudsætninger & Spillet er startet op, og spillerne har valgt antallet spillere og deres ønskede brikker\\
+            Forudsætninger & Spillet er startet op og spillerne har valgt antallet spillere og deres ønskede brikker.\\
         \hline
-            Success guaranti & Der er blevet valgt antallet af spillere, og hver spiller har valgt sit navn, herefter er spillet klar til at blive spillet\\
+            Success guaranti & Der er blevet valgt antallet af spillere og hver spiller har valgt sit navn, herefter er spillet klar til at blive spillet\\
         \hline
-            Hoved succes scenarie & Spillerne får udgivet en værdi af to terninger, og lander derefter på et felt\\
+            Hoved succes scenarie & Spillerne får vist terningens øjne og deres brik bliver rykket hen til det respektive felt.\\
         \hline
             Alternative udfald & Negative udfald:\\
-                & -	IOOuterActive har opdateret spillet, og derved opstår der en fejl når spillerne slå med terningerne, der kan ende i at der ikke bliver slået to terninger\\
+                & -	IOOuterActive har opdateret spillet og derved opstår der en fejl når spillerne slår med terningen, der kan ende i at der ikke slået med ternignen.\\
                 & -	Systemet blokerer for en spillers tur\\
-                & -	En spiller hopper fra/på, og derved skal spillet startes om\\
+                & -	En spiller hopper fra/på og derved skal spillet startes om.\\
         \hline
-            Specielle krav
-            & -	Enheden som spillet kører på skal være kompatibel med Java\\
-            & -	Spillerne skal kunne interagere med GUI’en ved brug af mus eller touch\\
-            & -	Der skal være plads på enheden til at kunne hente spillet\\
+            Specielle krav:
+            & -	Enheden som spillet kører på skal kunne køre Java.\\
+            & -	Spillerne skal kunne interagere med GUI’en ved brug af mus eller touch.\\
+            & -	Der skal være plads på enheden til at kunne hente spillet.\\
         \hline
-            Hyppighed & Hver tur bliver der slået med terninger\\
+            Hyppighed & Hver tur bliver der slået med en terning.\\
         \hline
     \end{tabular}
 \end{center}
 %4. UseCase
+%-------------------COMMENT---------------------------
+%Hvad øhh, spilleren SKAL jo købe feltet.
 \begin{center}
 \begin{tabular}{ | m{10em} | m{10cm}| }
         \hline
-            UseCase Section: Spiller køber et felt & Comment\\
+            UseCase Section: En spiller køber et felt & Comment\\
         \hline
-            Scope & Monopoly spil af IOOuterActive\\
+            Scope & Monopoly Junior spil af IOOuterActive\\
         \hline
             Level & User-goal\\
         \hline
             Primær Aktør & Spillerne\\
         \hline
-            Stakeholder og interessenter & Spillerne er interesseret i at købe det aktuelle felt\\
+            Stakeholder og interessenter & Spillerne er interesseret i at købe det aktuelle felt.\\
         \hline
             Forudsætninger & Spillet er i gang og en spiller har slået med terningerne\\
         \hline
@@ -104,7 +106,7 @@ Fully dressed UseCase:
         \hline
             UseCase Section: Spiller lander på et ejet felt & Comment\\
         \hline
-            Scope & Monopoly spil af IOOuterActive\\
+            Scope & Monopoly Junior spil af IOOuterActive\\
         \hline
             Level & User-goal\\
         \hline
@@ -112,9 +114,9 @@ Fully dressed UseCase:
         \hline
             Stakeholder og interessenter & ****\\
         \hline
-            Forudsætninger & Spillet er i gang og en spiller lander på et felt som er ejet af en anden spiller\\
+            Forudsætninger & Spillet er i gang og en spiller lander på et felt, som er ejet af en anden spiller.\\
         \hline
-            Success guaranti & En spiller lander på et felt der er ejet af en anden spiller og får derfor en negativ effekt\\
+            Success guaranti & En spiller lander på et felt, der er ejet af en anden spiller og får derfor en negativ effekt på balancen.\\
         \hline
     \end{tabular}
 \end{center}
@@ -125,17 +127,17 @@ Fully dressed UseCase:
         \hline
             UseCase Section: En spiller taber & Comment\\
         \hline
-            Scope & Monopoly spil af IOOuterActive\\
+            Scope & Monopoly Junior spil af IOOuterActive\\
         \hline
             Level & User-goal\\
         \hline
             Primær Aktør & Terningerne\\
         \hline
-            Stakeholder og interessenter & Spillerne er interesseret i at deres balance ikke når 0, og dermed taber\\
+            Stakeholder og interessenter & Spillerne er interesseret i at deres balance ikke når 0 og derved taber.\\
         \hline
-            Forudsætninger & Spillerne har slået med terningerne\\
+            Forudsætninger & Spillerne har slået med terningen.\\
         \hline
-            Success guaranti & En spiller lander på 0, og er ude af spillet\\
+            Success guaranti & En spilleres balance når 0, taber de spillet og spillet afsluttes.\\
         \hline
     \end{tabular}
 \end{center}
@@ -152,11 +154,11 @@ Fully dressed UseCase:
         \hline
             Primær Aktør & IOOuterActive\\
         \hline
-            Stakeholder og interessenter & IOOuterActive er interesserede i at programmet viser en vinder og afsluttes\\
+            Stakeholder og interessenter & IOOuterActive er interesserede i at programmet viser en vinder og afsluttes.\\
         \hline
-            Forudsætninger & Alle spillere undtagen en, har fået en balance på 0\\
+            Forudsætninger & En spiller har nået en balance på 0 eller derunder.\\
         \hline
-            Success guaranti &Spillet viser en vinder og kan derefter afsluttes\\
+            Success guaranti & Spillet viser en vinder og kan derefter afsluttes.\\
         \hline
     \end{tabular}
 \end{center}

@@ -274,6 +274,7 @@ INPUT ./fig/dtu/dtu.png
 INPUT fig/UC-cdio3.jpg
 INPUT ./fig/UC-cdio3.jpg
 INPUT ./fig/UC-cdio3.jpg
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT designSecondaray.tex
@@ -301,7 +302,6 @@ INPUT ./fig/dtu/dtu.png
 INPUT fig/JUnitTestDice.jpg
 INPUT ./fig/JUnitTestDice.jpg
 INPUT ./fig/JUnitTestDice.jpg
-INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png

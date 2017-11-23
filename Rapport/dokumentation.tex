@@ -4,10 +4,12 @@
 \subsection{Forklar hvad abtract betyder}
 
 \subsection{Fortæl hvad det hedder hvis alle fieldklasserne har en landOnField metode der gør noget forskelligt}
-Hvis alle fieldklasserne gør brug af den samme landOnField metode er det fordi denne metode er en super metode nedarvet til de forskellige subklasser,
-dette gør at alle klasserne kan gøre brug af samme metode. Eksempeltvis, hvis vi har en masse dyr som klasser, kat, hund, kanin etc. så kan de alle nedarve super metoden eat() fra 
+
+% IOException: Sentence length out of bounds.
+Hvis alle fieldklasserne gør brug af den samme landOnField metode, er det fordi denne metode er en super metode. En super metode er nedarvet til de forskellige subklasser fra super klassen, dette gør at alle klasserne kan gøre brug af samme metode. Eksempeltvis, hvis vi har en masse dyr som klasser, kat, hund, kanin etc. så kan de alle nedarve super metoden eat() fra 
 superklassen som hedder SurvivalRequirements, eftersom disse er metoder alle dyrene får brug for, så vil det give mening at lave det til en superklasse med supermetoder
 , så der holdes lav kobling og høj kohæsion, samt undgås kopiring af kode og høj mulighed for genbrug.
+
 \subsection{Dokumentation for test med screenshots}
     \subsection{JUnit test}
         JUnit test er en autonomisreret testmetode. Her skriver/koder man selv en test, som tester java kode. Oftest opbygger man JUnit test ud fra Java klasser.
