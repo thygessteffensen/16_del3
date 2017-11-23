@@ -63,6 +63,14 @@ public class UI {
 		gui.getUserButtonPressed(msg, button);
 	}
 	
+	/**
+	 * Retunerer en string som bruger giver os, ud fra beskden msg
+	 * @param msg Besked der skal vises til spilleren.
+	 * @return
+	 */
+	public String getUserString(String msg) {
+		return gui.getUserString(msg);
+	}
 
 
 }
