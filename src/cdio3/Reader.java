@@ -24,7 +24,6 @@ public class Reader {
 		while((line = fileReader.readLine()) !=null) {
 			if (line.equals(id)) line1 = fileReader.readLine();
 		}
-			
 		return line1;
 	}
 }
