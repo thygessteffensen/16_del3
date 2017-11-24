@@ -28,7 +28,7 @@ public class TestWallet {
 		fail("Not yet implemented");
 	}
 	/**
-	 * Tester getBalance() ved at tjekke om de 20 matadollars i parameteren
+	 * Tester getBalance() ved at tjekke om de 20 matadollars i parameteren.
 	 * er de samme som de 20 matadollars jeg forventer.
 	 */
 	@Test
