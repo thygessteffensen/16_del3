@@ -1,6 +1,11 @@
 package test;
 
 import static org.junit.Assert.*;
+/**
+ * Tester Wallet klassen
+ * @Author Mathias
+ * @Version 24.11.2017
+ */
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -22,12 +27,18 @@ public class TestWallet {
 	public void testWallet() {
 		fail("Not yet implemented");
 	}
-
+	/**
+	 * Tester getBalance() ved at tjekke om de 20 matadollars i parameteren
+	 * er de samme som de 20 matadollars jeg forventer.
+	 */
 	@Test
 	public void testGetBalance() {
-		assertEquals(20, wallet.getBalance()); //Tester om de 20 wallet er blevet instansieret med er de 20 jeg forventer de er
+		assertEquals(20, wallet.getBalance());
 	}
-
+	/**
+	 * Tester setBalance ved at sætte et beløb ind i parameteren og se om getteren får det samme.
+	 * Derefter testes om if statement giver true når konto er negativ.
+	 */
 	@Test
 	public void testSetBalance() {
 		/*
@@ -35,10 +46,10 @@ public class TestWallet {
 		assertEquals(30, wallet.getBalance());
 		SetBalance sætter ikke nogen balance, men tjekker derimod om en spiller har under 0 på kontoen
 		 */
-		wallet.setBalance(); //Lige meget hvad sættes til da den kun trækker det med ned til if statement nedenunder i klassen.
-		assertFalse(wallet.getPlayerLost()); //Forventer false da den ikke er negativ. 
-		wallet.setBalance(-5000); //-5000 trækkes med ned i if statement i klassen og gør at den bliver kørt
-		assertTrue(wallet.getPlayerLost());//Forventer True da -5000 er mindre end 0
+		wallet.setBalance(5);
+		assertFalse(wallet.getPlayerLost());
+		wallet.setBalance(-5000);
+		assertTrue(wallet.getPlayerLost());
 	}
 		
 
@@ -47,11 +58,13 @@ public class TestWallet {
 		//fail("Not yet implemented");
 		//Bliver testet i testSetBalance
 	}
-
+	/**
+	 * Tester changeBalance
+	 * Først tilføjes 5 matadollars til kontoen og derefter tjekkes om kontoen er 25.
+	 */
 	@Test
 	public void testChangeBalance() {
-		wallet.changeBalance(5); //Tilføjer 5 til balancen
-		assertEquals(25, wallet.getBalance()); //Tester om de 25 jeg har ændret balancen til også er de 25 jeg forventer.
+		wallet.changeBalance(5);
+		assertEquals(25, wallet.getBalance());
 	}
-
 }
