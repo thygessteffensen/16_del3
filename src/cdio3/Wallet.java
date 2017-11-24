@@ -19,7 +19,7 @@ public class Wallet extends Player{
 	 * Laver en getbalance så programmet ikke har direkte adgang til balance
 	 * @return
 	 */
-	public int getBalance() { // Getter til balance
+	public int getBalance() {
 		return balance;
 	}
 	
@@ -28,7 +28,7 @@ public class Wallet extends Player{
 	 * @param value given værdi der gør metoden i stand til at hardset balancen
 	 */
 	public void setBalance(int value) {
-		balance += value;
+		balance = value;
 		
 	}
 	
@@ -37,7 +37,7 @@ public class Wallet extends Player{
  	 * @return
  	 */
 	public boolean playerLost() {
-		if (balance < 0)
+		if (getBalance() < 0)
 			playerLost = true;
 		return playerLost;
 	}

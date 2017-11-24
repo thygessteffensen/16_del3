@@ -41,20 +41,17 @@ public class TestWallet {
 	 */
 	@Test
 	public void testSetBalance() {
-		/*
-		wallet.setBalance(30);
-		assertEquals(30, wallet.getBalance());
-		SetBalance sætter ikke nogen balance, men tjekker derimod om en spiller har under 0 på kontoen
-		 */
 		wallet.setBalance(5);
-		assertFalse(wallet.getPlayerLost());
-		wallet.setBalance(-5000);
-		assertTrue(wallet.getPlayerLost());
+		assertEquals(5, wallet.getBalance());
+		System.out.println(wallet.getBalance());
+		wallet.setBalance(-5);
+		assertTrue(wallet.playerLost());
+		System.out.println(wallet.playerLost());
 	}
 		
 
 	@Test
-	public void testGetPlayerLost() {
+	public void testPlayerLost() {
 		//fail("Not yet implemented");
 		//Bliver testet i testSetBalance
 	}
