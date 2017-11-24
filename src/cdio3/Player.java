@@ -1,10 +1,15 @@
 package cdio3;
-
+/**
+ * 
+ * @author Simon
+ *
+ */
 public class Player 
 {
 	private String piece;
 	Wallet wallet;
 	int balance;
+	int location;
 
 	public Player(String piece, int playerCount) {
 		switch (playerCount) {
@@ -20,6 +25,15 @@ public class Player
 		this.piece = piece;
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
+	public int getLocation() {
+		return location;
+		
+	}
+	
 	
 	/**
 	 * brik
@@ -28,6 +42,14 @@ public class Player
 		return piece;
 	}
 
+	/**
+	 * 
+	 */
+	public void setLocation(int location) {
+		this.location = location;
+	}
+	
+	
 	/**
 	 * 
 	 * @return
