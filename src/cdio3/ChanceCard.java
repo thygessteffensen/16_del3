@@ -3,6 +3,11 @@ package cdio3;
 import java.io.IOException;
 import java.util.Random;
 
+/**
+ * ChanceCard
+ * @author thyge
+ * @version 20.11.2017
+ */
 public class ChanceCard extends FieldEffect{
 	Random ran = new Random(); 
 	int numberOfCards = 18; //Antal af chance kort

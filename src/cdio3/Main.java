@@ -2,6 +2,11 @@ package cdio3;
 
 import java.io.IOException;
 
+/**
+ * 
+ * @author thyge
+ * @version 23.11.2017
+ */
 public class Main {
 	static UI ui;
 	static Player[] player; // Player array der indeholder referrencer til player objekter.
