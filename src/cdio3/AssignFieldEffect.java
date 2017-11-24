@@ -12,7 +12,7 @@ public class AssignFieldEffect {
 	}
 		break;
 	}
-	case 1: case 2: case 4 case 5:
+	case 1: case 2: case 4: case 5:
 		propertyValue = 1;
 		break;
 	case 7: case 8: case 10: case 11:
@@ -28,12 +28,22 @@ public class AssignFieldEffect {
 		 propertyValue = 5;
 		 break;
 	case 3: case 9: case 15: case 21:
-		ChanceKort.chanceKort();
+		chanceCard();
 		break;
 	case 18:
 		jail = true;
 		//Player.jail(true)
 	default: break;
+	
+	private void chanceCard() {
+		ChanceCard.getCard();
+		if (ChanceCard.getExtraCard == true)
+			chanceCard();
+		Player.setLocation(ChanceCard.getMoveTo());
+		Player.setBalance(ChanceCard.getBalanceChange());
+		ChanceCard.getMessage();
+		
+	}
 
 
 }
