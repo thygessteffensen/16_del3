@@ -28,6 +28,9 @@ public class TestWallet {
 		assertEquals(20, wallet.getBalance()); //Tester om de 20 wallet er blevet instansieret med er de 20 jeg forventer de er
 	}
 
+	/**
+	 * 
+	 */
 	@Test
 	public void testSetBalance() {
 		/*
