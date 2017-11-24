@@ -11,6 +11,11 @@ import org.junit.Test;
 
 import cdio3.Reader;
 
+/**
+ * Tester Reader klassen.
+ * @author thyge
+ * @version 22.11.2017
+ */
 public class TestReader {
 	Reader reader;
 

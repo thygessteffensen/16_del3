@@ -6,6 +6,11 @@ import org.junit.Test;
 
 import cdio3.Dice;
 
+/**
+ * Tester Dice klassen.
+ * @author thyge
+ * @version 21.11.2017
+ */
 public class TestDice {
 	Dice dice = new Dice();
 	
