@@ -5,8 +5,13 @@ public class SpecialFields {
 	int balanceChange; //Indeholder ændringer i spillerens konto
 	boolean passStart = false; //Boolean for om spilleren har passeret start
 	
-	public void initSF(int location) {
+	/**
+	 * Konstruktør
+	 * @param location
+	 */
+	public SpecialFields(int balance, int location) {
 		this.playerLocation = location;
+		this.balanceChange = balance;
 	}
 	
 	public boolean jailed() {

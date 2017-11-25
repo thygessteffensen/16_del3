@@ -2,16 +2,22 @@ package cdio3;
 
 public class AssignFieldEffect {
 	int location;
+	int balance;
 	private int propertyValue;
-	
-	public void initAFE(int location) {
-			this.location = location;
+
+	/**
+	 * Konstruktør
+	 */
+	public AssignFieldEffect(int location, int balance) {
+		this.location = location; //Spillerens location
+		this.balance = balance; //Spillerens konto
 	}
+
 	if (location <= 24)
-		sf.passStart == true;
+		SpecialFields.passStart == true;
 	switch(location) {
 	break;
-	case 0:
+	case 0: break;
 	case 1: case 2: case 4: case 5:
 		propertyValue = 1;
 		break;
@@ -34,7 +40,6 @@ public class AssignFieldEffect {
 		break;
 	case 18:
 		jail = true;
-		//Player.jail(true)
 	default: break;
 	}
 	
@@ -47,6 +52,7 @@ public class AssignFieldEffect {
 		ChanceCard.getMessage();
 		
 	}
+	private void specialFields() {
+		
+	}
 }
-}
-
