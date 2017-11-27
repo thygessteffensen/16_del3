@@ -1,16 +1,28 @@
 package cdio3;
 
+/**
+ * 
+ * @author thyge & mathias
+ * @version 27/11/2017
+ */
 public class AssignFieldEffect {
-	int location;
 	int balance;
 	private int propertyValue;
 	SpecialFields sp;
+	ChanceCard cc;
+	boolean jail;
+	String message;
+	int newLocation;
+	
 
+	/**
+	 * Initialisere felt effekten. 
+	 * Giver de respektive variabler, de rigitge værdier. 
+	 * @param location Lokationen på spilleren.
+	 */
 	public void initFieldEffect(int location) {
-
-		if (location <= 24)
-			sp.passStart();
-		
+		reset(location);
+		// switch der håndterer hvilke metode der skal benyttes, i forhold til hvilket felt man lander på.
 		switch(location) {
 		case 0: 
 			sp.passStart();
@@ -31,25 +43,47 @@ public class AssignFieldEffect {
 			propertyValue = 5;
 			break;
 		case 3: case 9: case 15: case 21:
-			cc.initChanceCard();
+			cc.initChanceCard(location);
 			balance = cc.getBalanceChange();
-			locationChange = cc.getMoveTo();
+			newLocation += cc.getMoveTo();
 			break;
 		case 18:
 			jail = true;
 		default: break;
 		}
 	}
-	private void chanceCard() {
-		ChanceCard.getCard();
-		if (ChanceCard.getExtraCard == true)
-			chanceCard();
-		Player.setLocation(ChanceCard.getMoveTo());
-		Player.setBalance(ChanceCard.getBalanceChange());
-		ChanceCard.getMessage();
-
+	
+	/**
+	 * Nulstiller alle variabler.
+	 * @param location Lokationen på spilleren.
+	 */
+	public void reset(int location) {
+		location = 0;
+		balance = 0;
+		String message = null;
+		newLocation = location;
+		jail = false;
 	}
-	private void specialFields() {
-
+	
+//----------------------------------------------------------------------------------
+	//                              getters
+//----------------------------------------------------------------------------------
+	 
+	public int getBalance() {
+		return balance;
 	}
+	
+	public int getNewLocation() {
+		return newLocation;
+	}
+	
+	public boolean getJail() {
+		return jail;
+	}
+	
+	public String getMessage() {
+		return message;
+	}
+	
+
 }
