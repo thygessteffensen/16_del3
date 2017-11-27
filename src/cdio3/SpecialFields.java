@@ -14,6 +14,18 @@ public class SpecialFields {
 		this.balanceChange = balance;
 	}
 	
+	/*
+	 * Afventer brug
+	 */
+	public void setPassStart(boolean start) {
+		passStart = start;
+	}
+	
+	public void startPassed() {
+		passStart = true;
+	}
+	
+	
 	public boolean jailed() {
 		return true;
 		}
