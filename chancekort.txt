@@ -1,0 +1,62 @@
+Chance 1:
+	Bilen
+	Træk et kort til
+Chance 2:
+	Ryk frem til start
+	Modtog 2m
+Chance 3:
+	Ryk (op til) fem felter frem
+Chance 4:
+	null
+	ryk frem til et orange felt
+Chance 5:
+	Ryk 1 felt frem (pri)
+	eller
+	tag et kort til
+Chance 6:
+	Skibet
+	Træk et kort itl
+Chance 7:
+	-2m
+Chance 8:
+	null
+	Orange eller grøn
+Chance 9:
+	null
+	lyseblåt
+Chance 10:
+	Fri af fængsel
+Chance 11:
+	Ryk frem til Strandpromenaden (24)
+Chance 12:
+	Katten
+	Et ekstra kort
+Chance 13:
+	Hunden
+	Et ekstra kort
+Chance 14:
+	modtog 1m fra alle
+Chance 15:
+	null
+	Punkt eller mørkeblåt
+Chance 16:
+	+2m
+Chance 17:
+	null
+	Rød
+Chance 18:
+	Skaterparken (11)
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
