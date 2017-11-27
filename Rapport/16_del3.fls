@@ -1,8 +1,8 @@
-PWD c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/1. semester/16_del3/Rapport
+PWD c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport
 INPUT c:/texlive/2017/texmf.cnf
 INPUT c:/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/1. semester/16_del3/Rapport/16_del3.tex
+INPUT c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex
 OUTPUT 16_del3.log
 INPUT c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -299,9 +299,6 @@ INPUT dokumentation.tex
 INPUT dokumentation.tex
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-INPUT fig/JUnitTestDice.jpg
-INPUT ./fig/JUnitTestDice.jpg
-INPUT ./fig/JUnitTestDice.jpg
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
@@ -321,3 +318,4 @@ INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb

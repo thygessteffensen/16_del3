@@ -1,15 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  23 NOV 2017 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.23)  27 NOV 2017 23:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/
-1. semester/16_del3/Rapport/16_del3.tex"
-
-(c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/1.
- semester/16_del3/Rapport/16_del3.tex
+**c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex
+(c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex
 LaTeX2e <2017-04-15>
-Babel <3.13> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.14> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (c:/texlive/2017/texmf-dist/tex/latex/base/size12.clo
@@ -414,19 +411,19 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (c:/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2017/09/18 3.13 The Babel package
+Package: babel 2017/10/04 3.14 The Babel package
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2017/09/18 3.13 Babel switching mechanism
+File: switch.def 2017/10/04 3.14 Babel switching mechanism
 )
 (c:/texlive/2017/texmf-dist/tex/generic/babel-danish/danish.ldf
 Language: danish 2009/09/19 v1.3r Danish support from the babel system
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2017/09/18 3.13 Babel common definitions
+File: babel.def 2017/10/04 3.14 Babel common definitions
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2017/09/18 3.13 Babel switching mechanism
+File: switch.def 2017/10/04 3.14 Babel switching mechanism
 )
 \babel@savecnt=\count99
 \U@D=\dimen112
@@ -1597,59 +1594,72 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 4.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 16.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 14.
-<fig/JUnitTestDice.jpg, id=193, 751.608pt x 449.2785pt>
-File: fig/JUnitTestDice.jpg Graphic file (type jpg)
-<use fig/JUnitTestDice.jpg>
-Package pdftex.def Info: fig/JUnitTestDice.jpg  used on input line 20. on input
- line 20.
-Package pdftex.def Info: Requested size: 569.05511pt x 340.17323pt on input lin
-e 20.
+(babel)             in language  on input line 16.
 
-Overfull \hbox (93.69685pt too wide) in paragraph at lines 20--21
+
+LaTeX Warning: File `fig/JUnitTestDice.jpg' not found on input line 22.
+
+
+./dokumentation.tex:22: Package pdftex.def Error: File `fig/JUnitTestDice.jpg' 
+not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...raphics[width=20cm]{fig/JUnitTestDice.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (93.69685pt too wide) in paragraph at lines 22--23
  [][] 
  []
 
 
+LaTeX Warning: Float too large for page by 4.71217pt on input line 24.
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 25.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 25.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 27.
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
-Package pdftex.def Info: fig/dtu/dtu.png  used on input line 30. on input line 
-30.
+Package pdftex.def Info: fig/dtu/dtu.png  used on input line 29. on input line 
+29.
 Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
- 30.
+ 29.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 29.
 [11]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 29.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 33.
 )
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
@@ -1726,31 +1736,39 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
- [16 <./fig/JUnitTestDice.jpg>]
+ [16]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (./16_del3.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
-Package rerunfilecheck Info: File `16_del3.out' has not changed.
-(rerunfilecheck)             Checksum: 2AD61932CAEF9FA2EFC62AA8AEE8D2C5;1301.
+
+
+Package rerunfilecheck Warning: File `16_del3.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `16_del3.out':
+(rerunfilecheck)             Before: C2904C51D829328374459706E67333F3;1320
+(rerunfilecheck)             After:  2AD61932CAEF9FA2EFC62AA8AEE8D2C5;1301.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 19929 strings out of 492990
- 368462 string characters out of 6136334
- 431453 words of memory out of 5000000
- 23184 multiletter control sequences out of 15000+600000
+ 19927 strings out of 492990
+ 368238 string characters out of 6136333
+ 431564 words of memory out of 5000000
+ 23182 multiletter control sequences out of 15000+600000
  542211 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,72p,10489b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,72p,10440b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2017/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on 16_del3.pdf (17 pages, 1166346 bytes).
+/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmtt12.pfb>
+Output written on 16_del3.pdf (17 pages, 1084803 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
+ 260 PDF objects out of 1000 (max. 8388607)
+ 216 compressed objects within 3 object streams
  65 named destinations out of 1000 (max. 500000)
- 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 
