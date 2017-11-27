@@ -6,6 +6,12 @@ import gui_fields.GUI_Player;
 
 // Link til Jdoc
 // http://htmlpreview.github.io/?https://raw.githubusercontent.com/diplomit-dtu/Matador_GUI/repository/Desktop_GUI/doc/index.html
+
+/**
+ * UserInterface
+ * @author thyge
+ * @version 23.11.2017
+ */
 public class UI {
 	GUI gui;
 	GUI_Field[] fields;

@@ -4,6 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * 
+ * @author unknown
+ * @version 20.11.2017
+ */
 public class Reader {	
 	/**
 	 * getString finder .TXT filen, en ønsket linje deri og omdanner den til en String
@@ -19,7 +24,6 @@ public class Reader {
 		while((line = fileReader.readLine()) !=null) {
 			if (line.equals(id)) line1 = fileReader.readLine();
 		}
-			
 		return line1;
 	}
 }
