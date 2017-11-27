@@ -42,14 +42,18 @@ public class Main {
 //                                              Spillet påbegyndes:
 //--------------------------------------------------------------------------------------------------------------------
 
-		for (int i = 0; i < optPlayer.length; i++) {
-			while(player[i].wallet.getPlayerLost()) {
-				// Tilføj gameplay her:
-			}
+//		for (int i = 0; i < optPlayer.length; i++) {
+//			while(player[i].wallet.getPlayerLost()) {
+//				// Tilføj gameplay her:
+//			}
+//		}
+		
+		
+		while(!player[1].wallet.getPlayerLost()) {
+			ui.getUserResponse("Du må slå", "ok");
+			dice.roll();
+			ui.setDice(dice.getDiceValue1, d2);
 		}
-		
-		
-		
 		
 		
 		
