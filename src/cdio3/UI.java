@@ -14,6 +14,7 @@ import gui_fields.GUI_Player;
  */
 public class UI {
 	GUI gui;
+	GUI_Field field;
 	GUI_Field[] fields;
 	GUI_Player[] player;
 
@@ -45,8 +46,8 @@ public class UI {
 	 * @param d1 Antal øjne på terning 1
 	 * @param d2 Antal øjne på terning 2
 	 */
-	public void setDice(int d1, int d2) {
-		gui.setDice(d1, d2);
+	public void setDice(int d1) {
+		gui.setDice(d1, 1);
 	}
 	
 	/**
@@ -77,6 +78,9 @@ public class UI {
 	public String getUserString(String msg) {
 		return gui.getUserString(msg);
 	}
-
+	
+	public void setLocation() {
+		fields[0].setCar(player[0], true);
+	}
 
 }

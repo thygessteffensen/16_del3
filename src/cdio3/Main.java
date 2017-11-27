@@ -12,7 +12,8 @@ public class Main {
 	static Player[] player; // Player array der indeholder referrencer til player objekter.
 	static Wallet wallet;
 	static Reader reader = new Reader();
-	
+	static Dice dice;
+	static AssignFieldEffect afe;
 	
 	
 	public static void main(String[] args) throws IOException {
@@ -56,8 +57,10 @@ public class Main {
 		
 		while(!player[1].wallet.getPlayerLost()) {
 			ui.getUserResponse("Du må slå", "ok");
+			// Fix static
 			dice.roll();
-			ui.setDice(dice.getDiceValue1, d2);
+			ui.setDice(dice.getDiceValue1());
+			ui.setLocation();
 		}
 		
 		
