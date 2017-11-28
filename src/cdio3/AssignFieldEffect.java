@@ -59,10 +59,11 @@ public class AssignFieldEffect {
 			balance = properties.getRecieveAmount();
 			break;
 		case 3: case 9: case 15: case 21:
-//			cc.initChanceCard(location);
-//			System.out.println("Chancecard" + cc.card);
-//			balance = cc.getBalanceChange();
-//			newLocation += cc.getMoveTo();
+			System.out.println("Lokation " + location);
+			cc.initChanceCard(location);
+			System.out.println("Chancecard" + cc.card);
+			balance = cc.getBalanceChange();
+			newLocation += cc.getMoveTo();
 			break;
 		case 18:
 			jail = true;

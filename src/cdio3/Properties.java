@@ -68,7 +68,6 @@ public class Properties {
 	 * Håndterer scenariet hvor grunden skal købes
 	 */
 	private void buy() {
-		System.out.println("Pay run");
 		owner[location] = playerNumber;
 		owned[location] = true;
 		amount = propValue * -1;
