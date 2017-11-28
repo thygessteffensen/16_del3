@@ -31,7 +31,7 @@ public class ChanceCard extends FieldEffect{
 	 * @throws IOException 
 	 */
 	public ChanceCard() throws IOException {
-		setCardMessage(); // Tilføjer den aktuelle tekst til kortet
+//		setCardMessage(); // Tilføjer den aktuelle tekst til kortet
 		allCardFalse(); // Sætter alle kort til false.
 		setExtraCard(); // Sætter felter til true, til der hvor man må trække et ekstra kort.
 		setBalanceChange(); // Sætter balancen
@@ -172,7 +172,7 @@ public class ChanceCard extends FieldEffect{
 	 */
 	private void setCardMessage() throws IOException {
 		for (int i = 1; i <= numberOfCards; i++) 
-			cardMessage[i] = reader.getString("CC"+i, "chanceCardsText"); 
+			cardMessage[i] = reader.getString("CC"+i, "chanceKort"); 
 	}
 	
 

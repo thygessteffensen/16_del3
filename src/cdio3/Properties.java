@@ -58,6 +58,7 @@ public class Properties {
 	 * Håndterer scenariet hvor grunden er ejet.
 	 */
 	private void pay() {
+		System.out.println("Run run");
 		payer = playerNumber;
 		reciever = owner[location];
 		amount = propValue;
@@ -67,8 +68,10 @@ public class Properties {
 	 * Håndterer scenariet hvor grunden skal købes
 	 */
 	private void buy() {
+		System.out.println("Pay run");
 		owner[location] = playerNumber;
-		amount = propValue;
+		owned[location] = true;
+		amount = propValue * -1;
 		reciever = owner[location];
 	}
 

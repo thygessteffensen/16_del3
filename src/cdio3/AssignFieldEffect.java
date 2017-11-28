@@ -9,7 +9,7 @@ public class AssignFieldEffect {
 	int balance;
 	private int propertyValue;
 	SpecialFields sp;
-	ChanceCard cc;
+	static ChanceCard cc;
 	boolean jail;
 	String message;
 	int newLocation;
@@ -29,7 +29,6 @@ public class AssignFieldEffect {
 		// switch der håndterer hvilke metode der skal benyttes, i forhold til hvilket felt man lander på.
 		switch(location) {
 		case 0: 
-			sp.passStart();
 			break;
 		case 1: case 2: case 4: case 5:
 			propertyValue = 1;
@@ -60,9 +59,10 @@ public class AssignFieldEffect {
 			balance = properties.getRecieveAmount();
 			break;
 		case 3: case 9: case 15: case 21:
-			cc.initChanceCard(location);
-			balance = cc.getBalanceChange();
-			newLocation += cc.getMoveTo();
+//			cc.initChanceCard(location);
+//			System.out.println("Chancecard" + cc.card);
+//			balance = cc.getBalanceChange();
+//			newLocation += cc.getMoveTo();
 			break;
 		case 18:
 			jail = true;

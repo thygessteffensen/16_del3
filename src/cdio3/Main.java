@@ -47,19 +47,9 @@ public class Main {
 			location[i] = 0;
 		}
 
-		//--------------------------------------------------------------------------------------------------------------------
-		//                                              Spillet påbegyndes:
-		//--------------------------------------------------------------------------------------------------------------------
-
-		//		for (int i = 0; i < optPlayer.length; i++) {
-		//			while(player[i].wallet.getPlayerLost()) {
-		//				// Tilføj gameplay her:
-		//			}
-		//		}
-
-		
-
-
+//--------------------------------------------------------------------------------------------------------------------
+//                                              Spillet påbegyndes:
+//--------------------------------------------------------------------------------------------------------------------
 		int diceValue;
 		int oldLoc;
 		int j = 0;
@@ -79,21 +69,10 @@ public class Main {
 				//-----------------------------------------------
 				afe.initFieldEffect(location[j], j);
 				player[j].wallet.changeBalance(afe.getBalance());
-				System.out.println(afe.getBalance());
 				ui.changeBalance(j, player[j].wallet.getBalance());
 				
 			}
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
 	}
 	public static String[] availiblePieces(String taken, String[] opt) {
 		String[] ap = new String[opt.length];
