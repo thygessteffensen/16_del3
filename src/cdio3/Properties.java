@@ -61,7 +61,6 @@ public class Properties {
 		payer = playerNumber;
 		reciever = owner[location];
 		amount = propValue;
-		System.out.println("Spiller " + owner[location] + " lejer felt " + location + " for " + amount);
 	}
 
 	/**
@@ -72,7 +71,6 @@ public class Properties {
 		owned[location] = true;
 		amount = propValue * -1;
 		reciever = owner[location];
-		System.out.println("Spiller " + owner[location] + " Køber felt " + location + " for " + amount);
 	}
 
 	/**

@@ -11,14 +11,9 @@ public class AssignFieldEffect {
 	String chanceMessage;
 	int balance;
 	private int propertyValue;
-<<<<<<< HEAD
 	private int location;
 	SpecialFields sp = new SpecialFields(balance, location);
-	static ChanceCard cc = new ChanceCard();
-=======
-	SpecialFields sp;
 	static ChanceCard cc;
->>>>>>> 2f8c8ad28d6a0920f14115b280f278e4dc5f71fb
 	boolean jail;
 	String message;
 	int newLocation;
@@ -26,13 +21,10 @@ public class AssignFieldEffect {
 	int reciever;
 	int payer;
 	int amount;
-<<<<<<< HEAD
-=======
 	
 	public AssignFieldEffect() throws IOException {
 		cc = new ChanceCard();
 	}
->>>>>>> 2f8c8ad28d6a0920f14115b280f278e4dc5f71fb
 
 	/**
 	 * Initialisere felt effekten. 
