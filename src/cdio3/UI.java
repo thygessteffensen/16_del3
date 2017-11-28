@@ -122,11 +122,6 @@ public class UI {
 	public String getUserString(String msg) {
 		return gui.getUserString(msg);
 	}
-	
-	public String getName(int i) {
-		return player[i].toString();
-		
-	}
 
 	public void setLocation(int playerNumber, int oldLocation, int newLocation) {
 		fields[oldLocation].setCar(player[playerNumber], false);
