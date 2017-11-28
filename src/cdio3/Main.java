@@ -79,6 +79,15 @@ public class Main {
 				ui.setLocation(j, oldLoc, location[j]);
 			}
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 	public static String[] availiblePieces(String taken, String[] opt) {
