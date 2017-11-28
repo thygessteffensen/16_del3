@@ -6,9 +6,19 @@ public class Wallet extends Player{
 	private int balance;
 	private boolean playerLost = false;
 
-	public Wallet(String piece, int playerCount, int balance) {
+	public Wallet(String piece, int playerCount) {
 		super(piece, playerCount);
 		this.balance = balance;
+		switch (playerCount) {
+		case 2: balance = 20;
+		break;
+		case 3: balance = 18;
+		break;
+		case 4: balance = 16;
+		break;
+		default: System.out.println("Fejl i wallet");
+		break;
+		}
 	}
 
 	public int getBalance() { // Getter til balance
