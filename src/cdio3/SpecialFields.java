@@ -1,4 +1,9 @@
 package cdio3;
+/**
+ * 
+ * @author Mathias
+ * @version 28/11/2017
+ */
 
 public class SpecialFields {
 	int playerLocation; //Indeholder spillerens aktuelle lokation
