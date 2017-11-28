@@ -80,11 +80,6 @@ public class Main {
 			}
 		}
 
-
-
-
-
-
 	}
 	public static String[] availiblePieces(String taken, String[] opt) {
 		String[] ap = new String[opt.length];
