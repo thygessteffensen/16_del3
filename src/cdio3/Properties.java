@@ -71,6 +71,7 @@ public class Properties {
 		owned[location] = true;
 		amount = propValue * -1;
 		reciever = owner[location];
+		message = 
 	}
 
 	/**
@@ -83,7 +84,7 @@ public class Properties {
 	}
 
 	/**
-	 * Returnerer beløbet +-
+	 * Returnerer beløbet +- (\pm)
 	 * @return Beløbet er en int der både kan være negativ og positiv.
 	 */
 	public int getPayAmount() {
@@ -92,6 +93,10 @@ public class Properties {
 	
 	public int getRecieveAmount() {
 		return amount;
+	}
+	
+	public String getMessage() {
+		return message;
 	}
 	
 
