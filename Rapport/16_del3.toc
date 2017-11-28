@@ -1,7 +1,7 @@
 \select@language {danish}
 \contentsline {section}{\numberline {1}Analyse}{3}{section.1}
 \contentsline {subsection}{\numberline {1.1}Kravliste}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}UseCases}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.2}UseCases}{4}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}UseCase diagram}{7}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}GRASP}{7}{subsection.1.4}
 \contentsline {section}{\numberline {2}Design}{9}{section.2}
@@ -18,3 +18,4 @@
 \contentsline {subsection}{\numberline {3.6}Positiv negativ test}{12}{subsection.3.6}
 \contentsline {subsection}{\numberline {3.7}Black- og Whitebox test}{12}{subsection.3.7}
 \contentsline {subsection}{\numberline {3.8}Dokumentation for overholdt GRASP}{12}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Vejledning til import af Git Repository til eclipse}{12}{subsection.3.9}
