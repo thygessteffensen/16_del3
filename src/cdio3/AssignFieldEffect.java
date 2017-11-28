@@ -30,11 +30,14 @@ public class AssignFieldEffect {
 	 * Initialisere felt effekten. 
 	 * Giver de respektive variabler, de rigitge værdier. 
 	 * @param location Lokationen på spilleren.
+	 * @param playerNumber Den givne spillers "navn".
 	 */
 	public void initFieldEffect(int location, int playerNumber) {
 		reset(location);
-		if (location >= 24) 
+		if (location >= 24) {
 			sp.passStart = true;
+			System.out.println("Start er passeret!");
+		}
 		// switch der håndterer hvilke metode der skal benyttes, i forhold til hvilket felt man lander på.
 		switch(location) {
 		case 0: 
