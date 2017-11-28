@@ -311,6 +311,8 @@ INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
+INPUT fig/dtu/dtu.png
+INPUT ./fig/dtu/dtu.png
 INPUT 16_del3.aux
 INPUT ./16_del3.out
 INPUT ./16_del3.out
