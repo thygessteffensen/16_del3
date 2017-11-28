@@ -79,6 +79,7 @@ public class Main {
 				//-----------------------------------------------
 				player[j].wallet.changeBalance(afe.getBalance());
 				ui.changeBalance(j, player[j].wallet.getBalance());
+				
 			}
 		}
 		
