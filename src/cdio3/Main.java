@@ -77,7 +77,9 @@ public class Main {
 					location[j] = location[j] - 24;
 				ui.setLocation(j, oldLoc, location[j]);
 				//-----------------------------------------------
+				afe.initFieldEffect(location[j], j);
 				player[j].wallet.changeBalance(afe.getBalance());
+				System.out.println(afe.getBalance());
 				ui.changeBalance(j, player[j].wallet.getBalance());
 				
 			}
