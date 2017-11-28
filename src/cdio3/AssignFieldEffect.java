@@ -1,5 +1,7 @@
 package cdio3;
 
+import java.io.IOException;
+
 /**
  * 
  * @author thyge & mathias
@@ -9,7 +11,7 @@ public class AssignFieldEffect {
 	int balance;
 	private int propertyValue;
 	SpecialFields sp;
-	static ChanceCard cc = new ChanceCard();
+	static ChanceCard cc;
 	boolean jail;
 	String message;
 	int newLocation;
@@ -17,7 +19,10 @@ public class AssignFieldEffect {
 	int reciever;
 	int payer;
 	int amount;
-
+	
+	public AssignFieldEffect() throws IOException {
+		cc = new ChanceCard();
+	}
 
 	/**
 	 * Initialisere felt effekten. 

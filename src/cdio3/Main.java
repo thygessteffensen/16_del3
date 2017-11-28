@@ -13,11 +13,12 @@ public class Main {
 	static Wallet wallet;
 	static Reader reader = new Reader();
 	static Dice dice;
-	static AssignFieldEffect afe = new AssignFieldEffect();
+	static AssignFieldEffect afe;
 	static int[] location;
 
 
 	public static void main(String[] args) throws IOException {
+		afe = new AssignFieldEffect();
 		ui = new UI();
 		String[] optPiece = {reader.getString("skib", "brikker"), reader.getString("bil", "brikker")
 				,reader.getString("kat", "brikker"),reader.getString("hund", "brikker")};
