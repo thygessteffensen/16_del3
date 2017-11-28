@@ -71,7 +71,7 @@ public class Properties {
 		owned[location] = true;
 		amount = propValue * -1;
 		reciever = owner[location];
-		message = 
+		//message = 
 	}
 
 	/**
