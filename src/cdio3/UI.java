@@ -105,4 +105,7 @@ public class UI {
 		fields[oldLocation].setCar(player[playerNumber], false);
 		fields[newLocation].setCar(player[playerNumber], true);
 	}
+	public void changeBalance(int i, int value) {
+		player[i].setBalance(value);
+	}
 }

@@ -13,7 +13,7 @@ public class Main {
 	static Wallet wallet;
 	static Reader reader = new Reader();
 	static Dice dice;
-	static AssignFieldEffect afe;
+	static AssignFieldEffect afe = new AssignFieldEffect();
 	static int[] location;
 
 
@@ -77,6 +77,9 @@ public class Main {
 				if(location[j] >=24 )
 					location[j] = location[j] - 24;
 				ui.setLocation(j, oldLoc, location[j]);
+				//-----------------------------------------------
+				player[j].wallet.changeBalance(afe.getBalance());
+				ui.changeBalance(j, player[j].wallet.getBalance());
 			}
 		}
 		

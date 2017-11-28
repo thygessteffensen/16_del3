@@ -13,7 +13,7 @@ public class AssignFieldEffect {
 	boolean jail;
 	String message;
 	int newLocation;
-	Properties properties;
+	Properties properties = new Properties();
 	int reciever;
 	int payer;
 	int amount;
@@ -37,7 +37,7 @@ public class AssignFieldEffect {
 			balance = properties.getRecieveAmount();
 			break;
 		case 6: case 12:
-			//TOM
+			propertyValue = 0;
 			break;
 		case 7: case 8: case 10: case 11:
 			propertyValue = 2;
