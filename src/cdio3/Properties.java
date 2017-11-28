@@ -61,6 +61,7 @@ public class Properties {
 		payer = playerNumber;
 		reciever = owner[location];
 		amount = propValue;
+		System.out.println("Spiller " + payer + " lejer grund " + location + " af spiller " + reciever + " for " + amount);
 	}
 
 	/**

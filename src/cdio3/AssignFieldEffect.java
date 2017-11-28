@@ -26,16 +26,15 @@ public class AssignFieldEffect {
 	public AssignFieldEffect() throws IOException {
 		cc = new ChanceCard();
 	}
-
+	
 	/**
 	 * Initialisere felt effekten. 
 	 * Giver de respektive variabler, de rigitge værdier. 
 	 * @param location Lokationen på spilleren.
+	 * @param playerNumber Den givne spillers "navn".
 	 */
 	public void initFieldEffect(int location, int playerNumber) {
 		reset(location);
-		if (location >= 24) 
-			sp.passStart = true;
 		// switch der håndterer hvilke metode der skal benyttes, i forhold til hvilket felt man lander på.
 		switch(location) {
 		case 0: 
@@ -79,7 +78,6 @@ public class AssignFieldEffect {
 			jail = true;
 		default: break;
 		}
-		
 	}
 
 	/**
