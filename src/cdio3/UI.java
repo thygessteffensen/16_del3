@@ -52,7 +52,8 @@ public class UI {
 	 * @param balance Spillerens balance
 	 */
 	public void addPlayer(int playerCount, int i, String name, int balance) {
-		player = new GUI_Player[playerCount];
+		if(player == null)
+			player = new GUI_Player[playerCount];
 		player[i] = new GUI_Player(name, balance);
 		gui.addPlayer(player[i]);
 	}
@@ -94,9 +95,13 @@ public class UI {
 	public String getUserString(String msg) {
 		return gui.getUserString(msg);
 	}
+	
+	public String getName(int i) {
+		return player[i].toString();
+		
+	}
 
 	public void setLocation(int playerNumber, int oldLocation, int newLocation) {
-		System.out.println(player[playerNumber].toString());
 		fields[oldLocation].setCar(player[playerNumber], false);
 		fields[newLocation].setCar(player[playerNumber], true);
 	}

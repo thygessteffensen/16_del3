@@ -66,7 +66,7 @@ public class Main {
 //		while(!player[j].wallet.getPlayerLost()) {
 		while(true) {
 			for (j = 0; j < playerCount; j++) {
-				System.out.println(player[j].getPiece());
+				System.out.println(ui.getName(j));
 				ui.getUserResponse("Du må slå", "ok");
 				// Fix static
 				dice.roll();
