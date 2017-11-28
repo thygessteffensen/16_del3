@@ -64,16 +64,18 @@ public class Main {
 				ui.setDice(diceValue);
 				oldLoc = location[j];
 				location[j] += diceValue;
-				if(location[j] >=24 )
+				if(location[j] >=24 ) {
 					location[j] = location[j] - 24;
+					player[j].wallet.changeBalance(+2);
+					System.out.println("Spiller " + player[j] + " har passeret start!");
+				}
 				ui.setLocation(j, oldLoc, location[j]);
 				//-----------------------------------------------
 				afe.initFieldEffect(location[j], j);
 				player[j].wallet.changeBalance(afe.getBalance());
 				ui.changeBalance(j, player[j].wallet.getBalance());
 				ui.showText(afe.getMessage() + "");
-				ui.showChanceText("test");
-				
+
 			}
 		}
 	}
