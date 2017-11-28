@@ -58,8 +58,8 @@ public class Main {
 			for (j = 0; j < playerCount; j++) {
 				ui.getUserResponse("Du må slå", "ok");
 				// Fix static
-				dice.roll();
-				diceValue = dice.getDiceValue1();
+				Dice.roll();
+				diceValue = Dice.getDiceValue1();
 				ui.setDice(diceValue);
 				oldLoc = location[j];
 				location[j] += diceValue;

@@ -13,14 +13,7 @@ public class SpecialFields {
 		this.playerLocation = location;
 		this.balanceChange = balance;
 	}
-	
-	/*
-	 * Afventer brug
-	 */
-	public void setPassStart(boolean start) {
-		passStart = start;
-	}
-	
+
 	public void startPassed() {
 		passStart = true;
 	}

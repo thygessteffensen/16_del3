@@ -8,10 +8,6 @@ public class Dice
 	
 	static Random ran = new Random(); // Instance of the Random class.
 	
-	public static void main(String[] args) {
-		roll();
-		System.out.println(getDiceValue1());
-	}
 	/**
 	 * Bruger Random klassen til at slå med en terning
 	 * @return Summen af terningen

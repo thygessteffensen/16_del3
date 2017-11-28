@@ -8,7 +8,8 @@ package cdio3;
 public class AssignFieldEffect {
 	int balance;
 	private int propertyValue;
-	SpecialFields sp;
+	private int location;
+	SpecialFields sp = new SpecialFields(balance, location);
 	static ChanceCard cc = new ChanceCard();
 	boolean jail;
 	String message;
@@ -18,7 +19,6 @@ public class AssignFieldEffect {
 	int payer;
 	int amount;
 
-
 	/**
 	 * Initialisere felt effekten. 
 	 * Giver de respektive variabler, de rigitge værdier. 
@@ -26,6 +26,8 @@ public class AssignFieldEffect {
 	 */
 	public void initFieldEffect(int location, int playerNumber) {
 		reset(location);
+		if (location >= 24) 
+			sp.passStart = true;
 		// switch der håndterer hvilke metode der skal benyttes, i forhold til hvilket felt man lander på.
 		switch(location) {
 		case 0: 
