@@ -44,7 +44,6 @@ public class AssignFieldEffect {
 			properties.getEffect(location, propertyValue, playerNumber);
 			balance = properties.getRecieveAmount();
 			break;
-
 		case 13: case 14: case 16: case 17:
 			propertyValue = 3;
 			properties.getEffect(location, propertyValue, playerNumber);
