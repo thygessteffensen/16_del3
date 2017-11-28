@@ -8,6 +8,7 @@ import java.io.IOException;
  * @version 27/11/2017
  */
 public class AssignFieldEffect {
+	String chanceMessage;
 	int balance;
 	private int propertyValue;
 	SpecialFields sp;
@@ -67,6 +68,7 @@ public class AssignFieldEffect {
 			cc.initChanceCard(location);
 			balance = cc.getBalanceChange();
 			newLocation += cc.getMoveTo();
+			chanceMessage = cc.getCardMessage();
 			break;
 		case 18:
 			jail = true;
@@ -82,7 +84,8 @@ public class AssignFieldEffect {
 	public void reset(int location) {
 		location = 0;
 		balance = 0;
-		String message = null;
+		String message = "";
+		String chanceMessage = "";
 		newLocation = location;
 		jail = false;
 	}
@@ -113,5 +116,9 @@ public class AssignFieldEffect {
 	
 	public int getPayAmount() {
 		return properties.getPayAmount();
+	}
+	
+	public String getChangeMessage() {
+		return chanceMessage;
 	}
 }

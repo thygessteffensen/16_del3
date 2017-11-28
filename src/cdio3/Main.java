@@ -57,7 +57,7 @@ public class Main {
 //		while(!player[j].wallet.getPlayerLost()) {
 		while(true) {
 			for (j = 0; j < playerCount; j++) {
-				ui.getUserResponse("Du må slå", "ok");
+				ui.showText("Du må slå");
 				// Fix static
 				dice.roll();
 				diceValue = dice.getDiceValue1();
@@ -71,6 +71,8 @@ public class Main {
 				afe.initFieldEffect(location[j], j);
 				player[j].wallet.changeBalance(afe.getBalance());
 				ui.changeBalance(j, player[j].wallet.getBalance());
+				ui.showText(afe.getMessage() + "");
+				ui.showChanceText(afe.getChangeMessage());
 				
 			}
 		}

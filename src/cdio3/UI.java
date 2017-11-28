@@ -130,4 +130,12 @@ public class UI {
 	public void changeBalance(int i, int value) {
 		player[i].setBalance(value);
 	}
+	
+	public void showText(String str) {
+		gui.showMessage(str);
+	}
+	
+	public void showChanceText(String str) {
+		gui.displayChanceCard(str);
+	}
 }
