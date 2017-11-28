@@ -1,9 +1,14 @@
 package cdio3;
 
 import gui_main.GUI;
+import gui_fields.GUI_Car;
+import gui_fields.GUI_Car.Type;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Player;
 import gui_fields.GUI_Street;
+
+import java.awt.Color;
+import java.awt.color.*;
 
 // Link til Jdoc
 // http://htmlpreview.github.io/?https://raw.githubusercontent.com/diplomit-dtu/Matador_GUI/repository/Desktop_GUI/doc/index.html
@@ -54,10 +59,32 @@ public class UI {
 	public void addPlayer(int playerCount, int i, String name, int balance) {
 		if(player == null)
 			player = new GUI_Player[playerCount];
-		player[i] = new GUI_Player(name, balance);
+		player[i] = new GUI_Player(name, balance, guiCar(name));
 		gui.addPlayer(player[i]);
 	}
 
+	/**
+	 * Denne metode vælger en bil til spilleren.
+	 * @param type Navnet på brikken
+	 * @return GUI_Car
+	 */
+	private GUI_Car guiCar(String type) {
+		GUI_Car car = null;
+		if(type.equals("UFO")) {
+			car = new GUI_Car(Color.GREEN , Color.YELLOW, GUI_Car.Type.UFO, GUI_Car.Pattern.FILL);
+		}
+		else if(type.equals("BIL")) {
+			car = new GUI_Car(Color.PINK , Color.BLACK, GUI_Car.Type.CAR, GUI_Car.Pattern.FILL);
+		}
+		else if(type.equals("RACERBIL")) {
+			car = new GUI_Car(Color.RED , Color.BLUE, GUI_Car.Type.RACECAR, GUI_Car.Pattern.FILL);
+		}
+		else if(type.equals("TRAKTOR")) {
+			car = new GUI_Car(Color.ORANGE , Color.WHITE, GUI_Car.Type.TRACTOR, GUI_Car.Pattern.FILL);
+		}
+		return car;
+	}
+	
 	/**
 	 * Sætter terninger med de respektive antal højen på spille pladen.
 	 * @param d1 Antal øjne på terning 1
