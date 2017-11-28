@@ -15,6 +15,7 @@ public class AssignFieldEffect {
 	SpecialFields sp = new SpecialFields(balance, location);
 	static ChanceCard cc;
 	boolean jail;
+	boolean chanceCard;
 	String message;
 	int newLocation;
 	Properties properties = new Properties();
@@ -72,6 +73,7 @@ public class AssignFieldEffect {
 			balance = cc.getBalanceChange();
 			newLocation += cc.getMoveTo();
 			chanceMessage = cc.getCardMessage();
+			chanceCard = true;
 			break;
 		case 18:
 			jail = true;
@@ -85,17 +87,18 @@ public class AssignFieldEffect {
 	 * @param location Lokationen på spilleren.
 	 */
 	public void reset(int location) {
-		location = 0;
+		this.location = 0;
 		balance = 0;
 		String message = "";
 		String chanceMessage = "";
 		newLocation = location;
 		jail = false;
+		chanceCard = false;
 	}
 
-	//----------------------------------------------------------------------------------
-	//                              getters
-	//----------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------
+//                              getters
+//----------------------------------------------------------------------------------
 
 	public int getBalance() {
 		return balance;
@@ -123,5 +126,9 @@ public class AssignFieldEffect {
 	
 	public String getChangeMessage() {
 		return chanceMessage;
+	}
+	
+	public boolean getChanceCard() {
+		return chanceCard;
 	}
 }

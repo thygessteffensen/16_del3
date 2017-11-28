@@ -71,11 +71,19 @@ public class Main {
 				afe.initFieldEffect(location[j], j);
 				player[j].wallet.changeBalance(afe.getBalance());
 				ui.changeBalance(j, player[j].wallet.getBalance());
-				ui.showText(afe.getMessage() + "");
-				ui.showChanceText("test");
+				showText();
+				
 				
 			}
-		}
+		}		
+	}
+	
+	public static void showText() {
+		System.out.println(afe.getChanceCard());
+ 		if(afe.getChanceCard())
+			ui.showChanceText(afe.getChangeMessage() + "");
+ 		else
+			ui.showText(afe.getMessage() + "");
 	}
 	public static String[] availiblePieces(String taken, String[] opt) {
 		String[] ap = new String[opt.length];

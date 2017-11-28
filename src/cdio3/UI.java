@@ -1,6 +1,7 @@
 package cdio3;
 
 import gui_main.GUI;
+import gui_fields.GUI_Board;
 import gui_fields.GUI_Car;
 import gui_fields.GUI_Car.Type;
 import gui_fields.GUI_Field;
@@ -9,6 +10,8 @@ import gui_fields.GUI_Street;
 
 import java.awt.Color;
 import java.awt.color.*;
+
+import gui_codebehind.GUI_Center;
 
 // Link til Jdoc
 // http://htmlpreview.github.io/?https://raw.githubusercontent.com/diplomit-dtu/Matador_GUI/repository/Desktop_GUI/doc/index.html
