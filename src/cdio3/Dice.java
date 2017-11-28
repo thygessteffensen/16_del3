@@ -4,17 +4,20 @@ import java.util.Random;
 
 public class Dice
 {
-	private int d1; // Value of dice 1 and 2.
+	private static int d1; // Value of dice 1 and 2.
 	
-	Random ran = new Random(); // Instance of the Random class.
+	static Random ran = new Random(); // Instance of the Random class.
 	
+	public static void main(String[] args) {
+		roll();
+		System.out.println(getDiceValue1());
+	}
 	/**
 	 * Bruger Random klassen til at slå med en terning
 	 * @return Summen af terningen
 	 */
-	public void roll()
+	public static void roll()
 	{
-		//To terninger defineres.
 		d1 = ran.nextInt(6)+1;
 	}
 
@@ -22,7 +25,7 @@ public class Dice
 	 * getDiceValue1 returnerer værdien d1 
 	 * @return
 	 */
-	public int getDiceValue1() {
+	public static int getDiceValue1() {
 		return d1;
 	}
 

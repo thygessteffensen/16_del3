@@ -2,12 +2,18 @@ package cdio3;
 
 import java.io.IOException;
 
+/**
+ * 
+ * @author thyge
+ * @version 23.11.2017
+ */
 public class Main {
 	static UI ui;
 	static Player[] player; // Player array der indeholder referrencer til player objekter.
 	static Wallet wallet;
 	static Reader reader = new Reader();
-	
+	static Dice dice;
+	static AssignFieldEffect afe;
 	
 	
 	public static void main(String[] args) throws IOException {
@@ -42,14 +48,20 @@ public class Main {
 //                                              Spillet påbegyndes:
 //--------------------------------------------------------------------------------------------------------------------
 
-		for (int i = 0; i < optPlayer.length; i++) {
-			while(player[i].wallet.getPlayerLost()) {
-				// Tilføj gameplay her:
-			}
+//		for (int i = 0; i < optPlayer.length; i++) {
+//			while(player[i].wallet.getPlayerLost()) {
+//				// Tilføj gameplay her:
+//			}
+//		}
+		
+		
+		while(!player[1].wallet.getPlayerLost()) {
+			ui.getUserResponse("Du må slå", "ok");
+			// Fix static
+			dice.roll();
+			ui.setDice(dice.getDiceValue1());
+			ui.setLocation();
 		}
-		
-		
-		
 		
 		
 		

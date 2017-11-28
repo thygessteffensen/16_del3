@@ -1,8 +1,9 @@
 package cdio3;
 
 import java.util.Random;
+import java.io.IOException;
 
-public class TestChanceCard {
+public class TestChanceCard{
 	static Random ran = new Random();
 	static ChanceCard cc = new ChanceCard();
 	public static void main(String[] args) {
