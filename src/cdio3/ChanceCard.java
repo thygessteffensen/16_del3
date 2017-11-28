@@ -30,7 +30,7 @@ public class ChanceCard extends FieldEffect{
 	 * Konstruktør. 
 	 * @throws IOException 
 	 */
-	public ChanceCard() throws IOException {
+	public ChanceCard(){
 //		setCardMessage(); // Tilføjer den aktuelle tekst til kortet
 		allCardFalse(); // Sætter alle kort til false.
 		setExtraCard(); // Sætter felter til true, til der hvor man må trække et ekstra kort.

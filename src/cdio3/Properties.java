@@ -58,7 +58,6 @@ public class Properties {
 	 * Håndterer scenariet hvor grunden er ejet.
 	 */
 	private void pay() {
-		System.out.println("Run run");
 		payer = playerNumber;
 		reciever = owner[location];
 		amount = propValue;
