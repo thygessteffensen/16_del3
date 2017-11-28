@@ -13,10 +13,23 @@ public class Main {
 	static Wallet wallet;
 	static Reader reader = new Reader();
 	static Dice dice;
-	static AssignFieldEffect afe;
+	static AssignFieldEffect afe = new AssignFieldEffect();
 	
 	
 	public static void main(String[] args) throws IOException {
+		System.out.println(afe.getBalance());
+		System.out.println(afe.getJail());
+		System.out.println(afe.getMessage());
+		System.out.println(afe.getNewLocation());
+		System.out.println(afe.getPayAmount());
+		System.out.println(afe.getPayer());
+		System.out.println(afe.amount);
+		System.out.println(afe.payer);
+		System.out.println(afe.reciever);
+
+		
+		
+		/*
 		ui = new UI();
 		ui.setUp();
 		String[] optPiece = {reader.getString("skib", "brikker"), reader.getString("bil", "brikker")
@@ -35,6 +48,7 @@ public class Main {
 		/**
 		 * Tilføjer spiller med brik og så'n
 		 */
+		/*
 		String taken = "none";
 		for (int i = 0; i < player.length ; i++) {
 			optPiece = availiblePieces(taken, optPiece);
@@ -71,8 +85,8 @@ public class Main {
 		
 		
 		
-		
 
+		 */
 	}
 	public static String[] availiblePieces(String taken, String[] opt) {
 		String[] ap = new String[opt.length];

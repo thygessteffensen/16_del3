@@ -6,17 +6,17 @@ package cdio3;
  * @version 27/11/2017
  */
 public class AssignFieldEffect {
-	int balance;
-	private int propertyValue;
+	int balance = 21;
+	int propertyValue = 2;
 	SpecialFields sp;
 	ChanceCard cc;
 	boolean jail;
-	String message;
-	int newLocation;
-	Properties properties;
+	String message = "test";
+	int newLocation = 5;
+	Properties properties = new Properties();
 	int reciever;
 	int payer;
-	int amount;
+	int amount = 50;
 
 
 	/**
@@ -79,7 +79,7 @@ public class AssignFieldEffect {
 	public void reset(int location) {
 		location = 0;
 		balance = 0;
-		String message = null;
+		this.message = null;
 		newLocation = location;
 		jail = false;
 	}

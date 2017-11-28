@@ -10,15 +10,15 @@ public class Properties {
 	boolean[] owned;
 	int[] owner;
 	int fields = 24;
-	int propValue;
-	int playerNumber;
-	int location;
+	int propValue = 12;
+	int playerNumber = 2;
+	int location = 1;
 	String message;
 	//------------
-	int reciever;
-	int payer;
-	int amount;
-
+	int reciever = 5;
+	int payer = 10;
+	int amount = 20;
+	static Reader reader = new Reader();
 	/**
 	 * Konstruktør
 	 */
