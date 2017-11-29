@@ -59,29 +59,29 @@ public class UI {
 //		temp[0].setTitle("Start");
 //		temp[0].
 		temp[0] = new GUI_Start("Start", "", "Hver gang du passere start, modtager du M2.", Color.GREEN, Color.BLACK);
-        temp[1] = new GUI_Street("Burgerbaren", "", "", "1", Color.YELLOW.darker(), Color.BLACK);
-        temp[2] = new GUI_Street("Pizzariaet", "", "", "1", Color.YELLOW.darker(), Color.BLACK);
+        temp[1] = new GUI_Street("Burgerbaren","1M", "Dette felt er ejet af:\n",  "1", Color.YELLOW.brighter(), Color.BLACK);
+        temp[2] = new GUI_Street("Pizzariaet", "1M", "", "1", Color.YELLOW.brighter(), Color.BLACK);
         temp[3] = new GUI_Chance("?", "", "Træk en chance kort!", Color.WHITE, Color.BLACK);
-        temp[4] = new GUI_Street("Slikbutikken", "", "", "1", Color.BLUE.brighter(), Color.BLACK);
-        temp[5] = new GUI_Street("Iskiosken", "", "", "1", Color.BLUE.brighter(), Color.BLACK);
+        temp[4] = new GUI_Street("Slikbutikken", "1M", "", "1", Color.ORANGE, Color.BLACK);
+        temp[5] = new GUI_Street("Iskiosken", "1M", "", "1", Color.ORANGE, Color.BLACK);
         temp[6] = new GUI_Jail(); temp[6].setSubText("");
-        temp[7] = new GUI_Street("Museet", "", "", "2", Color.PINK, Color.BLACK);
-        temp[8] = new GUI_Street("Biblioteket", "", "", "2", Color.PINK, Color.BLACK);
+        temp[7] = new GUI_Street("Museet", "2M", "", "2", Color.MAGENTA, Color.BLACK);
+        temp[8] = new GUI_Street("Biblioteket", "2M", "", "2", Color.MAGENTA, Color.BLACK);
         temp[9] = new GUI_Chance("?", "", "Træk en chance kort!", Color.WHITE, Color.BLACK);
-        temp[10] = new GUI_Street("Skaterparken", "", "", "2", Color.YELLOW.brighter(), Color.BLACK);
-        temp[11] = new GUI_Street("SvÃ¸mmingpoolen", "", "", "2", Color.YELLOW.brighter(), Color.BLACK);
+        temp[10] = new GUI_Street("Skaterparken", "2M", "", "2", Color.PINK, Color.BLACK);
+        temp[11] = new GUI_Street("SvÃ¸mmingpoolen", "2M", "", "2", Color.PINK, Color.BLACK);
         temp[12] = new GUI_Refuge(); temp[12].setTitle("Gratis parkering"); temp[12].setSubText("");
-        temp[13] = new GUI_Street("Spillehallen", "", "", "3", Color.RED, Color.BLACK);
-        temp[14] = new GUI_Street("Biografen", "", "", "3", Color.RED, Color.BLACK);
+        temp[13] = new GUI_Street("Spillehallen", "3M", "", "3", Color.RED, Color.BLACK);
+        temp[14] = new GUI_Street("Biografen", "3M", "", "3", Color.RED, Color.BLACK);
         temp[15] = new GUI_Chance("?", "", "Træk en chance kort!", Color.WHITE, Color.BLACK);
-        temp[16] = new GUI_Street("Legetøjsbutikken", "", "", "3", Color.YELLOW, Color.BLACK);
-        temp[17] = new GUI_Street("Dyrehandlen", "", "", "3", Color.YELLOW, Color.BLACK);
+        temp[16] = new GUI_Street("Legetøjsbutikken", "3M", "", "3", Color.CYAN, Color.BLACK);
+        temp[17] = new GUI_Street("Dyrehandlen", "3M", "", "3", Color.CYAN, Color.BLACK);
         temp[18] = new GUI_Shipping(); temp[18].setTitle("Gå i fængsel"); temp[18].setSubText("");
-        temp[19] = new GUI_Street("Bowlinghallen", "", "", "4", Color.GREEN.darker(), Color.BLACK);
-        temp[20] = new GUI_Street("Zoo", "", "", "4", Color.GREEN.darker(), Color.BLACK);
+        temp[19] = new GUI_Street("Bowlinghallen", "4M", "", "4", Color.GREEN.darker(), Color.BLACK);
+        temp[20] = new GUI_Street("Zoo", "4M", "", "4", Color.GREEN.darker(), Color.BLACK);
         temp[21] = new GUI_Chance("?", "", "Træk en chance kort!", Color.WHITE, Color.BLACK);
-        temp[22] = new GUI_Street("Vandlandet", "", "", "5", Color.BLUE.darker(), Color.WHITE);
-        temp[23] = new GUI_Street("Strandpromenaden", "", "", "5", Color.BLUE.darker(), Color.WHITE);
+        temp[22] = new GUI_Street("Vandlandet", "5M", "", "5", Color.BLUE, Color.WHITE);
+        temp[23] = new GUI_Street("Strandpromenaden", "5M", "", "5", Color.BLUE, Color.WHITE);
 //        temp[23] = new GUI_Street(title, subText, description, rent, bgColor, fgColor)
 //        udfyldes som set i eksemplet ovenover!
 		return temp;
