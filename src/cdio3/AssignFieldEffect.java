@@ -129,4 +129,8 @@ public class AssignFieldEffect {
 	public boolean getChanceCard() {
 		return chanceCard;
 	}
+	
+	public int getReciever() {
+		return properties.getReciever();
+	}
 }

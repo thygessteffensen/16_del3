@@ -43,21 +43,6 @@ public class UI {
 
 	public GUI_Field[] getFields() throws IOException {
 		GUI_Field[] temp = new GUI_Field[24];
-//		String tempStr;
-//		temp[0] = new GUI_Street();
-//
-//		for (int i = 1; i < temp.length; i++) {
-//			temp[i] = new GUI_Street();
-//			tempStr = reader.getString(("f"+i), "felter");
-//			if((i % 3) != 0) {
-//				System.out.println(i);
-//				System.out.println(tempStr);
-//				System.out.println();
-//				temp[i].setTitle(tempStr);
-//			}
-//		}
-//		temp[0].setTitle("Start");
-//		temp[0].
 		temp[0] = new GUI_Start("Start", "", "Hver gang du passere start, modtager du M2.", Color.GREEN, Color.BLACK);
         temp[1] = new GUI_Street("Burgerbaren","1M", "Dette felt er ejet af:\n",  "1", Color.YELLOW.brighter(), Color.BLACK);
         temp[2] = new GUI_Street("Pizzariaet", "1M", "", "1", Color.YELLOW.brighter(), Color.BLACK);
@@ -182,5 +167,9 @@ public class UI {
 
 	public void showChanceText(String str) {
 		gui.displayChanceCard(str);
+	}
+	
+	public String getFieldName(int location) {
+		return temp[location].getTitle();
 	}
 }

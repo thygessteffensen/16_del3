@@ -48,13 +48,15 @@ public class Main {
 			location[i] = 0;
 		}
 
-//--------------------------------------------------------------------------------------------------------------------
-//                                              Spillet påbegyndes:
-//--------------------------------------------------------------------------------------------------------------------
+		//--------------------------------------------------------------------------------------------------------------------
+		//                                              Spillet påbegyndes:
+		//--------------------------------------------------------------------------------------------------------------------
 		int diceValue;
 		int oldLoc;
 		int j = 0;
-//		while(!player[j].wallet.getPlayerLost()) {
+		String payer;
+		String reciever;
+		//		while(!player[j].wallet.getPlayerLost()) {
 		while(true) {
 			for (j = 0; j < playerCount; j++) {
 				ui.showText("Du må slå");
@@ -75,6 +77,12 @@ public class Main {
 				player[j].wallet.changeBalance(afe.getBalance());
 				ui.changeBalance(j, player[j].wallet.getBalance());
 				ui.showText(afe.getMessage() + "");
+				payer = player[j].getPiece();
+				reciever = player[afe.getReciever()].getPiece();
+				if(!payer.equals(reciever))
+					ui.showText(payer + " skal betale til " + reciever);
+				else
+					ui.showText(payer + " købte lige " + ui.getFieldName(location[j])); 
 
 			}
 		}
