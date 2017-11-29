@@ -17,9 +17,18 @@ public class Wallet extends Player{
 	 * @param playerCount
 	 * @param balance
 	 */
-	public Wallet(String piece, int playerCount, int balance) {
+	public Wallet(String piece, int playerCount) {
 		super(piece, playerCount);
-		this.balance = balance;
+		switch (playerCount) {
+		case 2: this.balance = 20;
+		break;
+		case 3: this.balance = 18;
+		break;
+		case 4: this.balance = 16;
+		break;
+		default: System.out.println("Fejl i wallet");
+		break;
+		}
 	}
 	/**
 	 * Laver en getbalance så programmet ikke har direkte adgang til balance
