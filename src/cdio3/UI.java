@@ -4,12 +4,18 @@ import gui_main.GUI;
 import gui_fields.GUI_Board;
 import gui_fields.GUI_Car;
 import gui_fields.GUI_Car.Type;
+import gui_fields.GUI_Chance;
 import gui_fields.GUI_Field;
+import gui_fields.GUI_Jail;
 import gui_fields.GUI_Player;
+import gui_fields.GUI_Refuge;
+import gui_fields.GUI_Shipping;
+import gui_fields.GUI_Start;
 import gui_fields.GUI_Street;
 
 import java.awt.Color;
 import java.awt.color.*;
+import java.io.IOException;
 
 import gui_codebehind.GUI_Center;
 
@@ -24,24 +30,60 @@ import gui_codebehind.GUI_Center;
 public class UI {
 	GUI gui;
 	GUI_Field field;
-	GUI_Field[] fields;
+	GUI_Field[] temp;
 	GUI_Player[] player;
+	Reader reader = new Reader();
 
 
-	public UI() {
-		fields = getFields();
-		gui = new GUI(fields);
+
+	public UI() throws IOException {
+		temp = getFields();
+		gui = new GUI(temp);
 	}
 
-	public GUI_Field[] getFields() {
+	public GUI_Field[] getFields() throws IOException {
 		GUI_Field[] temp = new GUI_Field[24];
-
-		temp[0] = new GUI_Street();
-
-		for (int i = 1; i < temp.length; i++) {
-			temp[i] = new GUI_Street();
-			temp[i].setTitle("Brik " + i);
-		}
+//		String tempStr;
+//		temp[0] = new GUI_Street();
+//
+//		for (int i = 1; i < temp.length; i++) {
+//			temp[i] = new GUI_Street();
+//			tempStr = reader.getString(("f"+i), "felter");
+//			if((i % 3) != 0) {
+//				System.out.println(i);
+//				System.out.println(tempStr);
+//				System.out.println();
+//				temp[i].setTitle(tempStr);
+//			}
+//		}
+//		temp[0].setTitle("Start");
+//		temp[0].
+		temp[0] = new GUI_Start("Start", "", "Hver gang du passere start, modtager du M2.", Color.GREEN, Color.BLACK);
+        temp[1] = new GUI_Street("Burgerbaren", "", "", "1", Color.YELLOW.darker(), Color.BLACK);
+        temp[2] = new GUI_Street("Pizzariaet", "", "", "1", Color.YELLOW.darker(), Color.BLACK);
+        temp[3] = new GUI_Chance("?", "", "Træk en chance kort!", Color.WHITE, Color.BLACK);
+        temp[4] = new GUI_Street("Slikbutikken", "", "", "1", Color.BLUE.brighter(), Color.BLACK);
+        temp[5] = new GUI_Street("Iskiosken", "", "", "1", Color.BLUE.brighter(), Color.BLACK);
+        temp[6] = new GUI_Jail(); temp[6].setSubText("");
+        temp[7] = new GUI_Street("Museet", "", "", "2", Color.PINK, Color.BLACK);
+        temp[8] = new GUI_Street("Biblioteket", "", "", "2", Color.PINK, Color.BLACK);
+        temp[9] = new GUI_Chance("?", "", "Træk en chance kort!", Color.WHITE, Color.BLACK);
+        temp[10] = new GUI_Street("Skaterparken", "", "", "2", Color.YELLOW.brighter(), Color.BLACK);
+        temp[11] = new GUI_Street("SvÃ¸mmingpoolen", "", "", "2", Color.YELLOW.brighter(), Color.BLACK);
+        temp[12] = new GUI_Refuge(); temp[12].setTitle("Gratis parkering"); temp[12].setSubText("");
+        temp[13] = new GUI_Street("Spillehallen", "", "", "3", Color.RED, Color.BLACK);
+        temp[14] = new GUI_Street("Biografen", "", "", "3", Color.RED, Color.BLACK);
+        temp[15] = new GUI_Chance("?", "", "Træk en chance kort!", Color.WHITE, Color.BLACK);
+        temp[16] = new GUI_Street("Legetøjsbutikken", "", "", "3", Color.YELLOW, Color.BLACK);
+        temp[17] = new GUI_Street("Dyrehandlen", "", "", "3", Color.YELLOW, Color.BLACK);
+        temp[18] = new GUI_Shipping(); temp[18].setTitle("Gå i fængsel"); temp[18].setSubText("");
+        temp[19] = new GUI_Street("Bowlinghallen", "", "", "4", Color.GREEN.darker(), Color.BLACK);
+        temp[20] = new GUI_Street("Zoo", "", "", "4", Color.GREEN.darker(), Color.BLACK);
+        temp[21] = new GUI_Chance("?", "", "Træk en chance kort!", Color.WHITE, Color.BLACK);
+        temp[22] = new GUI_Street("Vandlandet", "", "", "5", Color.BLUE.darker(), Color.WHITE);
+        temp[23] = new GUI_Street("Strandpromenaden", "", "", "5", Color.BLUE.darker(), Color.WHITE);
+//        temp[23] = new GUI_Street(title, subText, description, rent, bgColor, fgColor)
+//        udfyldes som set i eksemplet ovenover!
 		return temp;
 	}
 
@@ -49,7 +91,7 @@ public class UI {
 	 * Opsætter spillepladen ved init.
 	 */
 	public void setUp(int playerNumber) {
-		fields[0].setCar(player[playerNumber], true);	
+		temp[0].setCar(player[playerNumber], true);	
 	}
 
 	/**
@@ -87,7 +129,7 @@ public class UI {
 		}
 		return car;
 	}
-	
+
 	/**
 	 * Sætter terninger med de respektive antal højen på spille pladen.
 	 * @param d1 Antal øjne på terning 1
@@ -127,17 +169,17 @@ public class UI {
 	}
 
 	public void setLocation(int playerNumber, int oldLocation, int newLocation) {
-		fields[oldLocation].setCar(player[playerNumber], false);
-		fields[newLocation].setCar(player[playerNumber], true);
+		temp[oldLocation].setCar(player[playerNumber], false);
+		temp[newLocation].setCar(player[playerNumber], true);
 	}
 	public void changeBalance(int i, int value) {
 		player[i].setBalance(value);
 	}
-	
+
 	public void showText(String str) {
 		gui.showMessage(str);
 	}
-	
+
 	public void showChanceText(String str) {
 		gui.displayChanceCard(str);
 	}
