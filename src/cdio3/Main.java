@@ -59,7 +59,7 @@ public class Main {
 		//		while(!player[j].wallet.getPlayerLost()) {
 		while(true) {
 			for (j = 0; j < playerCount; j++) {
-				ui.showText("Du må slå");
+				ui.showText(player[j].getPiece() +  " må slå");
 				// Fix static
 				dice.roll();
 				diceValue = dice.getDiceValue1();
@@ -69,14 +69,11 @@ public class Main {
 				if(location[j] >=24 ) {
 					location[j] = location[j] - 24;
 					player[j].wallet.changeBalance(+2);
-					System.out.println("Spiller " + player[j] + " har passeret start!");
 				}
 				ui.setLocation(j, oldLoc, location[j]);
-				//-----------------------------------------------
 				afe.initFieldEffect(location[j], j);
 				player[j].wallet.changeBalance(afe.getBalance());
 				ui.changeBalance(j, player[j].wallet.getBalance());
-				ui.showText(afe.getMessage() + "");
 				payer = player[j].getPiece();
 				reciever = player[afe.getReciever()].getPiece();
 				if(!payer.equals(reciever))
