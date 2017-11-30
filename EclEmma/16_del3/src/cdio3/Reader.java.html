@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Reader.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Main (30-Nov-2017 14:59:11)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">Reader.java</span></div><h1>Reader.java</h1><pre class="source lang-java linenums">package cdio3;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+/**
+ * 
+ * @author unknown
+ * @version 20.11.2017
+ */
+<span class="fc" id="L12">public class Reader {	</span>
+	/**
+	 * getString finder .TXT filen, en ønsket linje deri og omdanner den til en String
+	 * @param id
+	 * @return Linjen som en String
+	 * @throws IOException
+	 */
+	public String getString (String id, String textFile) throws IOException{
+<span class="fc" id="L20">		String file = textFile;</span>
+		String line;
+<span class="fc" id="L22">		String line1 = null;</span>
+<span class="fc" id="L23">		BufferedReader fileReader = new BufferedReader (new FileReader (&quot;textFiles/&quot; + file));</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">		while((line = fileReader.readLine()) !=null) {</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">			if (line.equals(id)) line1 = fileReader.readLine();</span>
+		}
+<span class="fc" id="L27">		fileReader.close();</span>
+<span class="fc" id="L28">		return line1;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Main (30-Nov-2017 14:59:11)</div></body></html>
