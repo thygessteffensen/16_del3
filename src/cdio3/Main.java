@@ -1,6 +1,7 @@
 package cdio3;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 
@@ -126,8 +127,15 @@ public class Main {
 		return ap;
 	}
 
-	private static void endProgram(String piece){
-		ui.getUserResponse("Spiller " + piece + " har desværre tabt", "Luk spilx");
+
+	private static void endProgram(String piece) throws IOException{
+		ui.getUserResponse(piece + reader.getString("tabt", "spil"), "Luk spillet");
+		try {
+			TimeUnit.SECONDS.sleep(2);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.exit(0);
 	
 	}
