@@ -8,7 +8,7 @@ import java.util.Random;
  * @author thyge
  * @version 20.11.2017
  */
-public class ChanceCard extends FieldEffect{
+public class ChanceCard{
 	Random ran = new Random(); 
 	int numberOfCards = 18; //Antal af chance kort
 	int location; //Indeholder spillerens aktuelle lokation.

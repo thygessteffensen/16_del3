@@ -26,15 +26,6 @@ public class Player
 		else wallet.playerLost();
 	}
 	
-	/**
-	 *  getLocation
-	 * @return location
-	 */
-	public int getLocation() {
-		return location;
-		
-	}
-	
 	
 	/**
 	 * getPiece

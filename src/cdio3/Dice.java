@@ -30,9 +30,4 @@ public class Dice
 	public static int getDiceValue1() {
 		return d1;
 	}
-	
-	public int setDiceValue1(int value) {
-		return d1 = value;
-	}
-
 }

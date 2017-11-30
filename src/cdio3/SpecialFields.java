@@ -18,18 +18,4 @@ public class SpecialFields {
 		this.playerLocation = location;
 		this.balanceChange = balance;
 	}
-
-	public void startPassed() {
-		passStart = true;
-	}
-	
-	
-	public boolean jailed() {
-		return true;
-		}
-	public boolean passStart() {
-		playerLocation -= 24;
-		balanceChange += 2;
-		return true;
-	}
 }
