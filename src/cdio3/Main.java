@@ -121,7 +121,7 @@ public class Main {
 					ui.setLocation(j, oldLoc, location[j]);
 
 					
-					player[j].wallet.changeBalance(afe.getBalance());
+					player[j].wallet.changeBalance(afe.getBalanceChange());
 					ui.changeBalance(j, player[j].wallet.getBalance());
 					payer = player[j].getPiece();
 					reciever = player[afe.getReciever()].getPiece();
@@ -150,9 +150,9 @@ public class Main {
 						
 					}
 					else if(!payer.equals(reciever))
-						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
+						ui.showText(payer + " skal betale M" + afe.getBalanceChange() +" til " + reciever);
 					else
-						ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (Math.abs(afe.getBalance()))); 
+						ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (Math.abs(afe.getBalanceChange()))); 
 
 					if (player[j].wallet.playerLost() == true)
 						endProgram(player[j].getPiece());
