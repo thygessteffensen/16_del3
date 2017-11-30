@@ -144,15 +144,6 @@ public class UI {
 		gui.getUserButtonPressed(msg, button);
 	}
 
-	/**
-	 * Retunerer en string som bruger giver os, ud fra beskden msg
-	 * @param msg Besked der skal vises til spilleren.
-	 * @return
-	 */
-	public String getUserString(String msg) {
-		return gui.getUserString(msg);
-	}
-
 	public void setLocation(int playerNumber, int oldLocation, int newLocation) {
 		temp[oldLocation].setCar(player[playerNumber], false);
 		temp[newLocation].setCar(player[playerNumber], true);
