@@ -65,19 +65,26 @@ public class Main {
 					diceValue = dice.getDiceValue1();
 					ui.setDice(diceValue);
 					oldLoc = location[j];
-					location[j] += diceValue;
+					
+					afe.initFieldEffect(location[j], j);
+					location[j] += diceValue + afe.getNewLocation();
 					if(location[j] >=24 ) {
-						location[j] = location[j] - 24;
-						player[j].wallet.changeBalance(-200);
+						int times = location[j] / 24;
+						location[j] = location[j] - 24*times;
+						player[j].wallet.changeBalance(+2);
 					}
 					ui.setLocation(j, oldLoc, location[j]);
-					afe.initFieldEffect(location[j], j);
+
+					
 					player[j].wallet.changeBalance(afe.getBalance());
 					ui.changeBalance(j, player[j].wallet.getBalance());
 					payer = player[j].getPiece();
 					reciever = player[afe.getReciever()].getPiece();
 					if((location[j] % 6) == 0) {
 						switch(location[j]) {
+						case 0:
+							ui.showText("Start");
+							break;
 						case 6:
 							ui.showText(reader.getString("f6b", "felter"));
 							break;
@@ -93,7 +100,8 @@ public class Main {
 						}
 					}
 					else if((location[j] % 6) == 3) {
-						ui.showText(afe.getChangeMessage());
+//						ui.showText(afe.getChangeMessage());
+						System.out.println("Null point");
 					}
 					else if(!payer.equals(reciever))
 						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
@@ -118,9 +126,9 @@ public class Main {
 		return ap;
 	}
 
-	private static void endProgram(String piece) throws IOException{
-		ui.getUserResponse(piece + reader.getString("tabt", "spil"), "Luk spillet");
-		System.exit(500);
+	private static void endProgram(String piece){
+		ui.getUserResponse("Spiller " + piece + " har desværre tabt", "Luk spilx");
+		System.exit(0);
 	
 	}
 }
