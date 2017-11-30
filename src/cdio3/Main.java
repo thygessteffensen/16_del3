@@ -74,6 +74,8 @@ public class Main {
 						location[j] = location[j] - 24;
 						player[j].wallet.changeBalance(+2);
 					}
+					if(location[j] == 17)
+						player[j].jail(location);
 					ui.setLocation(j, oldLoc, location[j]);
 
 					
@@ -105,8 +107,6 @@ public class Main {
 						System.out.println(afe.getChangeMessage());
 						
 					}
-					else if(!payer.equals(reciever))
-						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
 					else if(!payer.equals(reciever))
 						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
 					else
