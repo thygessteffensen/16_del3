@@ -84,7 +84,7 @@ public class Main {
 					ui.showText(afe.getChangeMessage());
 				else {
 					ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (afe.getBalance())); 
-					System.out.println(ui.getFieldName(location[j]));
+					System.out.println(ui.getFieldName(location[j]) + "\t" + player[j].getPiece());
 				}
 
 			}
