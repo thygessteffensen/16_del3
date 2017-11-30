@@ -59,7 +59,7 @@ public class Main {
 		//		while(!player[j].wallet.getPlayerLost()) {
 		while(true) {
 			for (j = 0; j < playerCount; j++) {
-				ui.showText(player[j].getPiece() +  " må slå");
+				ui.getUserResponse(player[j].getPiece() +  " må slå", "Slå");
 				// Fix static
 				dice.roll();
 				diceValue = dice.getDiceValue1();
@@ -77,9 +77,11 @@ public class Main {
 				payer = player[j].getPiece();
 				reciever = player[afe.getReciever()].getPiece();
 				if(!payer.equals(reciever))
-					ui.showText(payer + " skal betale til " + reciever);
+					ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
+				else if((location[j] % 6) == 0)
+					ui.showText("Chance kort");
 				else
-					ui.showText(payer + " købte lige " + ui.getFieldName(location[j])); 
+					ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (afe.getBalance()*-1)); 
 
 			}
 		}
