@@ -7,15 +7,13 @@ package cdio3;
  */
 
 public class Wallet extends Player{
-	
 	private int balance;
 	private boolean playerLost = false;
 	
 	/**
 	 * Konstruktør
-	 * @param piece
-	 * @param playerCount
-	 * @param balance
+	 * @param piece Den valgte brik
+	 * @param playerCount Antallet af spillere
 	 */
 	public Wallet(String piece, int playerCount) {
 		super(piece, playerCount);
@@ -26,31 +24,32 @@ public class Wallet extends Player{
 		break;
 		case 4: this.balance = 16;
 		break;
-		default: System.out.println("Fejl i wallet");
+		default: this.balance = 0;
 		break;
 		}
 	}
+	
 	/**
-	 * Laver en getbalance så programmet ikke har direkte adgang til balance
-	 * @return balance
+	 * getBalance()
+	 * @return balance Spillerens aktuelle balance 
 	 */
 	public int getBalance() { // Getter til balance
 		return balance;
 	}
 	
 	/**
-	 * Laver en set balance så programmet kan hardset en balance på en player
-	 * @param value given værdi der gør metoden i stand til at hardset balancen
+	 * Lægger 'value' til spillerens balance og trækker negative fra.
+	 * @param value Værdien balancen skal ændres med, både +-
 	 */
 	public void setBalance(int value) {
 		balance += value;
 		
 	}
 	
- 	/**
- 	 * Tjekker om en spiller har tabt ved at se om balancen er under 0
- 	 * @return om spilleren har tabt eller ej
- 	 */
+	/**
+	 * Tjekker om spillerens balance er lig med eller under 0.
+	 * @return playerLost Den er sand, hvis spilleren har tabt
+	 */
 	public boolean playerLost() {
 		if (balance <= 0) {
 			playerLost = true;
@@ -59,8 +58,8 @@ public class Wallet extends Player{
 	}
 	
 	/**
-	 * Gør programmet i stand til at ændre en balance uden at skulle hardset den.
-	 * @param changebalance Den balance der bliver ændret med.
+	 * Lægger 'changebalance' til spillerens balance og trækker negative fra.
+	 * @param value Værdien balancen skal ændres med, både +-
 	 */
 	public void changeBalance(int changebalance) {
 		this.balance += changebalance;
