@@ -1,4 +1,9 @@
 package cdio3;
+/**
+ * 
+ * @author Mathias
+ * @version 28/11/2017
+ */
 
 public class SpecialFields {
 	int playerLocation; //Indeholder spillerens aktuelle lokation
@@ -13,14 +18,7 @@ public class SpecialFields {
 		this.playerLocation = location;
 		this.balanceChange = balance;
 	}
-	
-	/*
-	 * Afventer brug
-	 */
-	public void setPassStart(boolean start) {
-		passStart = start;
-	}
-	
+
 	public void startPassed() {
 		passStart = true;
 	}

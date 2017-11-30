@@ -2,16 +2,18 @@ package cdio3;
 
 import java.util.Random;
 
+/**
+ * 
+ * @author Mathias
+ * @version 28/11/2017
+ */
+
 public class Dice
 {
 	private static int d1; // Value of dice 1 and 2.
 	
 	static Random ran = new Random(); // Instance of the Random class.
 	
-	public static void main(String[] args) {
-		roll();
-		System.out.println(getDiceValue1());
-	}
 	/**
 	 * Bruger Random klassen til at slå med en terning
 	 * @return Summen af terningen
@@ -27,6 +29,10 @@ public class Dice
 	 */
 	public static int getDiceValue1() {
 		return d1;
+	}
+	
+	public int setDiceValue1(int value) {
+		return d1 = value;
 	}
 
 }

@@ -1,35 +1,43 @@
 package cdio3;
 
+import java.io.IOException;
+
 /**
  * 
  * @author thyge & mathias
  * @version 27/11/2017
  */
 public class AssignFieldEffect {
+	String chanceMessage;
 	int balance;
 	private int propertyValue;
-	SpecialFields sp;
-	ChanceCard cc;
+	private int location;
+	SpecialFields sp = new SpecialFields(balance, location);
+	static ChanceCard cc;
 	boolean jail;
+	boolean chanceCard;
 	String message;
 	int newLocation;
-	Properties properties;
+	Properties properties = new Properties();
 	int reciever;
 	int payer;
 	int amount;
-
-
+	
+	public AssignFieldEffect() throws IOException {
+		cc = new ChanceCard();
+	}
+	
 	/**
 	 * Initialisere felt effekten. 
 	 * Giver de respektive variabler, de rigitge værdier. 
 	 * @param location Lokationen på spilleren.
+	 * @param playerNumber Den givne spillers "navn".
 	 */
 	public void initFieldEffect(int location, int playerNumber) {
 		reset(location);
 		// switch der håndterer hvilke metode der skal benyttes, i forhold til hvilket felt man lander på.
 		switch(location) {
 		case 0: 
-			sp.passStart();
 			break;
 		case 1: case 2: case 4: case 5:
 			propertyValue = 1;
@@ -37,14 +45,13 @@ public class AssignFieldEffect {
 			balance = properties.getRecieveAmount();
 			break;
 		case 6: case 12:
-			//TOM
+			propertyValue = 0;
 			break;
 		case 7: case 8: case 10: case 11:
 			propertyValue = 2;
 			properties.getEffect(location, propertyValue, playerNumber);
 			balance = properties.getRecieveAmount();
 			break;
-
 		case 13: case 14: case 16: case 17:
 			propertyValue = 3;
 			properties.getEffect(location, propertyValue, playerNumber);
@@ -64,12 +71,13 @@ public class AssignFieldEffect {
 			cc.initChanceCard(location);
 			balance = cc.getBalanceChange();
 			newLocation += cc.getMoveTo();
+			chanceMessage = cc.getCardMessage();
+			chanceCard = true;
 			break;
 		case 18:
 			jail = true;
 		default: break;
 		}
-		
 	}
 
 	/**
@@ -77,16 +85,18 @@ public class AssignFieldEffect {
 	 * @param location Lokationen på spilleren.
 	 */
 	public void reset(int location) {
-		location = 0;
+		this.location = 0;
 		balance = 0;
-		String message = null;
+		String message = "";
+		String chanceMessage = "";
 		newLocation = location;
 		jail = false;
+		chanceCard = false;
 	}
 
-	//----------------------------------------------------------------------------------
-	//                              getters
-	//----------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------
+//                              getters
+//----------------------------------------------------------------------------------
 
 	public int getBalance() {
 		return balance;
@@ -110,5 +120,17 @@ public class AssignFieldEffect {
 	
 	public int getPayAmount() {
 		return properties.getPayAmount();
+	}
+	
+	public String getChangeMessage() {
+		return chanceMessage;
+	}
+	
+	public boolean getChanceCard() {
+		return chanceCard;
+	}
+	
+	public int getReciever() {
+		return properties.getReciever();
 	}
 }

@@ -14,65 +14,77 @@ public class Main {
 	static Reader reader = new Reader();
 	static Dice dice;
 	static AssignFieldEffect afe;
-	
-	
+	static int[] location;
+
+
 	public static void main(String[] args) throws IOException {
+		afe = new AssignFieldEffect();
 		ui = new UI();
-		ui.setUp();
 		String[] optPiece = {reader.getString("skib", "brikker"), reader.getString("bil", "brikker")
 				,reader.getString("kat", "brikker"),reader.getString("hund", "brikker")};
-		
+
 		String[] optPlayer = {"2", "3", "4"};
 		int playerCount;
 		playerCount = Integer.parseInt(ui.dropDown(reader.getString("spillerAntal", "velkommen"), optPlayer));
 		ui.getUserResponse(reader.getString("startPenge"+(playerCount-1), "velkommen"), "OK!");
 		player = new Player[playerCount];
-		
-//--------------------------------------------------------------------------------------------------------------------
-//                                              Spillere tilføjes
-//--------------------------------------------------------------------------------------------------------------------
-	
+
+		//--------------------------------------------------------------------------------------------------------------------
+		//                                              Spillere tilføjes
+		//--------------------------------------------------------------------------------------------------------------------
+
 		/**
 		 * Tilføjer spiller med brik og så'n
 		 */
 		String taken = "none";
-		for (int i = 0; i < player.length ; i++) {
+		location = new int[playerCount];
+		for (int i = 0; i < playerCount ; i++) {
 			optPiece = availiblePieces(taken, optPiece);
 			taken = ui.dropDown(reader.getString("vælgBrik","velkommen"), optPiece);
 			player[i] = new Player(taken, playerCount);
-			player[i].wallet = new Wallet(taken, playerCount, 20);
+			player[i].wallet = new Wallet(taken, playerCount);
 			ui.addPlayer(playerCount, i, player[i].getPiece(), player[i].wallet.getBalance());
+			ui.setUp(i);
+			location[i] = 0;
 		}
-		
-//--------------------------------------------------------------------------------------------------------------------
-//                                              Spillet påbegyndes:
-//--------------------------------------------------------------------------------------------------------------------
 
-//		for (int i = 0; i < optPlayer.length; i++) {
-//			while(player[i].wallet.getPlayerLost()) {
-//				// Tilføj gameplay her:
-//			}
-//		}
-		
-		
-		while(!player[1].wallet.getPlayerLost()) {
-			ui.getUserResponse("Du må slå", "ok");
-			// Fix static
-			dice.roll();
-			ui.setDice(dice.getDiceValue1());
-			ui.setLocation();
+		//--------------------------------------------------------------------------------------------------------------------
+		//                                              Spillet påbegyndes:
+		//--------------------------------------------------------------------------------------------------------------------
+		int diceValue;
+		int oldLoc;
+		int j = 0;
+		String payer;
+		String reciever;
+		//		while(!player[j].wallet.playerLost()) {
+		while(true) {
+			for (j = 0; j < playerCount; j++) {
+				ui.getUserResponse(player[j].getPiece() +  " må slå", "Slå");
+				// Fix static
+				dice.roll();
+				diceValue = dice.getDiceValue1();
+				ui.setDice(diceValue);
+				oldLoc = location[j];
+				location[j] += diceValue;
+				if(location[j] >=24 ) {
+					location[j] = location[j] - 24;
+					player[j].wallet.changeBalance(+2);
+				}
+				ui.setLocation(j, oldLoc, location[j]);
+				afe.initFieldEffect(location[j], j);
+				player[j].wallet.changeBalance(afe.getBalance());
+				ui.changeBalance(j, player[j].wallet.getBalance());
+				payer = player[j].getPiece();
+				reciever = player[afe.getReciever()].getPiece();
+				if(!payer.equals(reciever))
+					ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
+				else if((location[j] % 6) == 0)
+					ui.showText("Chance kort");
+				else
+					ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (afe.getBalance()*-1)); 
+
+			}
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
 	}
 	public static String[] availiblePieces(String taken, String[] opt) {
 		String[] ap = new String[opt.length];
@@ -84,4 +96,3 @@ public class Main {
 		return ap;
 	}
 }
-

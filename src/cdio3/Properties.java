@@ -68,8 +68,10 @@ public class Properties {
 	 */
 	private void buy() {
 		owner[location] = playerNumber;
-		amount = propValue;
+		owned[location] = true;
+		amount = propValue * -1;
 		reciever = owner[location];
+		//message = 
 	}
 
 	/**
@@ -82,7 +84,7 @@ public class Properties {
 	}
 
 	/**
-	 * Returnerer beløbet +-
+	 * Returnerer beløbet +- (\pm)
 	 * @return Beløbet er en int der både kan være negativ og positiv.
 	 */
 	public int getPayAmount() {
@@ -93,9 +95,11 @@ public class Properties {
 		return amount;
 	}
 	
-
-
-
-
-
+	public String getMessage() {
+		return message;
+	}
+	
+	public int getReciever() {
+		return reciever;
+	}
 }
