@@ -70,8 +70,8 @@ public class Main {
 					afe.initFieldEffect(location[j], j);
 					location[j] += diceValue + afe.getNewLocation();
 					if(location[j] >=24 ) {
-						int times = location[j] / 24;
-						location[j] = location[j] - 24*times;
+						int times = location[j] / 23;
+						location[j] = location[j] - 23*times;
 						player[j].wallet.changeBalance(+2);
 					}
 					ui.setLocation(j, oldLoc, location[j]);
@@ -101,8 +101,7 @@ public class Main {
 						}
 					}
 					else if((location[j] % 6) == 3) {
-//						ui.showText(afe.getChangeMessage());
-						System.out.println("Null point");
+						System.out.println(afe.getChangeMessage());
 					}
 					else if(!payer.equals(reciever))
 						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
