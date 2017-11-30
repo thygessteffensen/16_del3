@@ -68,10 +68,10 @@ public class Main {
 					oldLoc = location[j];
 					
 					afe.initFieldEffect(location[j], j);
-					location[j] += diceValue + afe.getNewLocation();
+					location[j] += diceValue;
+					
 					if(location[j] >=24 ) {
-						int times = location[j] / 23;
-						location[j] = location[j] - 23*times;
+						location[j] = location[j] - 24;
 						player[j].wallet.changeBalance(+2);
 					}
 					if(location[j] == 18)
@@ -103,10 +103,10 @@ public class Main {
 						}
 					}
 					else if((location[j] % 6) == 3) {
+//						ui.showText(afe.getChangeMessage());
 						System.out.println(afe.getChangeMessage());
+						
 					}
-					else if(!payer.equals(reciever))
-						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
 					else if(!payer.equals(reciever))
 						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
 					else

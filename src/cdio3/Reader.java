@@ -19,7 +19,7 @@ public class Reader {
 	public String getString (String id, String textFile) throws IOException{
 		String file = textFile;
 		String line;
-		String line1 = null;
+		String line1 = "Intet læst";
 		BufferedReader fileReader = new BufferedReader (new FileReader ("textFiles/" + file));
 		while((line = fileReader.readLine()) !=null) {
 			if (line.equals(id)) line1 = fileReader.readLine();
