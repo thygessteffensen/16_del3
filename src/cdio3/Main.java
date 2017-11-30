@@ -4,7 +4,7 @@ import java.io.IOException;
 
 /**
  * 
- * @author thyge
+ * @author thyge og Mathias
  * @version 23.11.2017
  */
 public class Main {
