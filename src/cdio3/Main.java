@@ -56,34 +56,52 @@ public class Main {
 		int j = 0;
 		String payer;
 		String reciever;
-				while(!player[j].wallet.playerLost()) {
-		while(true) {
-			for (j = 0; j < playerCount; j++) {
-				ui.getUserResponse(player[j].getPiece() +  " må slå", "Slå");
-				// Fix static
-				dice.roll();
-				diceValue = dice.getDiceValue1();
-				ui.setDice(diceValue);
-				oldLoc = location[j];
-				location[j] += diceValue;
-				if(location[j] >=24 ) {
-					location[j] = location[j] - 24;
-					player[j].wallet.changeBalance(-200);
-				}
-				ui.setLocation(j, oldLoc, location[j]);
-				afe.initFieldEffect(location[j], j);
-				player[j].wallet.changeBalance(afe.getBalance());
-				ui.changeBalance(j, player[j].wallet.getBalance());
-				payer = player[j].getPiece();
-				reciever = player[afe.getReciever()].getPiece();
-				if(!payer.equals(reciever))
-					ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
-				else if((location[j] % 6) == 0)
-					ui.showText("Chance kort");
-				else
-					ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (afe.getBalance()*-1)); 
-				if (player[j].wallet.playerLost() == true)
-					endProgram(player[j].getPiece());
+		while(!player[j].wallet.playerLost()) {
+			while(true) {
+				for (j = 0; j < playerCount; j++) {
+					ui.getUserResponse(player[j].getPiece() +  " må slå", "Slå");
+					// Fix static
+					dice.roll();
+					diceValue = dice.getDiceValue1();
+					ui.setDice(diceValue);
+					oldLoc = location[j];
+					location[j] += diceValue;
+					if(location[j] >=24 ) {
+						location[j] = location[j] - 24;
+						player[j].wallet.changeBalance(-200);
+					}
+					ui.setLocation(j, oldLoc, location[j]);
+					afe.initFieldEffect(location[j], j);
+					player[j].wallet.changeBalance(afe.getBalance());
+					ui.changeBalance(j, player[j].wallet.getBalance());
+					payer = player[j].getPiece();
+					reciever = player[afe.getReciever()].getPiece();
+					if((location[j] % 6) == 0) {
+						switch(location[j]) {
+						case 6:
+							ui.showText(reader.getString("f6b", "felter"));
+							break;
+						case 12:
+							ui.showText(reader.getString("f12", "felter"));
+							break;
+						case 18:
+							ui.showText(reader.getString("f18", "felter"));
+							break;
+						default:
+							ui.showText("Felt nummer -1");
+							break;
+						}
+					}
+					else if((location[j] % 6) == 3) {
+						ui.showText(afe.getChangeMessage());
+					}
+					else if(!payer.equals(reciever))
+						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
+					else if(!payer.equals(reciever))
+						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
+					else
+						ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (Math.abs(afe.getBalance()))); 
+
 				}
 			}
 		}
@@ -97,7 +115,7 @@ public class Main {
 		ap = temp.split(" ");
 		return ap;
 	}
-	
+
 	private static void endProgram(String getPiece){
 		ui.showText("Spiller " + getPiece + " har desværre tabt");
 		System.out.println("Spiller " + getPiece + " har desværre tabt");
