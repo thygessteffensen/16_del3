@@ -79,7 +79,22 @@ public class Main {
 				if(!payer.equals(reciever))
 					ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
 				else if((location[j] % 6) == 0)
-					ui.showText("Chance kort");
+					switch(location[j]) {
+					case 6:
+						ui.showText(reader.getString("f6b", "felter"));
+						break;
+					case 12:
+						ui.showText(reader.getString("f12", "felter"));
+						break;
+					case 18:
+						ui.showText(reader.getString("f18", "felter"));
+						break;
+					default:
+						ui.showText("Felt nummer -1");
+						break;
+					}
+				else if((location[j] % 6) == 3)
+					ui.showText(afe.getChangeMessage());
 				else
 					ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (Math.abs(afe.getBalance()))); 
 

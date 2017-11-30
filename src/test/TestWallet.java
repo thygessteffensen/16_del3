@@ -9,7 +9,7 @@ import org.junit.Test;
 import cdio3.Wallet;
 
 public class TestWallet {
-	Wallet wallet = new Wallet("Bil", 2, 20); // Instansiere en ny wallet som har brik bil, der er 2 spillere og de starter med 20 matadollars hver.
+	Wallet wallet = new Wallet("Bil", 2); // Instansiere en ny wallet som har brik bil, der er 2 spillere og de starter med 20 matadollars hver.
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
