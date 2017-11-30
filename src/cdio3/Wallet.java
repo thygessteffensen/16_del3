@@ -52,8 +52,9 @@ public class Wallet extends Player{
  	 * @return om spilleren har tabt eller ej
  	 */
 	public boolean playerLost() {
-		if (balance < 0)
+		if (balance < 0) {
 			playerLost = true;
+		}
 		return playerLost;
 	}
 	

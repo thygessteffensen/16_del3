@@ -56,7 +56,7 @@ public class Main {
 		int j = 0;
 		String payer;
 		String reciever;
-		//		while(!player[j].wallet.playerLost()) {
+				while(!player[j].wallet.playerLost()) {
 		while(true) {
 			for (j = 0; j < playerCount; j++) {
 				ui.getUserResponse(player[j].getPiece() +  " må slå", "Slå");
@@ -68,7 +68,7 @@ public class Main {
 				location[j] += diceValue;
 				if(location[j] >=24 ) {
 					location[j] = location[j] - 24;
-					player[j].wallet.changeBalance(+2);
+					player[j].wallet.changeBalance(-200);
 				}
 				ui.setLocation(j, oldLoc, location[j]);
 				afe.initFieldEffect(location[j], j);
@@ -82,7 +82,9 @@ public class Main {
 					ui.showText("Chance kort");
 				else
 					ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (afe.getBalance()*-1)); 
-
+				if (player[j].wallet.playerLost() == true)
+					endProgram(player[j].getPiece());
+				}
 			}
 		}
 	}
@@ -94,5 +96,11 @@ public class Main {
 				temp += opt[i] + " ";
 		ap = temp.split(" ");
 		return ap;
+	}
+	
+	private static void endProgram(String getPiece){
+		ui.showText("Spiller " + getPiece + " har desværre tabt");
+		System.out.println("Spiller " + getPiece + " har desværre tabt");
+		System.exit(0);
 	}
 }
