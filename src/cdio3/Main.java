@@ -74,6 +74,8 @@ public class Main {
 						location[j] = location[j] - 24*times;
 						player[j].wallet.changeBalance(+2);
 					}
+					if(location[j] == 17)
+						player[j].jail(location);
 					ui.setLocation(j, oldLoc, location[j]);
 
 					
