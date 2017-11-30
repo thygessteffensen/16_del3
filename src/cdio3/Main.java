@@ -102,6 +102,8 @@ public class Main {
 					else
 						ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (Math.abs(afe.getBalance()))); 
 
+					if (player[j].wallet.playerLost() == true)
+						endProgram(player[j].getPiece());
 				}
 			}
 		}
