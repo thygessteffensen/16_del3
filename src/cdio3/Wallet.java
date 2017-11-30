@@ -33,7 +33,7 @@ public class Wallet extends Player{
 	 * getBalance()
 	 * @return balance Spillerens aktuelle balance 
 	 */
-	public int getBalance() { // Getter til balance
+	public int getBalance() { 
 		return balance;
 	}
 	
