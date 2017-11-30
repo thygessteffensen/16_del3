@@ -5,15 +5,14 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * 
- * @author unknown
+ * @author CDIO2
  * @version 20.11.2017
  */
 public class Reader {	
 	/**
 	 * getString finder .TXT filen, en ønsket linje deri og omdanner den til en String
-	 * @param id
-	 * @return Linjen som en String
+	 * @param id Strengens linje id (tekst)
+	 * @return Den ønskede linje
 	 * @throws IOException
 	 */
 	public String getString (String id, String textFile) throws IOException{
