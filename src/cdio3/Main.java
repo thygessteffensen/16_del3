@@ -4,39 +4,62 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ * \\\\                               \\\\
+ * \\\\       Monopoly junoir         \\\\
+ * \\\\     Udviklet af gruppe 16     \\\\
+ * \\\\                               \\\\
+ * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
  * 
- * @author thyge og Mathias
- * @version 23.11.2017
+ * @author thyge
+ * @version 3011.2017
  */
+
 public class Main {
 	static UI ui;
 	static Player[] player; // Player array der indeholder referrencer til player objekter.
 	static Wallet wallet;
-	static Reader reader = new Reader();
+	static Reader reader;
 	static Dice dice;
 	static AssignFieldEffect afe;
 	static int[] location;
-
-
+	static int playerCount;
+	static String[] optPiece;
+	
 	public static void main(String[] args) throws IOException {
 		afe = new AssignFieldEffect();
 		ui = new UI();
-		String[] optPiece = {reader.getString("skib", "brikker"), reader.getString("bil", "brikker")
+		reader = new Reader();
+		
+		startGame();
+
+		addPlayers();
+		
+		gamePlay();
+	}
+	
+	
+	/**
+	 * Generer spille pladen og "vælger" antal spillere.
+	 * @throws IOException
+	 */
+	public static void startGame() throws IOException {
+		optPiece = new String[]{reader.getString("skib", "brikker"), reader.getString("bil", "brikker")
 				,reader.getString("kat", "brikker"),reader.getString("hund", "brikker")};
 
 		String[] optPlayer = {"2", "3", "4"};
-		int playerCount;
 		playerCount = Integer.parseInt(ui.dropDown(reader.getString("spillerAntal", "velkommen"), optPlayer));
 		ui.getUserResponse(reader.getString("startPenge"+(playerCount-1), "velkommen"), "OK!");
 		player = new Player[playerCount];
-
-		//--------------------------------------------------------------------------------------------------------------------
-		//                                              Spillere tilføjes
-		//--------------------------------------------------------------------------------------------------------------------
-
-		/**
-		 * Tilføjer spiller med brik og så'n
-		 */
+	}
+	
+	/**
+	 * Spillerne kan vølge brik og den bliver tilføjet til pladen.
+	 * @throws IOException
+	 */
+	public static void addPlayers() throws IOException {
 		String taken = "none";
 		location = new int[playerCount];
 		for (int i = 0; i < playerCount ; i++) {
@@ -48,10 +71,29 @@ public class Main {
 			ui.setUp(i);
 			location[i] = 0;
 		}
-
-		//--------------------------------------------------------------------------------------------------------------------
-		//                                              Spillet påbegyndes:
-		//--------------------------------------------------------------------------------------------------------------------
+	}
+	
+	/**
+	 * Generer en ny liste af nu tilgængeligebrikker.
+	 * @param taken Den netop valgte brik
+	 * @param opt Den gamle liste af brikker
+	 * @return Ny liste af brikker.
+	 */
+	public static String[] availiblePieces(String taken, String[] opt) {
+		String[] ap = new String[opt.length];
+		String temp = "";
+		for (int i = 0; i < opt.length; i++)
+			if(!taken.equals(opt[i]))
+				temp += opt[i] + " ";
+		ap = temp.split(" ");
+		return ap;
+	}
+	
+	/**
+	 * GamePlay
+	 * @throws IOException
+	 */
+	public static void gamePlay() throws IOException {
 		int diceValue;
 		int oldLoc;
 		int j = 0;
@@ -118,26 +160,19 @@ public class Main {
 			}
 		}
 	}
-	public static String[] availiblePieces(String taken, String[] opt) {
-		String[] ap = new String[opt.length];
-		String temp = "";
-		for (int i = 0; i < opt.length; i++)
-			if(!taken.equals(opt[i]))
-				temp += opt[i] + " ";
-		ap = temp.split(" ");
-		return ap;
-	}
-
-
+	
+	/**
+	 * Viser vinderne og slutter spillet.
+	 * @param piece Brikken på den aktuelle spiller
+	 * @throws IOException
+	 */
 	private static void endProgram(String piece) throws IOException{
 		ui.getUserResponse(piece + reader.getString("tabt", "spil"), "Luk spillet");
 		try {
 			TimeUnit.SECONDS.sleep(2);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.exit(0);
-	
 	}
 }
