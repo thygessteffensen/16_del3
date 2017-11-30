@@ -47,6 +47,7 @@ public class Properties {
 			buy();
 		}
 		else if(owned[location] == true) {
+			System.out.println("Pay u lil bitch");
 			pay();
 		}
 		else {
@@ -60,7 +61,7 @@ public class Properties {
 	private void pay() {
 		payer = playerNumber;
 		reciever = owner[location];
-		amount = propValue;
+		amount = getPayAmount();
 	}
 
 	/**
@@ -71,7 +72,6 @@ public class Properties {
 		owned[location] = true;
 		amount = propValue * -1;
 		reciever = owner[location];
-		//message = 
 	}
 
 	/**
@@ -88,7 +88,7 @@ public class Properties {
 	 * @return Beløbet er en int der både kan være negativ og positiv.
 	 */
 	public int getPayAmount() {
-		return -1 * amount;
+		return (amount);
 	}
 	
 	public int getRecieveAmount() {

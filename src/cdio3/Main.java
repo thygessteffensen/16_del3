@@ -97,8 +97,6 @@ public class Main {
 					}
 					else if(!payer.equals(reciever))
 						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
-					else if(!payer.equals(reciever))
-						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
 					else
 						ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (Math.abs(afe.getBalance()))); 
 
