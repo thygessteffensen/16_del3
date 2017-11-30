@@ -1,20 +1,17 @@
 package cdio3;
 
 /**
- * 
  * @author thyge
  * @version 27.11.2017
  */
 public class Properties {
-	// Nul baseret!
+	String message;
 	boolean[] owned;
 	int[] owner;
 	int fields = 24;
 	int propValue;
 	int playerNumber;
 	int location;
-	String message;
-	//------------
 	int reciever;
 	int payer;
 	int amount;
@@ -23,7 +20,6 @@ public class Properties {
 	 * Konstruktør
 	 */
 	public Properties() {
-		// generer arrays 
 		for (int i = 1; i < fields; i++) {
 			owned = new boolean[fields];
 			owner = new int[fields];
@@ -78,7 +74,6 @@ public class Properties {
 	 * Returnerer modtageren.
 	 * @return Modtagerens plads i player arrayet.
 	 */
-	
 	public int getPayer() {
 		return payer;
 	}
@@ -91,14 +86,23 @@ public class Properties {
 		return (amount);
 	}
 	
+	/**
+	 * @return Lejen fremlejeren modtager
+	 */
 	public int getRecieveAmount() {
 		return amount;
 	}
 	
+	/**
+	 * @return Beskeden til spillerne
+	 */
 	public String getMessage() {
 		return message;
 	}
 	
+	/**
+	 * @return Leje modtagerens nummer
+	 */
 	public int getReciever() {
 		return reciever;
 	}
