@@ -65,7 +65,7 @@ public class Main {
 		for (int i = 0; i < playerCount ; i++) {
 			optPiece = availiblePieces(taken, optPiece);
 			taken = ui.dropDown(reader.getString("vælgBrik","velkommen"), optPiece);
-			player[i] = new Player(taken, playerCount);
+			player[i] = new Player(taken);
 			player[i].wallet = new Wallet(taken, playerCount);
 			ui.addPlayer(playerCount, i, player[i].getPiece(), player[i].wallet.getBalance());
 			ui.setUp(i);

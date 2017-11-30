@@ -16,7 +16,7 @@ public class Wallet extends Player{
 	 * @param playerCount Antallet af spillere
 	 */
 	public Wallet(String piece, int playerCount) {
-		super(piece, playerCount);
+		super(piece);
 		switch (playerCount) {
 		case 2: this.balance = 20;
 		break;
