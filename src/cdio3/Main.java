@@ -69,7 +69,7 @@ public class Main {
 					location[j] += diceValue;
 					if(location[j] >=24 ) {
 						location[j] = location[j] - 24;
-						player[j].wallet.changeBalance(-200);
+						player[j].wallet.changeBalance(+2);
 					}
 					ui.setLocation(j, oldLoc, location[j]);
 					afe.initFieldEffect(location[j], j);
