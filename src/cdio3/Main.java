@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  */
 
 public class Main {
-	static UI ui;
+	static Ui ui;
 	static Player[] player; // Player array der indeholder referrencer til player objekter.
 	static Wallet wallet;
 	static Reader reader;
@@ -30,7 +30,7 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException {
 		afe = new AssignFieldEffect();
-		ui = new UI();
+		ui = new Ui();
 		reader = new Reader();
 		
 		startGame();
