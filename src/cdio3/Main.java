@@ -56,7 +56,7 @@ public class Main {
 		int j = 0;
 		String payer;
 		String reciever;
-		//		while(!player[j].wallet.playerLost()) {
+//				while(!player[j].wallet.playerLost()) {
 		while(true) {
 			for (j = 0; j < playerCount; j++) {
 				ui.getUserResponse(player[j].getPiece() +  " må slå", "Slå");
@@ -81,11 +81,18 @@ public class Main {
 				else if((location[j] % 6) == 0)
 					ui.showText("Chance kort");
 				else
-					ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (afe.getBalance()*-1)); 
+					ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (Math.abs(afe.getBalance()))); 
 
 			}
 		}
 	}
+	
+	/**
+	 * Tjekker hvilke prikker der stadig er tilgængelig.
+	 * @param taken Den brik der netop er blevet valgt
+	 * @param opt Den senest nyeste liste af briker
+	 * @return Ny liste over tilgængelige brikker.
+	 */
 	public static String[] availiblePieces(String taken, String[] opt) {
 		String[] ap = new String[opt.length];
 		String temp = "";
