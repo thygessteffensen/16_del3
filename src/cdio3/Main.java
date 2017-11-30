@@ -56,7 +56,7 @@ public class Main {
 		int j = 0;
 		String payer;
 		String reciever;
-		//		while(!player[j].wallet.getPlayerLost()) {
+		//		while(!player[j].wallet.playerLost()) {
 		while(true) {
 			for (j = 0; j < playerCount; j++) {
 				ui.getUserResponse(player[j].getPiece() +  " må slå", "Slå");
