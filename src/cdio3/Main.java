@@ -65,19 +65,22 @@ public class Main {
 					diceValue = dice.getDiceValue1();
 					ui.setDice(diceValue);
 					oldLoc = location[j];
-					location[j] += diceValue;
+					afe.initFieldEffect(location[j], j);
+					location[j] += diceValue + afe.getNewLocation();
 					if(location[j] >=24 ) {
 						location[j] = location[j] - 24;
 						player[j].wallet.changeBalance(+2);
 					}
 					ui.setLocation(j, oldLoc, location[j]);
-					afe.initFieldEffect(location[j], j);
 					player[j].wallet.changeBalance(afe.getBalance());
 					ui.changeBalance(j, player[j].wallet.getBalance());
 					payer = player[j].getPiece();
 					reciever = player[afe.getReciever()].getPiece();
 					if((location[j] % 6) == 0) {
 						switch(location[j]) {
+						case 0:
+							ui.showText("Start");
+							break;
 						case 6:
 							ui.showText(reader.getString("f6b", "felter"));
 							break;
