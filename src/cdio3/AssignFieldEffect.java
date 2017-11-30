@@ -106,10 +106,6 @@ public class AssignFieldEffect {
 		return newLocation;
 	}
 
-	public boolean getJail() {
-		return jail;
-	}
-
 	public String getMessage() {
 		return message;
 	}

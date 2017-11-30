@@ -68,7 +68,7 @@ public class Main {
 					location[j] += diceValue;
 					if(location[j] >=24 ) {
 						location[j] = location[j] - 24;
-						player[j].wallet.changeBalance(+2);
+						player[j].wallet.changeBalance(-200);
 					}
 					ui.setLocation(j, oldLoc, location[j]);
 					afe.initFieldEffect(location[j], j);
@@ -118,9 +118,9 @@ public class Main {
 		return ap;
 	}
 
-	private static void endProgram(String piece){
-		ui.getUserResponse("Spiller " + piece + " har desværre tabt", "Luk spilx");
-		System.exit(0);
+	private static void endProgram(String piece) throws IOException{
+		ui.getUserResponse(piece + reader.getString("tabt", "spil"), "Luk spillet");
+		System.exit(500);
 	
 	}
 }
