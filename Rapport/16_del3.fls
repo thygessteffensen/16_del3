@@ -299,6 +299,9 @@ INPUT dokumentation.tex
 INPUT dokumentation.tex
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
+INPUT fig/types_of_inheritance.jpg
+INPUT ./fig/types_of_inheritance.jpg
+INPUT ./fig/types_of_inheritance.jpg
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
