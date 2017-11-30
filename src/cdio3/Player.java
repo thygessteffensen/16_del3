@@ -21,15 +21,9 @@ public class Player
 	 * Jail metode
 	 */
 	public void jail() {
-		if(location == 18) {
-			if(wallet.getBalance() <=3) {
-				if(<escapeBotton> == true) {
-					wallet.changeBalance(-2);
-					dice.roll();
-				}							
-			}
-			else dice.setDiceValue1(0);
-		}
+		if(location == 18) 
+			wallet.changeBalance(-2);
+		else wallet.playerLost();
 	}
 	
 	/**
