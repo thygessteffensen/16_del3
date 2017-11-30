@@ -19,9 +19,6 @@ import java.io.IOException;
 
 import gui_codebehind.GUI_Center;
 
-// Link til Jdoc
-// http://htmlpreview.github.io/?https://raw.githubusercontent.com/diplomit-dtu/Matador_GUI/repository/Desktop_GUI/doc/index.html
-
 /**
  * UserInterface
  * @author thyge
@@ -29,24 +26,26 @@ import gui_codebehind.GUI_Center;
  */
 public class Ui {
 	GUI gui;
-	GUI_Field field;
-	GUI_Field[] temp;
+	GUI_Field[] fields;
 	GUI_Player[] player;
 	Reader reader = new Reader();
 	GameBoard gameBoard = new GameBoard();
 
 
-
+	/**
+	 * Konstruktør
+	 * @throws IOException
+	 */
 	public Ui() throws IOException {
-		temp = gameBoard.getFields();
-		gui = new GUI(temp);
+		fields = gameBoard.getFields();
+		gui = new GUI(fields);
 	}
 
 	/**
 	 * Opsætter spillepladen ved init.
 	 */
 	public void setUp(int playerNumber) {
-		temp[0].setCar(player[playerNumber], true);	
+		fields[0].setCar(player[playerNumber], true);	
 	}
 
 	/**
@@ -114,23 +113,48 @@ public class Ui {
 		gui.getUserButtonPressed(msg, button);
 	}
 
+	/**
+	 * Fjerner og placerer brikker
+	 * @param playerNumber Nummer på player, hvis brik skal flyttes
+	 * @param oldLocation Den gamle lokation på pladen
+	 * @param newLocation Den nye lokation på pladen
+	 */
 	public void setLocation(int playerNumber, int oldLocation, int newLocation) {
-		temp[oldLocation].setCar(player[playerNumber], false);
-		temp[newLocation].setCar(player[playerNumber], true);
-	}
-	public void changeBalance(int i, int value) {
-		player[i].setBalance(value);
-	}
-
-	public void showText(String str) {
-		gui.showMessage(str);
-	}
-
-	public void showChanceText(String str) {
-		gui.displayChanceCard(str);
+		fields[oldLocation].setCar(player[playerNumber], false);
+		fields[newLocation].setCar(player[playerNumber], true);
 	}
 	
+	/**
+	 * Ændrer spillerens balance på pladen
+	 * @param playerNumber Nummer på player, hvis brik skal flyttes
+	 * @param value Værdi balancen skal sættes til
+	 */
+	public void changeBalance(int playerNumber, int value) {
+		player[playerNumber].setBalance(value);
+	}
+
+	/**
+	 * Viser besked og fortsætter når 'ok' er trykket.
+	 * @param besked Besked der skal vises
+	 */
+	public void showText(String besked) {
+		gui.showMessage(besked);
+	}
+
+	/**
+	 * Viser chance kort besked i midten af brættet
+	 * @param chanceBesked Beskeden der skal vises
+	 */
+	public void showChanceText(String chanceBesked) {
+		gui.displayChanceCard(chanceBesked);
+	}
+	
+	/**
+	 * Retunere den givne felt navn
+	 * @param location På feltet
+	 * @return Navnet på feltet
+	 */
 	public String getFieldName(int location) {
-		return temp[location].getTitle();
+		return fields[location].getTitle();
 	}
 }
