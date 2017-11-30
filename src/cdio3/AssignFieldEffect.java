@@ -12,7 +12,6 @@ public class AssignFieldEffect {
 	int balance;
 	private int propertyValue;
 	private int location;
-	SpecialFields sp = new SpecialFields(balance, location);
 	static ChanceCard cc;
 	boolean jail;
 	boolean chanceCard;
