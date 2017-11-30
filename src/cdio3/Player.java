@@ -1,20 +1,22 @@
 package cdio3;
 
 /**
- * 
  * @author Simon og Mathias
- *
  */
 public class Player 
 {
-	Dice dice = new Dice();
-	private String piece;
 	Wallet wallet;
-	int balance;
-	int location;
+	private String piece;
+	private int balance;
+	private int location;
 
-	public Player(String piece, int playerCount) {
-		this.piece = piece;
+	/**
+	 * Konstruktør
+	 * @param piece Brikken som player skal have.
+	 * @param playerCount Antallet af spillere
+	 */
+	public Player(String piece) {
+		this.piece = piece;		
 	}
 	
 	/**
@@ -26,30 +28,27 @@ public class Player
 		else wallet.playerLost();
 	}
 	
-	
 	/**
 	 * getPiece
-	 * @return piece
+	 * @return piece String med brikkens navn
 	 */
 	public String getPiece(){
 		return piece;
 	}
 
 	/**
-	 * setLocation
+	 * Ikke imple
+	 * @param location
 	 */
 	public void setLocation(int location) {
 		this.location = location;
 	}
 	
-	
 	/**
-	 * setPiece
+	 * Sætter brikken i Player
+	 * @param piece Brikken i string.
 	 */
 	public void setPiece(String piece){
 		this.piece = piece;
 	}	
-
-
-
 }
