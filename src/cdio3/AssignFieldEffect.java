@@ -8,20 +8,24 @@ import java.io.IOException;
  * @version 27/11/2017
  */
 public class AssignFieldEffect {
-	String chanceMessage;
-	int balance;
+	private String chanceMessage;
+	private String message;
+	private int balance;
 	private int propertyValue;
 	private int location;
-	static ChanceCard cc;
-	boolean jail;
-	boolean chanceCard;
-	String message;
-	int newLocation;
+	private int reciever;
+	private int payer;
+	private int amount;
+	private int newLocation;
+	private boolean jail;
+	private boolean extraChanceCard;
+	ChanceCard cc;
 	Properties properties = new Properties();
-	int reciever;
-	int payer;
-	int amount;
 	
+	/**
+	 * Konstruktør
+	 * @throws IOException
+	 */
 	public AssignFieldEffect() throws IOException {
 		cc = new ChanceCard();
 	}
@@ -71,7 +75,7 @@ public class AssignFieldEffect {
 			balance = cc.getBalanceChange();
 			newLocation += cc.getMoveTo();
 			chanceMessage = cc.getCardMessage();
-			chanceCard = true;
+			extraChanceCard = true;
 			break;
 		case 18:
 			jail = true;
@@ -90,42 +94,67 @@ public class AssignFieldEffect {
 		String chanceMessage = "";
 		newLocation = location;
 		jail = false;
-		chanceCard = false;
+		extraChanceCard = false;
 	}
 
 //----------------------------------------------------------------------------------
-//                              getters
+	//                                 getters
 //----------------------------------------------------------------------------------
 
-	public int getBalance() {
-		return balance;
-	}
-
-	public int getNewLocation() {
-		return newLocation;
-	}
-
-	public String getMessage() {
-		return message;
-	}
-	
-	public int getPayer() {
-		return properties.getPayer();
-	}
-	
-	public int getPayAmount() {
-		return properties.getPayAmount();
-	}
-	
+	/**
+	 * @return Beskeden generet ved chance kort
+	 */
 	public String getChangeMessage() {
 		return chanceMessage;
 	}
 	
-	public boolean getChanceCard() {
-		return chanceCard;
+	/**
+	 * @return Beskeden generet
+	 */
+	public String getMessage() {
+		return message;
 	}
 	
+	/**
+	 * @return Ændringen i balancen
+	 */
+	public int getBalanceChange() {
+		return balance;
+	}	
+	
+	/**
+	 * @return Modtageren af leje ved leje af grund
+	 */
 	public int getReciever() {
 		return properties.getReciever();
+	}
+	
+	/**
+	 * @return Lejren der skal betale for leje af grund
+	 */
+	public int getPayer() {
+		return properties.getPayer();
+	}
+	
+	/**
+	 * @return Lejen det koster at leje den aktuelle grund
+	 */
+	public int getPayAmount() {
+		return properties.getPayAmount();
+	}
+
+	/**
+	 * @return Ændringen der skal lægges til lokationen
+	 */
+	public int getLocationChange() {
+		return newLocation;
+	}
+	
+	/**
+	 * Afgører om man må tage et chance kort til
+	 * @return Sand hvis man skal trække et kort til
+	 */
+	public boolean getExtraChanceCard() {
+		return extraChanceCard;
 	}
 }
