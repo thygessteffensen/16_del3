@@ -10,36 +10,26 @@ import java.util.Random;
  */
 public class ChanceCard{
 	Random ran = new Random(); 
-	int numberOfCards = 18; //Antal af chance kort
-	int location; //Indeholder spillerens aktuelle lokation.
-	int card; // Indeholder det chancekort nummer som er aktuelt for denne session.
+	Reader reader = new Reader();
+	private int numberOfCards = 18; //Antal af chance kort
+	private int location; //Indeholder spillerens aktuelle lokation.
+	private int card; // Indeholder det chancekort nummer som er aktuelt for denne session.
 	private boolean[] taken = new boolean[numberOfCards]; // Holder styr på taget/ikke taget stakken
 	private boolean[] extraCard = new boolean[numberOfCards]; // true hvis spilleren må trække et kort til.
 	private String[] cardMessage = new String[numberOfCards]; // chancekort beskeden bliver "loadet" ved start.
 	private int[] moveTo = new int[numberOfCards]; // angiver hvor mange felter man skal flytte for at komme chance stedet hen (start, 5 felter, skaterpark)
 	private int[] balanceChange = new int[numberOfCards]; // ændringen af balancen, enten negativ eller positiv
-	Reader reader = new Reader();
-	
-//----------------------------------------------------------------------------------
-	//                         Den tager udgangspunkt i 
-	//                       at start er felt nummer 1 og
-	//                    det sidste felt, er felt nummer 24
-//----------------------------------------------------------------------------------
-	
+		
 	/**
 	 * Konstruktør. 
 	 * @throws IOException 
 	 */
 	public ChanceCard() throws IOException{
-//		setCardMessage(); // Tilføjer den aktuelle tekst til kortet
-		cardMessage = new String[24];
-		for (int i = 1; i <= numberOfCards+1; i++) {
-			cardMessage[i] = reader.getString("CC"+i, "chanceKort"); 
-		}
-		allCardFalse(); // Sætter alle kort til false.
-		setExtraCard(); // Sætter felter til true, til der hvor man må trække et ekstra kort.
-		setBalanceChange(); // Sætter balancen
-		setMoveTo(); // sætter moveto værdierne
+		allCardFalse();
+		setCardMessage();
+		setExtraCard();
+		setBalanceChange(); 
+		setMoveTo();
 	}
 
 	/**
@@ -171,12 +161,13 @@ public class ChanceCard{
 	
 	/**
 	 * Loader alle tekst strenge til et array
-	 * - NB: Afventer reader.
 	 * @throws IOException 
 	 */
 	private void setCardMessage() throws IOException{
-		for (int i = 1; i <= numberOfCards+1; i++) 
+		cardMessage = new String[24];
+		for (int i = 1; i <= numberOfCards+1; i++) {
 			cardMessage[i] = reader.getString("CC"+i, "chanceKort"); 
+		}
 	}
 	
 
@@ -191,12 +182,6 @@ public class ChanceCard{
 	private void allCardFalse() {
 		for(int i = 0; i<numberOfCards; i++) {
 			taken[i] = false;
-		}
-	}
-	
-	private void allCardTrue() {
-		for(int i = 0; i<numberOfCards; i++) {
-			taken[i] = true;
 		}
 	}
 }
