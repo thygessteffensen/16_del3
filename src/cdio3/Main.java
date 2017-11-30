@@ -56,7 +56,7 @@ public class Main {
 		int j = 0;
 		String payer;
 		String reciever;
-//				while(!player[j].wallet.playerLost()) {
+		//				while(!player[j].wallet.playerLost()) {
 		while(true) {
 			for (j = 0; j < playerCount; j++) {
 				ui.getUserResponse(player[j].getPiece() +  " må slå", "Slå");
@@ -76,9 +76,9 @@ public class Main {
 				ui.changeBalance(j, player[j].wallet.getBalance());
 				payer = player[j].getPiece();
 				reciever = player[afe.getReciever()].getPiece();
-				if(!payer.equals(reciever))
-					ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
-				else if((location[j] % 6) == 0)
+				//				if((location[j] % 3) == 0)
+				//					ui.showText("Chance krot eller andet");
+				if((location[j] % 6) == 0) {
 					switch(location[j]) {
 					case 6:
 						ui.showText(reader.getString("f6b", "felter"));
@@ -93,15 +93,19 @@ public class Main {
 						ui.showText("Felt nummer -1");
 						break;
 					}
-				else if((location[j] % 6) == 3)
+				}
+				else if((location[j] % 6) == 3) {
 					ui.showText(afe.getChangeMessage());
+				}
+				else if(!payer.equals(reciever))
+					ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);
 				else
 					ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (Math.abs(afe.getBalance()))); 
 
 			}
 		}
 	}
-	
+
 	/**
 	 * Tjekker hvilke prikker der stadig er tilgængelig.
 	 * @param taken Den brik der netop er blevet valgt
