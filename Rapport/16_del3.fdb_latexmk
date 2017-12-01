@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ["pdflatex"] 1511467573 "c:\Users\thyge\OneDrive\Dokumenter\Skolemappen\DTU\Diplom Softwareteknologi\1. semester\16_del3\Rapport\16_del3.tex" "16_del3.pdf" "16_del3" 1511467575
   "16_del3.aux" 1511467575 3842 b01dc223f01bfb9cb4642c2df6fe6878 ""
   "16_del3.out" 1511467575 1301 2ad61932caef9fa2efc62aa8aee8d2c5 ""
@@ -428,6 +429,11 @@
   "16_del3.aux" 1511862309 3977 e4836cdf5e75dda4df71f316b50d43a1 ""
   "16_del3.out" 1511862309 1402 c282ac4b1d51078c8cd2dd7335269371 ""
 >>>>>>> parent of 3c7c507... + billede
+=======
+["pdflatex"] 1511862441 "c:\Users\nicki\OneDrive\Documents\GitHub\16_del3\Rapport\16_del3.tex" "16_del3.pdf" "16_del3" 1511862441
+  "16_del3.aux" 1511862309 3977 e4836cdf5e75dda4df71f316b50d43a1 ""
+  "16_del3.out" 1511862309 1402 c282ac4b1d51078c8cd2dd7335269371 ""
+>>>>>>> parent of 3c7c507... + billede
   "16_del3.tex" 1511862092 2036 4d65b3bdc404e91a54cbb3b131fe9cb9 ""
   "16_del3.toc" 1511862309 1782 42d9ca3dacee50c68025f5a68d02e4e1 ""
   "UseCases.tex" 1511862092 6426 9d78dcc52922e6809eb31a0d4a433007 ""
@@ -578,6 +584,7 @@
   "16_del3.log"
   "16_del3.toc"
 <<<<<<< HEAD
+<<<<<<< HEAD
   "16_del3.pdf"
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -588,6 +595,11 @@
   "16_del3.out"
   "16_del3.aux"
 >>>>>>> parent of 80653f5... +Rettelser i rapport
+=======
+  "16_del3.aux"
+  "16_del3.out"
+  "16_del3.pdf"
+>>>>>>> parent of 3c7c507... + billede
 =======
   "16_del3.aux"
   "16_del3.out"

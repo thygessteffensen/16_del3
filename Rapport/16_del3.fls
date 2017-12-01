@@ -334,6 +334,7 @@ INPUT ./fig/dtu/dtu.png
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 INPUT fig/JUnitTestDice.jpg
 INPUT ./fig/JUnitTestDice.jpg
 INPUT ./fig/JUnitTestDice.jpg
@@ -343,6 +344,8 @@ INPUT ./fig/JUnitTestDice.jpg
 INPUT fig/types_of_inheritance.jpg
 INPUT ./fig/types_of_inheritance.jpg
 INPUT ./fig/types_of_inheritance.jpg
+=======
+>>>>>>> parent of 3c7c507... + billede
 =======
 >>>>>>> parent of 3c7c507... + billede
 INPUT fig/dtu/dtu.png
