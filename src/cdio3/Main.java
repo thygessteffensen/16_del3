@@ -120,10 +120,11 @@ public class Main {
 					
 					if(location[j] >=24 ) {
 						location[j] = location[j] - 24;
-						player[j].wallet.changeBalance(+2);
+						player[j].wallet.changeBalance(0);
 					}
-					if(location[j] == 18)
+					if(location[j] == 18) {
 						player[j].jail(location[j]);
+					}
 					ui.setLocation(j, oldLoc, location[j]);
 
 					

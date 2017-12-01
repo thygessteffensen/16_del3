@@ -23,9 +23,7 @@ public class Player
 	 * Jail metode
 	 */
 	public void jail(int location) {
-		if(wallet.getBalance() < 2) 
-			wallet.changeBalance(-2);
-		else wallet.playerLost();
+		wallet.changeBalance(-2);
 	}
 	
 	/**
@@ -37,7 +35,7 @@ public class Player
 	}
 
 	/**
-	 * Ikke imple
+	 * setLocation sætter spillerens felt.
 	 * @param location
 	 */
 	public void setLocation(int location) {

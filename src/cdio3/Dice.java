@@ -18,7 +18,8 @@ public class Dice
 	 */
 	public static void roll()
 	{
-		d1 = ran.nextInt(6)+1;
+		d1 = 6;
+		//d1 = ran.nextInt(6)+1;
 	}
 
 	/**
