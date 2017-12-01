@@ -73,7 +73,7 @@ public class AssignFieldEffect {
 			cc.initChanceCard(location);
 			balance = cc.getBalanceChange();
 			newLocation += cc.getMoveTo();
-			chanceMessage = cc.getCardMessage();
+			chanceMessage = cc.toString();
 			extraChanceCard = true;
 			break;
 		default: break;
@@ -100,10 +100,7 @@ public class AssignFieldEffect {
 	//                                 getters
 //----------------------------------------------------------------------------------
 
-	/**
-	 * @return Beskeden generet ved chance kort
-	 */
-	public String getChangeMessage() {
+	public String toString() {
 		return chanceMessage;
 	}
 	

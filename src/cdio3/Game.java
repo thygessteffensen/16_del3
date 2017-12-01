@@ -153,7 +153,7 @@ public class Game {
 					}
 					else if((location[j] % 6) == 3) {
 						try {
-							ui.showText(afe.getChangeMessage());
+							ui.showText(afe.toString());
 						} catch (Exception e) {
 							ui.showText("Intet gyldig tekst");
 						}

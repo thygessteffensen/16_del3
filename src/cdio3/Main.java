@@ -96,7 +96,7 @@ public class Main {
 						}
 					}
 					else if((location[j] % 6) == 3) {
-						ui.showText(afe.getChangeMessage());
+						ui.showText(afe.toString());
 					}
 					else if(!payer.equals(reciever))
 						ui.showText(payer + " skal betale M" + afe.getBalance() +" til " + reciever);

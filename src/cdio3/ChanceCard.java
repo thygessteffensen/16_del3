@@ -110,11 +110,7 @@ public class ChanceCard{
 		return balanceChange[card];
 	}
 	
-	/**
-	 * Retunerer den streng spillerne skal se.
-	 * @return String
-	 */
-	public String getCardMessage() {
+	public String toString() {
 		return cardMessage[card];
 	}
 
