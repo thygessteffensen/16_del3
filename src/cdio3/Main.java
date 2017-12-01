@@ -178,7 +178,8 @@ public class Main {
 		try {
 			TimeUnit.SECONDS.sleep(2);
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			System.out.println("Fejl i sleep når program lukker");
+			//e.printStackTrace();
 		}
 		System.exit(0);
 	}
