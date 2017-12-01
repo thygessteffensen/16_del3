@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  23 NOV 2017 21:06
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.10)  30 NOV 2017 14:55
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.10)  30 NOV 2017 14:55
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1188,7 +1192,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \c__siunitx_mathtt_int=\count303
  (./forside.tex
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fig/gruppeBilleder/mfager.png, id=80, 103.38625pt x 140.525pt>
+=======
+<fig/gruppeBilleder/mfager.png, id=84, 103.38625pt x 140.525pt>
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 <fig/gruppeBilleder/mfager.png, id=84, 103.38625pt x 140.525pt>
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1199,7 +1207,11 @@ n input line 7.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 7
 .
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fig/gruppeBilleder/milishia.png, id=81, 103.38625pt x 140.525pt>
+=======
+<fig/gruppeBilleder/milishia.png, id=85, 103.38625pt x 140.525pt>
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 <fig/gruppeBilleder/milishia.png, id=85, 103.38625pt x 140.525pt>
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1210,7 +1222,11 @@ Package pdftex.def Info: fig/gruppeBilleder/milishia.png  used on input line 7.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 7
 .
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fig/gruppeBilleder/nicki.png, id=82, 103.38625pt x 140.525pt>
+=======
+<fig/gruppeBilleder/nicki.png, id=86, 103.38625pt x 140.525pt>
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 <fig/gruppeBilleder/nicki.png, id=86, 103.38625pt x 140.525pt>
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1221,7 +1237,11 @@ Package pdftex.def Info: fig/gruppeBilleder/nicki.png  used on input line 8. on
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 8
 .
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fig/gruppeBilleder/semi.png, id=83, 103.38625pt x 140.525pt>
+=======
+<fig/gruppeBilleder/semi.png, id=87, 103.38625pt x 140.525pt>
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 <fig/gruppeBilleder/semi.png, id=87, 103.38625pt x 140.525pt>
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1232,7 +1252,11 @@ input line 9.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 9
 .
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fig/gruppeBilleder/simon.png, id=84, 103.38625pt x 140.525pt>
+=======
+<fig/gruppeBilleder/simon.png, id=88, 103.38625pt x 140.525pt>
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 <fig/gruppeBilleder/simon.png, id=88, 103.38625pt x 140.525pt>
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1243,7 +1267,11 @@ n input line 10.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 1
 0.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fig/gruppeBilleder/thyge.png, id=85, 103.38625pt x 140.525pt>
+=======
+<fig/gruppeBilleder/thyge.png, id=89, 103.38625pt x 140.525pt>
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 <fig/gruppeBilleder/thyge.png, id=89, 103.38625pt x 140.525pt>
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1254,7 +1282,11 @@ n input line 11.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 1
 1.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fig/dtu/DTU_small.png, id=86, 180.675pt x 180.675pt>
+=======
+<fig/dtu/DTU_small.png, id=90, 180.675pt x 180.675pt>
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 <fig/dtu/DTU_small.png, id=90, 180.675pt x 180.675pt>
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1279,7 +1311,11 @@ leder/mfager.png> <./fig/gruppeBilleder/milishia.png> <./fig/gruppeBilleder/nic
 ki.png> <./fig/gruppeBilleder/semi.png> <./fig/gruppeBilleder/simon.png> <./fig
 /gruppeBilleder/thyge.png> <./fig/dtu/DTU_small.png>]) (./site2.tex
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fig/TROver.jpg, id=97, 162.00525pt x 127.677pt>
+=======
+<fig/TROver.jpg, id=101, 162.00525pt x 127.677pt>
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 <fig/TROver.jpg, id=101, 162.00525pt x 127.677pt>
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1297,7 +1333,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fig/dtu/dtu.png, id=98, 1063.975pt x 478.78876pt>
+=======
+<fig/dtu/dtu.png, id=102, 1063.975pt x 478.78876pt>
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 <fig/dtu/dtu.png, id=102, 1063.975pt x 478.78876pt>
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1361,6 +1401,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Overfull \hbox (37.22632pt too wide) in paragraph at lines 4--22
  [] 
@@ -1372,11 +1413,16 @@ Overfull \hbox (37.22632pt too wide) in paragraph at lines 26--43
 
 Overfull \hbox (37.22632pt too wide) in paragraph at lines 4--22
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
+=======
+
+Overfull \hbox (37.22632pt too wide) in paragraph at lines 4--22
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
  [] 
  []
 
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
+<<<<<<< HEAD
 <<<<<<< HEAD
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 43. on input line 
 43.
@@ -1392,6 +1438,8 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 43.
 [3]
 =======
+=======
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 22. on input line 
 22.
 Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
@@ -1409,6 +1457,9 @@ Overfull \hbox (37.22632pt too wide) in paragraph at lines 26--43
  [] 
  []
 
+<<<<<<< HEAD
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
+=======
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
@@ -1425,7 +1476,11 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 46.
 <<<<<<< HEAD
+<<<<<<< HEAD
  [4]
+=======
+[4]
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 [4]
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1481,6 +1536,7 @@ Overfull \hbox (37.22632pt too wide) in paragraph at lines 147--164
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 29. on input line 
 29.
 Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
@@ -1508,6 +1564,8 @@ e 32.
 
 Overfull \hbox (93.69685pt too wide) in paragraph at lines 32--33
 =======
+=======
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 41. on input line 
 41.
 Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
@@ -1521,6 +1579,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 41.
  [6]
+<<<<<<< HEAD
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining danish shorthand "~
@@ -1558,6 +1617,25 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 42.
 =======
+=======
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 41.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 41.
+<fig/UC-cdio3.jpg, id=174, 1489.565pt x 924.45375pt>
+File: fig/UC-cdio3.jpg Graphic file (type jpg)
+<use fig/UC-cdio3.jpg>
+Package pdftex.def Info: fig/UC-cdio3.jpg  used on input line 44. on input line
+ 44.
+Package pdftex.def Info: Requested size: 569.05511pt x 353.17218pt on input lin
+e 44.
+
+Overfull \hbox (93.69685pt too wide) in paragraph at lines 44--45
+ [][] 
+ []
+
+Package babel Info: Redefining danish shorthand "|
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 (babel)             in language  on input line 48.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 48.
@@ -1575,6 +1653,9 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 54.
+<<<<<<< HEAD
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
+=======
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 [7 <./fig/UC-cdio3.jpg>]) (./designSecondaray.tex
 File: fig/dtu/dtu.png Graphic file (type png)
@@ -1601,7 +1682,11 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fig/Designklassediagram(3).jpg, id=180, 1575.8875pt x 1053.9375pt>
+=======
+<fig/Designklassediagram(3).jpg, id=194, 1575.8875pt x 1053.9375pt>
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 <fig/Designklassediagram(3).jpg, id=194, 1575.8875pt x 1053.9375pt>
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1616,6 +1701,7 @@ Overfull \hbox (93.69685pt too wide) in paragraph at lines 8--9
  [][] 
  []
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 16.
@@ -1639,9 +1725,6 @@ Package pdftex.def Info: fig/dtu/dtu.png  used on input line 21. on input line
 21.
 Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
  21.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "~
 =======
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 16.
@@ -1668,11 +1751,144 @@ Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
->>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+[9 <./fig/Designklassediagram(3).jpg>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 26.
+<fig/SSD.jpg, id=201, 599.23875pt x 412.54124pt>
+File: fig/SSD.jpg Graphic file (type jpg)
+<use fig/SSD.jpg>
+Package pdftex.def Info: fig/SSD.jpg  used on input line 29. on input line 29.
+Package pdftex.def Info: Requested size: 569.05511pt x 391.79236pt on input lin
+e 29.
+
+Overfull \hbox (93.69685pt too wide) in paragraph at lines 29--30
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 36.
+<fig/domainemodel.PNG, id=202, 641.39626pt x 319.69438pt>
+File: fig/domainemodel.PNG Graphic file (type png)
+<use fig/domainemodel.PNG>
+Package pdftex.def Info: fig/domainemodel.PNG  used on input line 39. on input 
+line 39.
+Package pdftex.def Info: Requested size: 569.05511pt x 283.64415pt on input lin
+e 39.
+
+Overfull \hbox (93.69685pt too wide) in paragraph at lines 39--40
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./dokumentation.tex
+File: fig/dtu/dtu.png Graphic file (type png)
+<use fig/dtu/dtu.png>
+Package pdftex.def Info: fig/dtu/dtu.png  used on input line 1. on input line 1
+.
+Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
+ 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+ [10]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 2.
+<fig/types_of_inheritance.jpg, id=207, 451.6875pt x 374.90062pt>
+File: fig/types_of_inheritance.jpg Graphic file (type jpg)
+<use fig/types_of_inheritance.jpg>
+Package pdftex.def Info: fig/types_of_inheritance.jpg  used on input line 8. on
+ input line 8.
+Package pdftex.def Info: Requested size: 170.71652pt x 141.69716pt on input lin
+e 8.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+=======
+Package babel Info: Redefining danish shorthand "|
+<<<<<<< HEAD
+(babel)             in language  on input line 16.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 16.
+<fig/Sekvensdiagram(1).jpg, id=195, 901.3675pt x 794.97pt>
+File: fig/Sekvensdiagram(1).jpg Graphic file (type jpg)
+<use fig/Sekvensdiagram(1).jpg>
+Package pdftex.def Info: fig/Sekvensdiagram(1).jpg  used on input line 19. on i
+nput line 19.
+Package pdftex.def Info: Requested size: 512.1496pt x 451.71837pt on input line
+ 19.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 19--20
+ [][] 
+ []
+
+File: fig/dtu/dtu.png Graphic file (type png)
+<use fig/dtu/dtu.png>
+Package pdftex.def Info: fig/dtu/dtu.png  used on input line 21. on input line 
+21.
+Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
+ 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
+(babel)             in language  on input line 21.
+=======
+(babel)             in language  on input line 15.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 15.
+File: fig/dtu/dtu.png Graphic file (type png)
+<use fig/dtu/dtu.png>
+Package pdftex.def Info: fig/dtu/dtu.png  used on input line 22. on input line 
+22.
+Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
+ 22.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 22.
+[11]
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "~
+<<<<<<< HEAD
 (babel)             in language  on input line 21.
 [9 <./fig/Designklassediagram(3).jpg>]
 
@@ -1877,6 +2093,8 @@ Package babel Info: Redefining danish shorthand "~
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 22.
 Package babel Info: Redefining danish shorthand "~
+=======
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 (babel)             in language  on input line 22.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 23.
@@ -1926,6 +2144,9 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 43.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 43.
+<<<<<<< HEAD
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
+=======
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
@@ -1945,7 +2166,10 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
  [12]
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+=======
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 File: fig/dtu/dtu.png Graphic file (type png)
@@ -1963,7 +2187,11 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
 <<<<<<< HEAD
+<<<<<<< HEAD
  [13 <./fig/Sekvensdiagram(1).jpg>]
+=======
+ [13]
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
  [13]
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -1982,7 +2210,11 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
 <<<<<<< HEAD
+<<<<<<< HEAD
  [14 <./fig/SSD.jpg>]
+=======
+ [14 <./fig/Sekvensdiagram(1).jpg>]
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
  [14 <./fig/Sekvensdiagram(1).jpg>]
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -2001,7 +2233,11 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
 <<<<<<< HEAD
+<<<<<<< HEAD
  [15 <./fig/domainemodel.PNG>]
+=======
+ [15 <./fig/SSD.jpg>]
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
  [15 <./fig/SSD.jpg>]
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -2020,8 +2256,11 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
 <<<<<<< HEAD
+<<<<<<< HEAD
  [16 <./fig/JUnitTestDice.jpg>]
 =======
+=======
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
  [16 <./fig/domainemodel.PNG> <./fig/types_of_inheritance.jpg>]
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
@@ -2038,12 +2277,16 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
  [17]
+<<<<<<< HEAD
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
+=======
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (./16_del3.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `16_del3.out' has not changed.
+<<<<<<< HEAD
 <<<<<<< HEAD
 (rerunfilecheck)             Checksum: 2AD61932CAEF9FA2EFC62AA8AEE8D2C5;1301.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
@@ -2067,6 +2310,8 @@ PDF statistics:
  65 named destinations out of 1000 (max. 500000)
  228 words of extra memory for PDF output out of 10000 (max. 10000000)
 =======
+=======
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 (rerunfilecheck)             Checksum: C282AC4B1D51078C8CD2DD7335269371;1402.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
@@ -2090,5 +2335,8 @@ PDF statistics:
  240 compressed objects within 3 object streams
  77 named destinations out of 1000 (max. 500000)
  236 words of extra memory for PDF output out of 10000 (max. 10000000)
+<<<<<<< HEAD
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
+=======
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 

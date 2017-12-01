@@ -2,7 +2,11 @@
 \contentsline {section}{\numberline {1}Analyse}{3}{section.1}
 \contentsline {subsection}{\numberline {1.1}Kravliste}{3}{subsection.1.1}
 <<<<<<< HEAD
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {1.2}UseCases}{3}{subsection.1.2}
+=======
+\contentsline {subsection}{\numberline {1.2}UseCases}{4}{subsection.1.2}
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 =======
 \contentsline {subsection}{\numberline {1.2}UseCases}{4}{subsection.1.2}
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
@@ -18,16 +22,22 @@
 \contentsline {subsection}{\numberline {3.2}Forklar hvad abtract betyder}{11}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Fort\IeC {\ae }l hvad det hedder hvis alle fieldklasserne har en landOnField metode der g\IeC {\o }r noget forskelligt}{11}{subsection.3.3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {3.4}Dokumentation for test med screenshots}{11}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}JUnit test}{11}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Positiv negativ test}{11}{subsection.3.6}
 \contentsline {subsection}{\numberline {3.7}Black- og Whitebox test}{12}{subsection.3.7}
 \contentsline {subsection}{\numberline {3.8}Dokumentation for overholdt GRASP}{12}{subsection.3.8}
 =======
+=======
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 \contentsline {subsection}{\numberline {3.4}Dokumentation for test med screenshots}{12}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}JUnit test}{12}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Positiv negativ test}{12}{subsection.3.6}
 \contentsline {subsection}{\numberline {3.7}Black- og Whitebox test}{12}{subsection.3.7}
 \contentsline {subsection}{\numberline {3.8}Dokumentation for overholdt GRASP}{12}{subsection.3.8}
 \contentsline {subsection}{\numberline {3.9}Vejledning til import af Git Repository til eclipse}{12}{subsection.3.9}
+<<<<<<< HEAD
+>>>>>>> 80653f595c5290349d98a062999656c5144bf36c
+=======
 >>>>>>> 80653f595c5290349d98a062999656c5144bf36c
