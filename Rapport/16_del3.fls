@@ -1,8 +1,8 @@
-PWD c:/Users/Bruger/Documents/GitHub/16_del3/Rapport
+PWD c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport
 INPUT c:/texlive/2017/texmf.cnf
 INPUT c:/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Bruger/Documents/GitHub/16_del3/Rapport/16_del3.tex
+INPUT c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex
 OUTPUT 16_del3.log
 INPUT c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
