@@ -17,7 +17,6 @@ public class AssignFieldEffect {
 	private int payer;
 	private int amount;
 	private int newLocation;
-	private boolean jail;
 	private boolean extraChanceCard;
 	ChanceCard cc;
 	Properties properties = new Properties();
@@ -77,8 +76,6 @@ public class AssignFieldEffect {
 			chanceMessage = cc.getCardMessage();
 			extraChanceCard = true;
 			break;
-		case 18:
-			jail = true;
 		default: break;
 		}
 	}
@@ -93,7 +90,6 @@ public class AssignFieldEffect {
 		String message = "";
 		String chanceMessage = "";
 		newLocation = location;
-		jail = false;
 		extraChanceCard = false;
 	}
 
