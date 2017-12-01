@@ -134,7 +134,7 @@ public class Main {
 
 					ui.changeBalance(j, player[j].wallet.getBalance());
 
-					payer = player[j].getPiece();
+					payer = player[j].getPiece();	
 					reciever = player[afe.getReciever()].getPiece();
 
 					if((location[j] % 6) == 0) {
