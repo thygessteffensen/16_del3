@@ -5,20 +5,20 @@
 \contentsline {subsection}{\numberline {1.3}UseCases}{6}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}UseCase-Diagram}{10}{subsection.1.4}
 \contentsline {subsection}{\numberline {1.5}UseCases}{10}{subsection.1.5}
-\contentsline {subsection}{\numberline {1.6}UseCase diagram}{13}{subsection.1.6}
-\contentsline {subsection}{\numberline {1.7}GRASP}{13}{subsection.1.7}
-\contentsline {section}{\numberline {2}Design}{16}{section.2}
-\contentsline {subsection}{\numberline {2.1}Klasse diagram}{16}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Sekvensdiagram}{17}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}System sekvensdiagram}{17}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Dom\IeC {\ae }nemodel}{17}{subsection.2.4}
-\contentsline {section}{\numberline {3}Dokumentation}{18}{section.3}
-\contentsline {subsection}{\numberline {3.1}Forklar hvad arv er}{18}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Forklar hvad abtract betyder}{18}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Fort\IeC {\ae }l hvad det hedder hvis alle fieldklasserne har en landOnField metode der g\IeC {\o }r noget forskelligt}{18}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Dokumentation for test med screenshots}{19}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}JUnit test}{19}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Positiv negativ test}{19}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Black- og Whitebox test}{19}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Dokumentation for overholdt GRASP}{19}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}Vejledning til import af Git Repository til eclipse}{19}{subsection.3.9}
+\contentsline {subsection}{\numberline {1.6}UseCase diagram}{12}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}GRASP}{12}{subsection.1.7}
+\contentsline {section}{\numberline {2}Design}{15}{section.2}
+\contentsline {subsection}{\numberline {2.1}Klasse diagram}{15}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Sekvensdiagram}{16}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}System sekvensdiagram}{16}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Dom\IeC {\ae }nemodel}{16}{subsection.2.4}
+\contentsline {section}{\numberline {3}Dokumentation}{17}{section.3}
+\contentsline {subsection}{\numberline {3.1}Forklar hvad arv er}{17}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Forklar hvad abtract betyder}{17}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Fort\IeC {\ae }l hvad det hedder hvis alle fieldklasserne har en landOnField metode der g\IeC {\o }r noget forskelligt}{17}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Dokumentation for test med screenshots}{18}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}JUnit test}{18}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Positiv negativ test}{18}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Black- og Whitebox test}{18}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Dokumentation for overholdt GRASP}{18}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Vejledning til import af Git Repository til eclipse}{18}{subsection.3.9}

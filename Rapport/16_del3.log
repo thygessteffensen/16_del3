@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.23)  1 DEC 2017 11:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.23)  1 DEC 2017 11:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1183,49 +1183,49 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count303
  (./forside.tex
-<fig/gruppeBilleder/mfager.png, id=104, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/mfager.png, id=96, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/mfager.png Graphic file (type png)
 <use fig/gruppeBilleder/mfager.png>
 Package pdftex.def Info: fig/gruppeBilleder/mfager.png  used on input line 7. o
 n input line 7.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 7
 .
-<fig/gruppeBilleder/milishia.png, id=105, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/milishia.png, id=97, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/milishia.png Graphic file (type png)
 <use fig/gruppeBilleder/milishia.png>
 Package pdftex.def Info: fig/gruppeBilleder/milishia.png  used on input line 7.
  on input line 7.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 7
 .
-<fig/gruppeBilleder/nicki.png, id=106, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/nicki.png, id=98, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/nicki.png Graphic file (type png)
 <use fig/gruppeBilleder/nicki.png>
 Package pdftex.def Info: fig/gruppeBilleder/nicki.png  used on input line 8. on
  input line 8.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 8
 .
-<fig/gruppeBilleder/semi.png, id=107, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/semi.png, id=99, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/semi.png Graphic file (type png)
 <use fig/gruppeBilleder/semi.png>
 Package pdftex.def Info: fig/gruppeBilleder/semi.png  used on input line 9. on 
 input line 9.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 9
 .
-<fig/gruppeBilleder/simon.png, id=108, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/simon.png, id=100, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/simon.png Graphic file (type png)
 <use fig/gruppeBilleder/simon.png>
 Package pdftex.def Info: fig/gruppeBilleder/simon.png  used on input line 10. o
 n input line 10.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 1
 0.
-<fig/gruppeBilleder/thyge.png, id=109, 103.38625pt x 140.525pt>
+<fig/gruppeBilleder/thyge.png, id=101, 103.38625pt x 140.525pt>
 File: fig/gruppeBilleder/thyge.png Graphic file (type png)
 <use fig/gruppeBilleder/thyge.png>
 Package pdftex.def Info: fig/gruppeBilleder/thyge.png  used on input line 11. o
 n input line 11.
 Package pdftex.def Info: Requested size: 62.7989pt x 85.35826pt on input line 1
 1.
-<fig/dtu/DTU_small.png, id=110, 180.675pt x 180.675pt>
+<fig/dtu/DTU_small.png, id=102, 180.675pt x 180.675pt>
 File: fig/dtu/DTU_small.png Graphic file (type png)
 <use fig/dtu/DTU_small.png>
 Package pdftex.def Info: fig/dtu/DTU_small.png  used on input line 24. on input
@@ -1246,7 +1246,7 @@ Package babel Info: Redefining danish shorthand "~
 leder/mfager.png> <./fig/gruppeBilleder/milishia.png> <./fig/gruppeBilleder/nic
 ki.png> <./fig/gruppeBilleder/semi.png> <./fig/gruppeBilleder/simon.png> <./fig
 /gruppeBilleder/thyge.png> <./fig/dtu/DTU_small.png>]) (./site2.tex
-<fig/TROver.jpg, id=121, 162.00525pt x 127.677pt>
+<fig/TROver.jpg, id=113, 162.00525pt x 127.677pt>
 File: fig/TROver.jpg Graphic file (type jpg)
 <use fig/TROver.jpg>
 Package pdftex.def Info: fig/TROver.jpg  used on input line 9. on input line 9.
@@ -1260,7 +1260,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<fig/dtu/dtu.png, id=122, 1063.975pt x 478.78876pt>
+<fig/dtu/dtu.png, id=114, 1063.975pt x 478.78876pt>
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 17. on input line 
@@ -1452,24 +1452,6 @@ Overfull \hbox (37.22632pt too wide) in paragraph at lines 64--95
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-[]|\OT1/cmr/m/n/12 Hvis fel-tet ik-ke er
- []
-
-
-Underfull \hbox (badness 6125) in paragraph at lines 110--111
-\OT1/cmr/m/n/12 p^^Wa fel-tet k^^\be det,
- []
-
-./analyseSecondary.tex:113: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.113         \hline
-                    
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
 Overfull \hbox (37.22632pt too wide) in paragraph at lines 99--119
  [] 
  []
@@ -1503,42 +1485,41 @@ Overfull \hbox (37.22632pt too wide) in paragraph at lines 144--161
  [] 
  []
 
-File: fig/dtu/dtu.png Graphic file (type png)
-<use fig/dtu/dtu.png>
-Package pdftex.def Info: fig/dtu/dtu.png  used on input line 161. on input line
- 161.
-Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
- 161.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 161.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 161.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 161.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 161.
-[9]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 162.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 162.
 
+LaTeX Warning: File `fig/dtu/UCD part2.jpg' not found on input line 163.
 
-LaTeX Warning: File `fig/dtu/UC-cdio3.jpg' not found on input line 163.
 
-
-./analyseSecondary.tex:163: Package pdftex.def Error: File `fig/dtu/UC-cdio3.jp
-g' not found: using draft setting.
+./analyseSecondary.tex:163: Package pdftex.def Error: File `fig/dtu/UCD part2.j
+pg' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 ...graphics[scale=0.8]{fig/dtu/UC-cdio3.jpg}
+l.163 ...raphics[scale=0.8]{fig/dtu/UCD part2.jpg}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+File: fig/dtu/dtu.png Graphic file (type png)
+<use fig/dtu/dtu.png>
+Package pdftex.def Info: fig/dtu/dtu.png  used on input line 167. on input line
+ 167.
+Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
+ 167.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 167.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 167.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 167.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 167.
+[9]
 
 ./analyseSecondary.tex:167: LaTeX Error: \begin{document} ended by \end{enumera
 te}.
@@ -1577,21 +1558,6 @@ Overfull \hbox (37.22632pt too wide) in paragraph at lines 26--43
 
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
-Package pdftex.def Info: fig/dtu/dtu.png  used on input line 43. on input line 
-43.
-Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
- 43.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 43.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 43.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 43.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 43.
-[10]
-File: fig/dtu/dtu.png Graphic file (type png)
-<use fig/dtu/dtu.png>
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 46. on input line 
 46.
 Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
@@ -1604,7 +1570,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 46.
- [11]
+[10]
 Overfull \hbox (37.22632pt too wide) in paragraph at lines 48--79
  [] 
  []
@@ -1638,7 +1604,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 122.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 122.
-[12]
+[11]
 Underfull \hbox (badness 2707) in paragraph at lines 128--128
 []|\OT1/cmr/m/n/12 UseCase Section: En
  []
@@ -1658,16 +1624,20 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 175.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 175.
-<fig/UC-cdio3.jpg, id=225, 1489.565pt x 924.45375pt>
-File: fig/UC-cdio3.jpg Graphic file (type jpg)
-<use fig/UC-cdio3.jpg>
-Package pdftex.def Info: fig/UC-cdio3.jpg  used on input line 178. on input lin
-e 178.
+
+
+LaTeX Warning: File `fig/UCD part2.jpg' not found on input line 178.
+
+<fig/UCD part2.jpg, id=210, 1489.565pt x 924.45375pt>
+File: fig/UCD part2.jpg Graphic file (type jpg)
+<use fig/UCD part2.jpg>
+Package pdftex.def Info: fig/UCD part2.jpg  used on input line 178. on input li
+ne 178.
 Package pdftex.def Info: Requested size: 569.05511pt x 353.17218pt on input lin
 e 178.
 
-Overfull \hbox (93.69685pt too wide) in paragraph at lines 178--179
- [][] 
+Overfull \hbox (142.98106pt too wide) in paragraph at lines 178--179
+ []\OT1/cmr/m/n/12 part2.jpg [] 
  []
 
 
@@ -1691,7 +1661,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 186.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 186.
-[13]
+[12]
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 194. on input line
@@ -1706,7 +1676,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 194.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 194.
- [14 <./fig/UC-cdio3.jpg>]) (./designSecondaray.tex
+ [13 <./fig/UCD part2.jpg>]) (./designSecondaray.tex
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 1. on input line 1
@@ -1721,7 +1691,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
- [15]
+ [14]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -1730,7 +1700,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
-<fig/Designklassediagram(3).jpg, id=249, 1575.8875pt x 1053.9375pt>
+<fig/Designklassediagram(3).jpg, id=235, 1575.8875pt x 1053.9375pt>
 File: fig/Designklassediagram(3).jpg Graphic file (type jpg)
 <use fig/Designklassediagram(3).jpg>
 Package pdftex.def Info: fig/Designklassediagram(3).jpg  used on input line 8. 
@@ -1746,7 +1716,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 16.
-<fig/Sekvensdiagram(1).jpg, id=250, 901.3675pt x 794.97pt>
+<fig/Sekvensdiagram(1).jpg, id=236, 901.3675pt x 794.97pt>
 File: fig/Sekvensdiagram(1).jpg Graphic file (type jpg)
 <use fig/Sekvensdiagram(1).jpg>
 Package pdftex.def Info: fig/Sekvensdiagram(1).jpg  used on input line 19. on i
@@ -1772,7 +1742,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
-[16 <./fig/Designklassediagram(3).jpg>]
+[15 <./fig/Designklassediagram(3).jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1780,7 +1750,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 26.
-<fig/SSD.jpg, id=256, 599.23875pt x 412.54124pt>
+<fig/SSD.jpg, id=242, 599.23875pt x 412.54124pt>
 File: fig/SSD.jpg Graphic file (type jpg)
 <use fig/SSD.jpg>
 Package pdftex.def Info: fig/SSD.jpg  used on input line 29. on input line 29.
@@ -1798,7 +1768,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 36.
-<fig/domainemodel.PNG, id=257, 641.39626pt x 319.69438pt>
+<fig/domainemodel.PNG, id=243, 641.39626pt x 319.69438pt>
 File: fig/domainemodel.PNG Graphic file (type png)
 <use fig/domainemodel.PNG>
 Package pdftex.def Info: fig/domainemodel.PNG  used on input line 39. on input 
@@ -1828,7 +1798,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
- [17]
+ [16]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -1837,22 +1807,13 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 2.
-
-
-LaTeX Warning: File `fig/types_of_inheritance.jpg' not found on input line 10.
-
-
-./dokumentation.tex:10: Package pdftex.def Error: File `fig/types_of_inheritanc
-e.jpg' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 ...s[width=6cm]{fig/types_of_inheritance.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<fig/types_of_inheritance.jpg, id=248, 451.6875pt x 374.90062pt>
+File: fig/types_of_inheritance.jpg Graphic file (type jpg)
+<use fig/types_of_inheritance.jpg>
+Package pdftex.def Info: fig/types_of_inheritance.jpg  used on input line 10. o
+n input line 10.
+Package pdftex.def Info: Requested size: 170.71652pt x 141.69716pt on input lin
+e 10.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1887,30 +1848,22 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 29.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 29.
-[18]
-
-LaTeX Warning: File `fig/JUnitTestDice.jpg' not found on input line 33.
-
-
-./dokumentation.tex:33: Package pdftex.def Error: File `fig/JUnitTestDice.jpg' 
-not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33 ...raphics[width=20cm]{fig/JUnitTestDice.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[17]
+<fig/JunitTest.jpg, id=253, 1252.68pt x 748.7975pt>
+File: fig/JunitTest.jpg Graphic file (type jpg)
+<use fig/JunitTest.jpg>
+Package pdftex.def Info: fig/JunitTest.jpg  used on input line 33. on input lin
+e 33.
+Package pdftex.def Info: Requested size: 569.05511pt x 340.16638pt on input lin
+e 33.
 
 Overfull \hbox (100.94261pt too wide) in paragraph at lines 32--34
  []\OT1/cmr/m/n/12 s [] 
  []
 
 
-LaTeX Warning: Float too large for page by 4.71217pt on input line 35.
+LaTeX Warning: Reference `fig:JUnitTest' on page 18 undefined on input line 36.
+
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1947,6 +1900,21 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
+ [18]
+File: fig/dtu/dtu.png Graphic file (type png)
+<use fig/dtu/dtu.png>
+Package pdftex.def Info: fig/dtu/dtu.png  used on input line 81. on input line 
+81.
+Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
+ 81.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 81.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 81.
  [19]
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
@@ -1962,7 +1930,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
- [20]
+ [20 <./fig/Sekvensdiagram(1).jpg>]
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 81. on input line 
@@ -1977,7 +1945,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
- [21 <./fig/Sekvensdiagram(1).jpg>]
+ [21 <./fig/SSD.jpg>]
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 81. on input line 
@@ -1992,7 +1960,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
- [22 <./fig/SSD.jpg>]
+ [22 <./fig/domainemodel.PNG> <./fig/types_of_inheritance.jpg>]
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 81. on input line 
@@ -2007,64 +1975,41 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
- [23 <./fig/domainemodel.PNG>]
-File: fig/dtu/dtu.png Graphic file (type png)
-<use fig/dtu/dtu.png>
-Package pdftex.def Info: fig/dtu/dtu.png  used on input line 81. on input line 
-81.
-Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
- 81.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 81.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 81.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 81.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 81.
- [24]
+ [23 <./fig/JunitTest.jpg>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
- (./16_del3.aux)
+
+(./16_del3.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
+Package rerunfilecheck Info: File `16_del3.out' has not changed.
+(rerunfilecheck)             Checksum: 7C4B0738361BE61366A8C995DEA2E600;1583.
 
 
-Package rerunfilecheck Warning: File `16_del3.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `16_del3.out':
-(rerunfilecheck)             Before: 804BBD17D4787BA5429D4B54C80BA468;1746
-(rerunfilecheck)             After:  7C4B0738361BE61366A8C995DEA2E600;1583.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 19982 strings out of 492990
- 368899 string characters out of 6136333
- 431623 words of memory out of 5000000
- 23210 multiletter control sequences out of 15000+600000
+ 19986 strings out of 492990
+ 369068 string characters out of 6136333
+ 431614 words of memory out of 5000000
+ 23217 multiletter control sequences out of 15000+600000
  542211 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,14n,72p,10440b,818s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.3.11} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.10} has been referenced but does not e
-xist, replaced by a fixed one
-
-<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2017/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmtt12.pfb>
-Output written on 16_del3.pdf (25 pages, 1110106 bytes).
+<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt12.pfb>
+Output written on 16_del3.pdf (24 pages, 1200501 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
- 89 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 

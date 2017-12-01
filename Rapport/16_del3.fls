@@ -283,11 +283,8 @@ INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-INPUT fig/dtu/dtu.png
-INPUT ./fig/dtu/dtu.png
-INPUT fig/UC-cdio3.jpg
-INPUT ./fig/UC-cdio3.jpg
-INPUT ./fig/UC-cdio3.jpg
+INPUT ./fig/UCD part2.jpg
+INPUT ./fig/UCD part2.jpg
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
@@ -315,8 +312,14 @@ INPUT dokumentation.tex
 INPUT dokumentation.tex
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
+INPUT fig/types_of_inheritance.jpg
+INPUT ./fig/types_of_inheritance.jpg
+INPUT ./fig/types_of_inheritance.jpg
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
+INPUT fig/JunitTest.jpg
+INPUT ./fig/JunitTest.jpg
+INPUT ./fig/JunitTest.jpg
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
