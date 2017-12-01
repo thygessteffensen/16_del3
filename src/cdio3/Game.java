@@ -17,6 +17,10 @@ public class Game {
 	 Wallet wallet;
 	 Reader reader;
 	 Dice dice;
+	 
+	 
+	 
+	 
 	 AssignFieldEffect afe;
 	 int[] location;
 	 int playerCount;

@@ -108,13 +108,6 @@ public class AssignFieldEffect {
 	}
 	
 	/**
-	 * @return Beskeden generet
-	 */
-	public String getMessage() {
-		return message;
-	}
-	
-	/**
 	 * @return Ændringen i balancen
 	 */
 	public int getBalanceChange() {
@@ -126,13 +119,6 @@ public class AssignFieldEffect {
 	 */
 	public int getReciever() {
 		return properties.getReciever();
-	}
-	
-	/**
-	 * @return Lejren der skal betale for leje af grund
-	 */
-	public int getPayer() {
-		return properties.getPayer();
 	}
 	
 	/**

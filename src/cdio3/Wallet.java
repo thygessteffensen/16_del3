@@ -38,15 +38,6 @@ public class Wallet extends Player{
 	}
 	
 	/**
-	 * Lægger 'value' til spillerens balance og trækker negative fra.
-	 * @param value Værdien balancen skal ændres med, både +-
-	 */
-	public void setBalance(int value) {
-		balance = value;
-		
-	}
-	
-	/**
 	 * Tjekker om spillerens balance er lig med eller under 0.
 	 * @return playerLost Den er sand, hvis spilleren har tabt
 	 */

@@ -72,14 +72,6 @@ public class Properties {
 	}
 
 	/**
-	 * Returnerer modtageren.
-	 * @return Modtagerens plads i player arrayet.
-	 */
-	public int getPayer() {
-		return payer;
-	}
-
-	/**
 	 * Returnerer beløbet +- (\pm)
 	 * @return Beløbet er en int der både kan være negativ og positiv.
 	 */
