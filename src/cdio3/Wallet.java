@@ -42,7 +42,7 @@ public class Wallet extends Player{
 	 * @param value Værdien balancen skal ændres med, både +-
 	 */
 	public void setBalance(int value) {
-		balance += value;
+		balance = value;
 		
 	}
 	

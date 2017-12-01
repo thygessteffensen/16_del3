@@ -33,22 +33,21 @@ public class TestWallet {
 	 */
 	@Test
 	public void testSetBalance() {
-		/*
 		wallet.setBalance(30);
 		assertEquals(30, wallet.getBalance());
-		SetBalance sætter ikke nogen balance, men tjekker derimod om en spiller har under 0 på kontoen
-		 */
-		wallet.setBalance(); //Lige meget hvad sættes til da den kun trækker det med ned til if statement nedenunder i klassen.
-		assertFalse(wallet.getPlayerLost()); //Forventer false da den ikke er negativ. 
-		wallet.setBalance(-5000); //-5000 trækkes med ned i if statement i klassen og gør at den bliver kørt
-		assertTrue(wallet.getPlayerLost());//Forventer True da -5000 er mindre end 0
+		 
+		
 	}
 		
 
 	@Test
 	public void testGetPlayerLost() {
-		//fail("Not yet implemented");
-		//Bliver testet i testSetBalance
+		wallet.setBalance(5); //Sætter balancen til 5
+		System.out.println(wallet.getBalance());
+		assertFalse(wallet.playerLost()); //Forventer false da den ikke er negativ. 
+		wallet.setBalance(-5); //-5 trækkes med ned i if statement i klassen og gør at den bliver kørt
+		System.out.println(wallet.getBalance());
+		assertTrue(wallet.playerLost());//Forventer True da -5 er mindre end 0
 	}
 
 	@Test
