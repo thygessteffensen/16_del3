@@ -20,11 +20,13 @@ public class Properties {
 	 * Konstruktør
 	 */
 	public Properties() {
+		owned = new boolean[fields];
+		owner = new int[fields];
 		for (int i = 1; i < fields; i++) {
-			owned = new boolean[fields];
-			owner = new int[fields];
-			if((i % 3) != 0)
-				owned[i] = false;
+			owner[i] = 5;
+			owned[i] = false;
+//			if((i % 3) != 0)
+//				owned[i] = false;
 		}
 	}
 
@@ -43,7 +45,6 @@ public class Properties {
 			buy();
 		}
 		else if(owned[location] == true) {
-			System.out.println("Pay u lil bitch");
 			pay();
 		}
 		else {
