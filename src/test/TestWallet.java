@@ -13,10 +13,17 @@ import org.junit.Test;
 
 import cdio3.Wallet;
 
+/**
+ * 
+ * @author mathias
+ *
+ */
+
 public class TestWallet {
 	Wallet wallet = new Wallet("Bil", 2); // Instansiere en ny wallet som har brik bil, der er 2 spillere og de starter med 20 matadollars hver.
 	Wallet test3 = new Wallet("UFO", 3); //Laver ny wallet med 3 spillere.
 	Wallet test4 = new Wallet("UFO", 4); //Laver ny wallet med 4 spillere.
+	Wallet testOutOfBounds = new Wallet ("UFO", 5); //Laver en wallet der ikke burde kunne eksistere.
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -33,6 +40,7 @@ public class TestWallet {
 	public void testWallet() {
 		assertEquals(18, test3.getBalance()); //Tester balance for 3 spillere.
 		assertEquals(16, test4.getBalance()); //Tester balance for 4 spillere.
+		assertEquals(0, testOutOfBounds.getBalance()); //Tester balance for mængde spillere der ikke burde kunne lade sig gøre
 	}
 	/**
 	 * Tester getBalance
