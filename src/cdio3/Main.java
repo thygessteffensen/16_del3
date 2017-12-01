@@ -176,10 +176,10 @@ public class Main {
 	private static void endProgram(String piece) throws IOException{
 		ui.getUserResponse(piece + reader.getString("tabt", "spil"), "Luk spillet");
 		try {
-			TimeUnit.SECONDS.sleep(2);
+			TimeUnit.SECONDS.sleep(1);
 		} catch (InterruptedException e) {
 			System.out.println("Fejl i sleep når program lukker");
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 		System.exit(0);
 	}
