@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>AssignFieldEffect.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Main (30-Nov-2017 14:59:11)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">AssignFieldEffect.java</span></div><h1>AssignFieldEffect.java</h1><pre class="source lang-java linenums">package cdio3;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>AssignFieldEffect.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Run (01-Dec-2017 11:49:03)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">AssignFieldEffect.java</span></div><h1>AssignFieldEffect.java</h1><pre class="source lang-java linenums">package cdio3;
 
 import java.io.IOException;
 
@@ -8,24 +8,26 @@ import java.io.IOException;
  * @version 27/11/2017
  */
 public class AssignFieldEffect {
-	String chanceMessage;
-	int balance;
+	private String chanceMessage;
+	private String message;
+	private int balance;
 	private int propertyValue;
 	private int location;
-<span class="fc" id="L15">	SpecialFields sp = new SpecialFields(balance, location);</span>
-	static ChanceCard cc;
-	boolean jail;
-	boolean chanceCard;
-	String message;
-	int newLocation;
-<span class="fc" id="L21">	Properties properties = new Properties();</span>
-	int reciever;
-	int payer;
-	int amount;
+	private int reciever;
+	private int payer;
+	private int amount;
+	private int newLocation;
+	private boolean extraChanceCard;
+	ChanceCard cc;
+<span class="nc" id="L22">	Properties properties = new Properties();</span>
 	
-<span class="fc" id="L26">	public AssignFieldEffect() throws IOException {</span>
-<span class="fc" id="L27">		cc = new ChanceCard();</span>
-<span class="fc" id="L28">	}</span>
+	/**
+	 * Konstruktør
+	 * @throws IOException
+	 */
+<span class="nc" id="L28">	public AssignFieldEffect() throws IOException {</span>
+<span class="nc" id="L29">		cc = new ChanceCard();</span>
+<span class="nc" id="L30">	}</span>
 	
 	/**
 	 * Initialisere felt effekten. 
@@ -34,104 +36,111 @@ public class AssignFieldEffect {
 	 * @param playerNumber Den givne spillers &quot;navn&quot;.
 	 */
 	public void initFieldEffect(int location, int playerNumber) {
-<span class="fc" id="L37">		reset(location);</span>
+<span class="nc" id="L39">		reset(location);</span>
 		// switch der håndterer hvilke metode der skal benyttes, i forhold til hvilket felt man lander på.
-<span class="pc bpc" id="L39" title="1 of 10 branches missed.">		switch(location) {</span>
+<span class="nc bnc" id="L41" title="All 9 branches missed.">		switch(location) {</span>
 		case 0: 
-<span class="fc" id="L41">			break;</span>
+<span class="nc" id="L43">			break;</span>
 		case 1: case 2: case 4: case 5:
-<span class="fc" id="L43">			propertyValue = 1;</span>
-<span class="fc" id="L44">			properties.getEffect(location, propertyValue, playerNumber);</span>
-<span class="fc" id="L45">			balance = properties.getRecieveAmount();</span>
-<span class="fc" id="L46">			break;</span>
+<span class="nc" id="L45">			propertyValue = 1;</span>
+<span class="nc" id="L46">			properties.getEffect(location, propertyValue, playerNumber);</span>
+<span class="nc" id="L47">			balance = properties.getRecieveAmount();</span>
+<span class="nc" id="L48">			break;</span>
 		case 6: case 12:
-<span class="fc" id="L48">			propertyValue = 0;</span>
-<span class="fc" id="L49">			break;</span>
+<span class="nc" id="L50">			propertyValue = 0;</span>
+<span class="nc" id="L51">			break;</span>
 		case 7: case 8: case 10: case 11:
-<span class="fc" id="L51">			propertyValue = 2;</span>
-<span class="fc" id="L52">			properties.getEffect(location, propertyValue, playerNumber);</span>
-<span class="fc" id="L53">			balance = properties.getRecieveAmount();</span>
-<span class="fc" id="L54">			break;</span>
+<span class="nc" id="L53">			propertyValue = 2;</span>
+<span class="nc" id="L54">			properties.getEffect(location, propertyValue, playerNumber);</span>
+<span class="nc" id="L55">			balance = properties.getRecieveAmount();</span>
+<span class="nc" id="L56">			break;</span>
 		case 13: case 14: case 16: case 17:
-<span class="fc" id="L56">			propertyValue = 3;</span>
-<span class="fc" id="L57">			properties.getEffect(location, propertyValue, playerNumber);</span>
-<span class="fc" id="L58">			balance = properties.getRecieveAmount();</span>
-<span class="fc" id="L59">			break;</span>
+<span class="nc" id="L58">			propertyValue = 3;</span>
+<span class="nc" id="L59">			properties.getEffect(location, propertyValue, playerNumber);</span>
+<span class="nc" id="L60">			balance = properties.getRecieveAmount();</span>
+<span class="nc" id="L61">			break;</span>
 		case 19: case 20:
-<span class="fc" id="L61">			propertyValue = 4;</span>
-<span class="fc" id="L62">			properties.getEffect(location, propertyValue, playerNumber);</span>
-<span class="fc" id="L63">			balance = properties.getRecieveAmount();</span>
-<span class="fc" id="L64">			break;</span>
+<span class="nc" id="L63">			propertyValue = 4;</span>
+<span class="nc" id="L64">			properties.getEffect(location, propertyValue, playerNumber);</span>
+<span class="nc" id="L65">			balance = properties.getRecieveAmount();</span>
+<span class="nc" id="L66">			break;</span>
 		case 22: case 23:
-<span class="fc" id="L66">			propertyValue = 5;</span>
-<span class="fc" id="L67">			properties.getEffect(location, propertyValue, playerNumber);</span>
-<span class="fc" id="L68">			balance = properties.getRecieveAmount();</span>
-<span class="fc" id="L69">			break;</span>
+<span class="nc" id="L68">			propertyValue = 5;</span>
+<span class="nc" id="L69">			properties.getEffect(location, propertyValue, playerNumber);</span>
+<span class="nc" id="L70">			balance = properties.getRecieveAmount();</span>
+<span class="nc" id="L71">			break;</span>
 		case 3: case 9: case 15: case 21:
-<span class="fc" id="L71">			cc.initChanceCard(location);</span>
-<span class="fc" id="L72">			balance = cc.getBalanceChange();</span>
-<span class="fc" id="L73">			newLocation += cc.getMoveTo();</span>
-<span class="fc" id="L74">			chanceMessage = cc.getCardMessage();</span>
-<span class="fc" id="L75">			chanceCard = true;</span>
-<span class="fc" id="L76">			break;</span>
-		case 18:
-<span class="fc" id="L78">			jail = true;</span>
+<span class="nc" id="L73">			cc.initChanceCard(location);</span>
+<span class="nc" id="L74">			balance = cc.getBalanceChange();</span>
+<span class="nc" id="L75">			newLocation += cc.getMoveTo();</span>
+<span class="nc" id="L76">			chanceMessage = cc.getCardMessage();</span>
+<span class="nc" id="L77">			extraChanceCard = true;</span>
+<span class="nc" id="L78">			break;</span>
 		default: break;
 		}
-<span class="fc" id="L81">	}</span>
+<span class="nc" id="L81">		System.out.println(&quot;Location: \t&quot; + location);</span>
+<span class="nc" id="L82">		System.out.println(&quot;Værdi \t \t M&quot; + propertyValue);</span>
+<span class="nc" id="L83">	}</span>
 
 	/**
 	 * Nulstiller alle variabler.
 	 * @param location Lokationen på spilleren.
 	 */
 	public void reset(int location) {
-<span class="fc" id="L88">		this.location = 0;</span>
-<span class="fc" id="L89">		balance = 0;</span>
-<span class="fc" id="L90">		String message = &quot;&quot;;</span>
-<span class="fc" id="L91">		String chanceMessage = &quot;&quot;;</span>
-<span class="fc" id="L92">		newLocation = location;</span>
-<span class="fc" id="L93">		jail = false;</span>
-<span class="fc" id="L94">		chanceCard = false;</span>
-<span class="fc" id="L95">	}</span>
+<span class="nc" id="L90">		this.location = 0;</span>
+<span class="nc" id="L91">		balance = 0;</span>
+<span class="nc" id="L92">		String message = &quot;&quot;;</span>
+<span class="nc" id="L93">		String chanceMessage = &quot;&quot;;</span>
+<span class="nc" id="L94">		newLocation = location;</span>
+<span class="nc" id="L95">		extraChanceCard = false;</span>
+<span class="nc" id="L96">		propertyValue = 0;</span>
+<span class="nc" id="L97">	}</span>
 
 //----------------------------------------------------------------------------------
-//                              getters
+	//                                 getters
 //----------------------------------------------------------------------------------
 
-	public int getBalance() {
-<span class="fc" id="L102">		return balance;</span>
-	}
-
-	public int getNewLocation() {
-<span class="nc" id="L106">		return newLocation;</span>
-	}
-
-	public boolean getJail() {
-<span class="nc" id="L110">		return jail;</span>
-	}
-
-	public String getMessage() {
-<span class="nc" id="L114">		return message;</span>
-	}
-	
-	public int getPayer() {
-<span class="nc" id="L118">		return properties.getPayer();</span>
-	}
-	
-	public int getPayAmount() {
-<span class="nc" id="L122">		return properties.getPayAmount();</span>
-	}
-	
+	/**
+	 * @return Beskeden generet ved chance kort
+	 */
 	public String getChangeMessage() {
-<span class="fc" id="L126">		return chanceMessage;</span>
+<span class="nc" id="L107">		return chanceMessage;</span>
 	}
 	
-	public boolean getChanceCard() {
-<span class="nc" id="L130">		return chanceCard;</span>
-	}
+	/**
+	 * @return Ændringen i balancen
+	 */
+	public int getBalanceChange() {
+<span class="nc" id="L114">		return balance;</span>
+	}	
 	
+	/**
+	 * @return Modtageren af leje ved leje af grund
+	 */
 	public int getReciever() {
-<span class="fc" id="L134">		return properties.getReciever();</span>
+<span class="nc" id="L121">		return properties.getReciever();</span>
+	}
+	
+	/**
+	 * @return Lejen det koster at leje den aktuelle grund
+	 */
+	public int getPayAmount() {
+<span class="nc" id="L128">		return properties.getPayAmount();</span>
+	}
+
+	/**
+	 * @return Ændringen der skal lægges til lokationen
+	 */
+	public int getLocationChange() {
+<span class="nc" id="L135">		return newLocation;</span>
+	}
+	
+	/**
+	 * Afgører om man må tage et chance kort til
+	 * @return Sand hvis man skal trække et kort til
+	 */
+	public boolean getExtraChanceCard() {
+<span class="nc" id="L143">		return extraChanceCard;</span>
 	}
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Main (30-Nov-2017 14:59:11)</div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Run (01-Dec-2017 11:49:03)</div></body></html>

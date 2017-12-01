@@ -1,56 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Player.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Main (30-Nov-2017 14:59:11)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">Player.java</span></div><h1>Player.java</h1><pre class="source lang-java linenums">package cdio3;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Player.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Run (01-Dec-2017 11:49:03)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">Player.java</span></div><h1>Player.java</h1><pre class="source lang-java linenums">package cdio3;
 
 /**
- * 
  * @author Simon og Mathias
- *
  */
 public class Player 
 {
-<span class="fc" id="L10">	Dice dice = new Dice();</span>
-	private String piece;
 	Wallet wallet;
-	int balance;
-	int location;
+	private String piece;
+	private int balance;
+	private int location;
 
-<span class="fc" id="L16">	public Player(String piece, int playerCount) {</span>
-<span class="fc" id="L17">		this.piece = piece;</span>
-<span class="fc" id="L18">	}</span>
+	/**
+	 * Konstruktør
+	 * @param piece Brikken som player skal have.
+	 * @param playerCount Antallet af spillere
+	 */
+<span class="fc" id="L18">	public Player(String piece) {</span>
+<span class="fc" id="L19">		this.piece = piece;		</span>
+<span class="fc" id="L20">	}</span>
 	
 	/**
 	 * Jail metode
 	 */
-	public void jail() {
-<span class="nc bnc" id="L24" title="All 2 branches missed.">		if(location == 18) </span>
-<span class="nc" id="L25">			wallet.changeBalance(-2);</span>
-<span class="nc" id="L26">		else wallet.playerLost();</span>
-<span class="nc" id="L27">	}</span>
-	
+	public void jail(int location) {
+<span class="fc" id="L26">		wallet.changeBalance(-2);</span>
+<span class="fc" id="L27">	}</span>
 	
 	/**
 	 * getPiece
-	 * @return piece
+	 * @return piece String med brikkens navn
 	 */
 	public String getPiece(){
-<span class="fc" id="L35">		return piece;</span>
+<span class="fc" id="L34">		return piece;</span>
 	}
 
 	/**
-	 * setLocation
+	 * setLocation sætter spillerens felt.
+	 * @param location
 	 */
 	public void setLocation(int location) {
 <span class="nc" id="L42">		this.location = location;</span>
 <span class="nc" id="L43">	}</span>
 	
-	
 	/**
-	 * setPiece
+	 * Sætter brikken i Player
+	 * @param piece Brikken i string.
 	 */
 	public void setPiece(String piece){
 <span class="nc" id="L50">		this.piece = piece;</span>
 <span class="nc" id="L51">	}	</span>
-
-
-
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Main (30-Nov-2017 14:59:11)</div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Run (01-Dec-2017 11:49:03)</div></body></html>

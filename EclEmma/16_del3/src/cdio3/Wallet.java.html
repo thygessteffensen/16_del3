@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Wallet.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Main (30-Nov-2017 14:59:11)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">Wallet.java</span></div><h1>Wallet.java</h1><pre class="source lang-java linenums">package cdio3;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Wallet.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Run (01-Dec-2017 11:49:03)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">Wallet.java</span></div><h1>Wallet.java</h1><pre class="source lang-java linenums">package cdio3;
 
 /**
  * 
@@ -7,63 +7,53 @@
  */
 
 public class Wallet extends Player{
-	
 	private int balance;
-<span class="fc" id="L12">	private boolean playerLost = false;</span>
+<span class="nc" id="L11">	private boolean playerLost = false;</span>
 	
 	/**
 	 * Konstruktør
-	 * @param piece
-	 * @param playerCount
-	 * @param balance
+	 * @param piece Den valgte brik
+	 * @param playerCount Antallet af spillere
 	 */
 	public Wallet(String piece, int playerCount) {
-<span class="fc" id="L21">		super(piece, playerCount);</span>
-<span class="pc bpc" id="L22" title="3 of 4 branches missed.">		switch (playerCount) {</span>
-<span class="nc" id="L23">		case 2: this.balance = 20;</span>
+<span class="nc" id="L19">		super(piece);</span>
+<span class="nc bnc" id="L20" title="All 4 branches missed.">		switch (playerCount) {</span>
+<span class="nc" id="L21">		case 2: this.balance = 20;</span>
+<span class="nc" id="L22">		break;</span>
+<span class="nc" id="L23">		case 3: this.balance = 18;</span>
 <span class="nc" id="L24">		break;</span>
-<span class="nc" id="L25">		case 3: this.balance = 18;</span>
+<span class="nc" id="L25">		case 4: this.balance = 16;</span>
 <span class="nc" id="L26">		break;</span>
-<span class="fc" id="L27">		case 4: this.balance = 16;</span>
-<span class="fc" id="L28">		break;</span>
-<span class="nc" id="L29">		default: System.out.println(&quot;Fejl i wallet&quot;);</span>
+<span class="nc" id="L27">		default: this.balance = 0;</span>
 		break;
 		}
-<span class="fc" id="L32">	}</span>
+<span class="nc" id="L30">	}</span>
+	
 	/**
-	 * Laver en getbalance så programmet ikke har direkte adgang til balance
-	 * @return balance
+	 * getBalance()
+	 * @return balance Spillerens aktuelle balance 
 	 */
-	public int getBalance() { // Getter til balance
-<span class="fc" id="L38">		return balance;</span>
+	public int getBalance() { 
+<span class="nc" id="L37">		return balance;</span>
 	}
 	
 	/**
-	 * Laver en set balance så programmet kan hardset en balance på en player
-	 * @param value given værdi der gør metoden i stand til at hardset balancen
+	 * Tjekker om spillerens balance er lig med eller under 0.
+	 * @return playerLost Den er sand, hvis spilleren har tabt
 	 */
-	public void setBalance(int value) {
-<span class="nc" id="L46">		balance += value;</span>
-		
-<span class="nc" id="L48">	}</span>
-	
- 	/**
- 	 * Tjekker om en spiller har tabt ved at se om balancen er under 0
- 	 * @return om spilleren har tabt eller ej
- 	 */
 	public boolean playerLost() {
-<span class="pc bpc" id="L55" title="1 of 2 branches missed.">		if (balance &lt;= 0) {</span>
-<span class="nc" id="L56">			playerLost = true;</span>
+<span class="nc bnc" id="L45" title="All 2 branches missed.">		if (balance &lt;= 0) {</span>
+<span class="nc" id="L46">			playerLost = true;</span>
 		}
-<span class="fc" id="L58">		return playerLost;</span>
+<span class="nc" id="L48">		return playerLost;</span>
 	}
 	
 	/**
-	 * Gør programmet i stand til at ændre en balance uden at skulle hardset den.
-	 * @param changebalance Den balance der bliver ændret med.
+	 * Lægger 'changebalance' til spillerens balance og trækker negative fra.
+	 * @param value Værdien balancen skal ændres med, både +-
 	 */
 	public void changeBalance(int changebalance) {
-<span class="fc" id="L66">		this.balance += changebalance;</span>
-<span class="fc" id="L67">	}</span>
+<span class="nc" id="L56">		this.balance += changebalance;</span>
+<span class="nc" id="L57">	}</span>
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Main (30-Nov-2017 14:59:11)</div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Run (01-Dec-2017 11:49:03)</div></body></html>

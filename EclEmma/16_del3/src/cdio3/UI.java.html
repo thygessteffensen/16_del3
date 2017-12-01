@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>UI.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Main (30-Nov-2017 14:59:11)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">UI.java</span></div><h1>UI.java</h1><pre class="source lang-java linenums">package cdio3;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Ui.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Run (01-Dec-2017 11:49:03)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">Ui.java</span></div><h1>Ui.java</h1><pre class="source lang-java linenums">package cdio3;
 
 import gui_main.GUI;
 import gui_fields.GUI_Board;
@@ -19,65 +19,34 @@ import java.io.IOException;
 
 import gui_codebehind.GUI_Center;
 
-// Link til Jdoc
-// http://htmlpreview.github.io/?https://raw.githubusercontent.com/diplomit-dtu/Matador_GUI/repository/Desktop_GUI/doc/index.html
-
 /**
  * UserInterface
  * @author thyge
  * @version 23.11.2017
  */
-public class UI {
+public class Ui {
 	GUI gui;
-	GUI_Field field;
-	GUI_Field[] temp;
+	GUI_Field[] fields;
 	GUI_Player[] player;
-<span class="fc" id="L35">	Reader reader = new Reader();</span>
+<span class="fc" id="L31">	Reader reader = new Reader();</span>
+<span class="fc" id="L32">	GameBoard gameBoard = new GameBoard();</span>
 
 
-
-<span class="fc" id="L39">	public UI() throws IOException {</span>
-<span class="fc" id="L40">		temp = getFields();</span>
-<span class="fc" id="L41">		gui = new GUI(temp);</span>
+	/**
+	 * Konstruktør
+	 * @throws IOException
+	 */
+<span class="fc" id="L39">	public Ui() throws IOException {</span>
+<span class="fc" id="L40">		fields = gameBoard.getFields();</span>
+<span class="fc" id="L41">		gui = new GUI(fields);</span>
 <span class="fc" id="L42">	}</span>
-
-	public GUI_Field[] getFields() throws IOException {
-<span class="fc" id="L45">		GUI_Field[] temp = new GUI_Field[24];</span>
-<span class="fc" id="L46">		temp[0] = new GUI_Start(&quot;Start&quot;, &quot;&quot;, &quot;Hver gang du passere start, modtager du M2.&quot;, Color.GREEN, Color.BLACK);</span>
-<span class="fc" id="L47">        temp[1] = new GUI_Street(&quot;Burgerbaren&quot;,&quot;1M&quot;, &quot;Dette felt er ejet af:\n&quot;,  &quot;1&quot;, Color.YELLOW.brighter(), Color.BLACK);</span>
-<span class="fc" id="L48">        temp[2] = new GUI_Street(&quot;Pizzariaet&quot;, &quot;1M&quot;, &quot;&quot;, &quot;1&quot;, Color.YELLOW.brighter(), Color.BLACK);</span>
-<span class="fc" id="L49">        temp[3] = new GUI_Chance(&quot;?&quot;, &quot;&quot;, &quot;Træk en chance kort!&quot;, Color.WHITE, Color.BLACK);</span>
-<span class="fc" id="L50">        temp[4] = new GUI_Street(&quot;Slikbutikken&quot;, &quot;1M&quot;, &quot;&quot;, &quot;1&quot;, Color.ORANGE, Color.BLACK);</span>
-<span class="fc" id="L51">        temp[5] = new GUI_Street(&quot;Iskiosken&quot;, &quot;1M&quot;, &quot;&quot;, &quot;1&quot;, Color.ORANGE, Color.BLACK);</span>
-<span class="fc" id="L52">        temp[6] = new GUI_Jail(); temp[6].setSubText(&quot;&quot;);</span>
-<span class="fc" id="L53">        temp[7] = new GUI_Street(&quot;Museet&quot;, &quot;2M&quot;, &quot;&quot;, &quot;2&quot;, Color.MAGENTA, Color.BLACK);</span>
-<span class="fc" id="L54">        temp[8] = new GUI_Street(&quot;Biblioteket&quot;, &quot;2M&quot;, &quot;&quot;, &quot;2&quot;, Color.MAGENTA, Color.BLACK);</span>
-<span class="fc" id="L55">        temp[9] = new GUI_Chance(&quot;?&quot;, &quot;&quot;, &quot;Træk en chance kort!&quot;, Color.WHITE, Color.BLACK);</span>
-<span class="fc" id="L56">        temp[10] = new GUI_Street(&quot;Skaterparken&quot;, &quot;2M&quot;, &quot;&quot;, &quot;2&quot;, Color.PINK, Color.BLACK);</span>
-<span class="fc" id="L57">        temp[11] = new GUI_Street(&quot;SvÃ¸mmingpoolen&quot;, &quot;2M&quot;, &quot;&quot;, &quot;2&quot;, Color.PINK, Color.BLACK);</span>
-<span class="fc" id="L58">        temp[12] = new GUI_Refuge(); temp[12].setTitle(&quot;Gratis parkering&quot;); temp[12].setSubText(&quot;&quot;);</span>
-<span class="fc" id="L59">        temp[13] = new GUI_Street(&quot;Spillehallen&quot;, &quot;3M&quot;, &quot;&quot;, &quot;3&quot;, Color.RED, Color.BLACK);</span>
-<span class="fc" id="L60">        temp[14] = new GUI_Street(&quot;Biografen&quot;, &quot;3M&quot;, &quot;&quot;, &quot;3&quot;, Color.RED, Color.BLACK);</span>
-<span class="fc" id="L61">        temp[15] = new GUI_Chance(&quot;?&quot;, &quot;&quot;, &quot;Træk en chance kort!&quot;, Color.WHITE, Color.BLACK);</span>
-<span class="fc" id="L62">        temp[16] = new GUI_Street(&quot;Legetøjsbutikken&quot;, &quot;3M&quot;, &quot;&quot;, &quot;3&quot;, Color.CYAN, Color.BLACK);</span>
-<span class="fc" id="L63">        temp[17] = new GUI_Street(&quot;Dyrehandlen&quot;, &quot;3M&quot;, &quot;&quot;, &quot;3&quot;, Color.CYAN, Color.BLACK);</span>
-<span class="fc" id="L64">        temp[18] = new GUI_Shipping(); temp[18].setTitle(&quot;Gå i fængsel&quot;); temp[18].setSubText(&quot;&quot;);</span>
-<span class="fc" id="L65">        temp[19] = new GUI_Street(&quot;Bowlinghallen&quot;, &quot;4M&quot;, &quot;&quot;, &quot;4&quot;, Color.GREEN.darker(), Color.BLACK);</span>
-<span class="fc" id="L66">        temp[20] = new GUI_Street(&quot;Zoo&quot;, &quot;4M&quot;, &quot;&quot;, &quot;4&quot;, Color.GREEN.darker(), Color.BLACK);</span>
-<span class="fc" id="L67">        temp[21] = new GUI_Chance(&quot;?&quot;, &quot;&quot;, &quot;Træk en chance kort!&quot;, Color.WHITE, Color.BLACK);</span>
-<span class="fc" id="L68">        temp[22] = new GUI_Street(&quot;Vandlandet&quot;, &quot;5M&quot;, &quot;&quot;, &quot;5&quot;, Color.BLUE, Color.WHITE);</span>
-<span class="fc" id="L69">        temp[23] = new GUI_Street(&quot;Strandpromenaden&quot;, &quot;5M&quot;, &quot;&quot;, &quot;5&quot;, Color.BLUE, Color.WHITE);</span>
-//        temp[23] = new GUI_Street(title, subText, description, rent, bgColor, fgColor)
-//        udfyldes som set i eksemplet ovenover!
-<span class="fc" id="L72">		return temp;</span>
-	}
 
 	/**
 	 * Opsætter spillepladen ved init.
 	 */
 	public void setUp(int playerNumber) {
-<span class="fc" id="L79">		temp[0].setCar(player[playerNumber], true);	</span>
-<span class="fc" id="L80">	}</span>
+<span class="fc" id="L48">		fields[0].setCar(player[playerNumber], true);	</span>
+<span class="fc" id="L49">	}</span>
 
 	/**
 	 * Tilføjer spillere til GUI_Player, såvel som på pladen
@@ -87,11 +56,11 @@ public class UI {
 	 * @param balance Spillerens balance
 	 */
 	public void addPlayer(int playerCount, int i, String name, int balance) {
-<span class="fc bfc" id="L90" title="All 2 branches covered.">		if(player == null)</span>
-<span class="fc" id="L91">			player = new GUI_Player[playerCount];</span>
-<span class="fc" id="L92">		player[i] = new GUI_Player(name, balance, guiCar(name));</span>
-<span class="fc" id="L93">		gui.addPlayer(player[i]);</span>
-<span class="fc" id="L94">	}</span>
+<span class="fc bfc" id="L59" title="All 2 branches covered.">		if(player == null)</span>
+<span class="fc" id="L60">			player = new GUI_Player[playerCount];</span>
+<span class="fc" id="L61">		player[i] = new GUI_Player(name, balance, guiCar(name));</span>
+<span class="fc" id="L62">		gui.addPlayer(player[i]);</span>
+<span class="fc" id="L63">	}</span>
 
 	/**
 	 * Denne metode vælger en bil til spilleren.
@@ -99,20 +68,20 @@ public class UI {
 	 * @return GUI_Car
 	 */
 	private GUI_Car guiCar(String type) {
-<span class="fc" id="L102">		GUI_Car car = null;</span>
-<span class="fc bfc" id="L103" title="All 2 branches covered.">		if(type.equals(&quot;UFO&quot;)) {</span>
-<span class="fc" id="L104">			car = new GUI_Car(Color.GREEN , Color.YELLOW, GUI_Car.Type.UFO, GUI_Car.Pattern.FILL);</span>
-<span class="fc" id="L105">		}</span>
-<span class="fc bfc" id="L106" title="All 2 branches covered.">		else if(type.equals(&quot;BIL&quot;)) {</span>
-<span class="fc" id="L107">			car = new GUI_Car(Color.PINK , Color.BLACK, GUI_Car.Type.CAR, GUI_Car.Pattern.FILL);</span>
-<span class="fc" id="L108">		}</span>
-<span class="fc bfc" id="L109" title="All 2 branches covered.">		else if(type.equals(&quot;RACERBIL&quot;)) {</span>
-<span class="fc" id="L110">			car = new GUI_Car(Color.RED , Color.BLUE, GUI_Car.Type.RACECAR, GUI_Car.Pattern.FILL);</span>
-<span class="fc" id="L111">		}</span>
-<span class="pc bpc" id="L112" title="1 of 2 branches missed.">		else if(type.equals(&quot;TRAKTOR&quot;)) {</span>
-<span class="fc" id="L113">			car = new GUI_Car(Color.ORANGE , Color.WHITE, GUI_Car.Type.TRACTOR, GUI_Car.Pattern.FILL);</span>
+<span class="fc" id="L71">		GUI_Car car = null;</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">		if(type.equals(&quot;UFO&quot;)) {</span>
+<span class="fc" id="L73">			car = new GUI_Car(Color.GREEN , Color.YELLOW, GUI_Car.Type.UFO, GUI_Car.Pattern.FILL);</span>
+<span class="fc" id="L74">		}</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">		else if(type.equals(&quot;BIL&quot;)) {</span>
+<span class="fc" id="L76">			car = new GUI_Car(Color.PINK , Color.BLACK, GUI_Car.Type.CAR, GUI_Car.Pattern.FILL);</span>
+<span class="fc" id="L77">		}</span>
+<span class="fc bfc" id="L78" title="All 2 branches covered.">		else if(type.equals(&quot;RACERBIL&quot;)) {</span>
+<span class="fc" id="L79">			car = new GUI_Car(Color.RED , Color.BLUE, GUI_Car.Type.RACECAR, GUI_Car.Pattern.FILL);</span>
+<span class="fc" id="L80">		}</span>
+<span class="pc bpc" id="L81" title="1 of 2 branches missed.">		else if(type.equals(&quot;TRAKTOR&quot;)) {</span>
+<span class="fc" id="L82">			car = new GUI_Car(Color.ORANGE , Color.WHITE, GUI_Car.Type.TRACTOR, GUI_Car.Pattern.FILL);</span>
 		}
-<span class="fc" id="L115">		return car;</span>
+<span class="fc" id="L84">		return car;</span>
 	}
 
 	/**
@@ -121,8 +90,8 @@ public class UI {
 	 * @param d2 Antal øjne på terning 2
 	 */
 	public void setDice(int d1) {
-<span class="fc" id="L124">		gui.setDice(d1, 1);</span>
-<span class="fc" id="L125">	}</span>
+<span class="fc" id="L93">		gui.setDice(d1, 1);</span>
+<span class="fc" id="L94">	}</span>
 
 	/**
 	 * Danner en dropdownmenu, hvor i man kan vælge mellem strengene
@@ -132,7 +101,7 @@ public class UI {
 	 * @return
 	 */
 	public String dropDown(String Message, String[] opt) {
-<span class="fc" id="L135">		return gui.getUserSelection(Message, opt);</span>
+<span class="fc" id="L104">		return gui.getUserSelection(Message, opt);</span>
 	}
 
 	/**
@@ -141,27 +110,52 @@ public class UI {
 	 * @param button Tekst til knappen.
 	 */
 	public void getUserResponse(String msg, String button) {
-<span class="fc" id="L144">		gui.getUserButtonPressed(msg, button);</span>
-<span class="fc" id="L145">	}</span>
+<span class="fc" id="L113">		gui.getUserButtonPressed(msg, button);</span>
+<span class="fc" id="L114">	}</span>
 
+	/**
+	 * Fjerner og placerer brikker
+	 * @param playerNumber Nummer på player, hvis brik skal flyttes
+	 * @param oldLocation Den gamle lokation på pladen
+	 * @param newLocation Den nye lokation på pladen
+	 */
 	public void setLocation(int playerNumber, int oldLocation, int newLocation) {
-<span class="fc" id="L148">		temp[oldLocation].setCar(player[playerNumber], false);</span>
-<span class="fc" id="L149">		temp[newLocation].setCar(player[playerNumber], true);</span>
-<span class="fc" id="L150">	}</span>
-	public void changeBalance(int i, int value) {
-<span class="fc" id="L152">		player[i].setBalance(value);</span>
-<span class="fc" id="L153">	}</span>
-
-	public void showText(String str) {
-<span class="fc" id="L156">		gui.showMessage(str);</span>
-<span class="fc" id="L157">	}</span>
-
-	public void showChanceText(String str) {
-<span class="nc" id="L160">		gui.displayChanceCard(str);</span>
-<span class="nc" id="L161">	}</span>
+<span class="fc" id="L123">		fields[oldLocation].setCar(player[playerNumber], false);</span>
+<span class="fc" id="L124">		fields[newLocation].setCar(player[playerNumber], true);</span>
+<span class="fc" id="L125">	}</span>
 	
+	/**
+	 * Ændrer spillerens balance på pladen
+	 * @param playerNumber Nummer på player, hvis brik skal flyttes
+	 * @param value Værdi balancen skal sættes til
+	 */
+	public void changeBalance(int playerNumber, int value) {
+<span class="fc" id="L133">		player[playerNumber].setBalance(value);</span>
+<span class="fc" id="L134">	}</span>
+
+	/**
+	 * Viser besked og fortsætter når 'ok' er trykket.
+	 * @param besked Besked der skal vises
+	 */
+	public void showText(String besked) {
+<span class="fc" id="L141">		gui.showMessage(besked);</span>
+<span class="fc" id="L142">	}</span>
+
+	/**
+	 * Viser chance kort besked i midten af brættet
+	 * @param chanceBesked Beskeden der skal vises
+	 */
+	public void showChanceText(String chanceBesked) {
+<span class="nc" id="L149">		gui.displayChanceCard(chanceBesked);</span>
+<span class="nc" id="L150">	}</span>
+	
+	/**
+	 * Retunere den givne felt navn
+	 * @param location På feltet
+	 * @return Navnet på feltet
+	 */
 	public String getFieldName(int location) {
-<span class="fc" id="L164">		return temp[location].getTitle();</span>
+<span class="fc" id="L158">		return fields[location].getTitle();</span>
 	}
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Main (30-Nov-2017 14:59:11)</div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Run (01-Dec-2017 11:49:03)</div></body></html>
