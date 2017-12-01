@@ -78,6 +78,8 @@ public class AssignFieldEffect {
 			break;
 		default: break;
 		}
+		System.out.println("Location: \t" + location);
+		System.out.println("Værdi \t \t M" + propertyValue);
 	}
 
 	/**
@@ -91,6 +93,7 @@ public class AssignFieldEffect {
 		String chanceMessage = "";
 		newLocation = location;
 		extraChanceCard = false;
+		propertyValue = 0;
 	}
 
 //----------------------------------------------------------------------------------

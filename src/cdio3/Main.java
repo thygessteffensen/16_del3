@@ -33,23 +33,24 @@ public class Main {
 	static int[] location;
 	static int playerCount;
 	static String[] optPiece;
-	
+
 	public static void main(String[] args) throws IOException {
 		afe = new AssignFieldEffect();
 		ui = new Ui();
 		reader = new Reader();
-		
+
 		startGame();
 
 		addPlayers();
-		
+
 		gamePlay();
 	}
-	
-	
+
+
 	/**
 	 * Generer spille pladen og "vælger" antal spillere.
 	 * @throws IOException
+	 * 
 	 */
 	public static void startGame() throws IOException {
 		optPiece = new String[]{reader.getString("skib", "brikker"), reader.getString("bil", "brikker")
@@ -60,7 +61,7 @@ public class Main {
 		ui.getUserResponse(reader.getString("startPenge"+(playerCount-1), "velkommen"), "OK!");
 		player = new Player[playerCount];
 	}
-	
+
 	/**
 	 * Spillerne kan vølge brik og den bliver tilføjet til pladen.
 	 * @throws IOException
@@ -78,7 +79,7 @@ public class Main {
 			location[i] = 0;
 		}
 	}
-	
+
 	/**
 	 * Generer en ny liste af nu tilgængeligebrikker.
 	 * @param taken Den netop valgte brik
@@ -94,7 +95,7 @@ public class Main {
 		ap = temp.split(" ");
 		return ap;
 	}
-	
+
 	/**
 	 * GamePlay
 	 * @throws IOException
@@ -114,9 +115,10 @@ public class Main {
 					diceValue = dice.getDiceValue1();
 					ui.setDice(diceValue);
 					oldLoc = location[j];
+
 					
-					afe.initFieldEffect(location[j], j);
 					location[j] += diceValue;
+					afe.initFieldEffect(location[j], j);
 					
 					if(location[j] >=24 ) {
 						location[j] = location[j] - 24;
@@ -127,11 +129,14 @@ public class Main {
 					}
 					ui.setLocation(j, oldLoc, location[j]);
 
-					
+
 					player[j].wallet.changeBalance(afe.getBalanceChange());
+
 					ui.changeBalance(j, player[j].wallet.getBalance());
+
 					payer = player[j].getPiece();
 					reciever = player[afe.getReciever()].getPiece();
+
 					if((location[j] % 6) == 0) {
 						switch(location[j]) {
 						case 0:
@@ -157,10 +162,15 @@ public class Main {
 						} catch (Exception e) {
 							ui.showText("Intet gyldig tekst");
 						}
-						
+
 					}
-					else if(!payer.equals(reciever))
+					else if(!payer.equals(reciever)) {
 						ui.showText(payer + " skal betale M" + afe.getBalanceChange() +" til " + reciever);
+						// Modtageren
+						player[afe.getReciever()].wallet.changeBalance(afe.getPayAmount());
+						// Aftageren
+						player[j].wallet.changeBalance(-1*afe.getPayAmount());
+					}
 					else
 						ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (Math.abs(afe.getBalanceChange()))); 
 
@@ -170,7 +180,7 @@ public class Main {
 			}
 		}
 	}
-	
+
 	/**
 	 * Viser vinderne og slutter spillet.
 	 * @param piece Brikken på den aktuelle spiller
