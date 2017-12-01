@@ -157,4 +157,10 @@ public class Ui {
 	public String getFieldName(int location) {
 		return fields[location].getTitle();
 	}
+	
+	public void setOwener(int location, int playerNumber) {
+//		fields[location].setForeGroundColor(player[playerNumber].getPrimaryColor());;
+		fields[location].setBackGroundColor(player[playerNumber].getPrimaryColor());;
+//		fields[location].setSubText("Skibet");;
+	}
 }

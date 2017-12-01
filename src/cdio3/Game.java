@@ -1,5 +1,6 @@
 package cdio3;
 
+import java.awt.Color;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -17,6 +18,7 @@ public class Game {
 	 Wallet wallet;
 	 Reader reader;
 	 Dice dice;
+	 GameBoard gameBoard;
 	 
 	 
 	 
@@ -48,7 +50,7 @@ public class Game {
 		optPiece = new String[]{reader.getString("skib", "brikker"), reader.getString("bil", "brikker")
 				,reader.getString("kat", "brikker"),reader.getString("hund", "brikker")};
 
-		String[] optPlayer = {"2", "3", "4"};
+		String[] optPlayer = {"4", "3", "2"};
 		playerCount = Integer.parseInt(ui.dropDown(reader.getString("spillerAntal", "velkommen"), optPlayer));
 		ui.getUserResponse(reader.getString("startPenge"+(playerCount-1), "velkommen"), "OK!");
 		player = new Player[playerCount];
@@ -110,12 +112,13 @@ public class Game {
 
 					
 					location[j] += diceValue;
-					afe.initFieldEffect(location[j], j);
-					
 					if(location[j] >=24 ) {
 						location[j] = location[j] - 24;
 						player[j].wallet.changeBalance(2);
 					}
+					afe.initFieldEffect(location[j], j);
+					
+					
 					if(location[j] == 18) {
 						player[j].jail(location[j]);
 					}
@@ -163,9 +166,11 @@ public class Game {
 						// Aftageren
 						player[j].wallet.changeBalance(-1*afe.getPayAmount());
 					}
-					else
+					else {
 						ui.showText(payer + " købte " + ui.getFieldName(location[j]) + " for M" + (Math.abs(afe.getBalanceChange()))); 
-
+						ui.setOwener(location[j], j);
+					}
+						
 					if (player[j].wallet.playerLost() == true)
 						endProgram(player[j].getPiece());
 				}
