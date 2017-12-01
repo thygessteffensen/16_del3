@@ -179,7 +179,7 @@ public class Game {
 	}
 
 	/**
-	 * Viser vinderne og slutter spillet.
+	 * Viser vinderne og sutter spillet.
 	 * @param piece Brikken på den aktuelle spiller
 	 * @throws IOException
 	 */

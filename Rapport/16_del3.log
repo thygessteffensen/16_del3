@@ -1,12 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.23)  1 DEC 2017 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.30)  1 DEC 2017 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex
-(c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex
+**"c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/
+1. semester/16_del3/Rapport/16_del3.tex"
+
+(c:/Users/thyge/OneDrive/Dokumenter/Skolemappen/DTU/Diplom Softwareteknologi/1.
+ semester/16_del3/Rapport/16_del3.tex
 LaTeX2e <2017-04-15>
-Babel <3.14> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.13> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (c:/texlive/2017/texmf-dist/tex/latex/base/size12.clo
@@ -411,19 +414,19 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (c:/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2017/10/04 3.14 The Babel package
+Package: babel 2017/09/18 3.13 The Babel package
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2017/10/04 3.14 Babel switching mechanism
+File: switch.def 2017/09/18 3.13 Babel switching mechanism
 )
 (c:/texlive/2017/texmf-dist/tex/generic/babel-danish/danish.ldf
 Language: danish 2009/09/19 v1.3r Danish support from the babel system
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2017/10/04 3.14 Babel common definitions
+File: babel.def 2017/09/18 3.13 Babel common definitions
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2017/10/04 3.14 Babel switching mechanism
+File: switch.def 2017/09/18 3.13 Babel switching mechanism
 )
 \babel@savecnt=\count99
 \U@D=\dimen112
@@ -1246,27 +1249,19 @@ Package babel Info: Redefining danish shorthand "~
 leder/mfager.png> <./fig/gruppeBilleder/milishia.png> <./fig/gruppeBilleder/nic
 ki.png> <./fig/gruppeBilleder/semi.png> <./fig/gruppeBilleder/simon.png> <./fig
 /gruppeBilleder/thyge.png> <./fig/dtu/DTU_small.png>]) (./site2.tex
-<fig/TROver.jpg, id=101, 162.00525pt x 127.677pt>
-File: fig/TROver.jpg Graphic file (type jpg)
-<use fig/TROver.jpg>
-Package pdftex.def Info: fig/TROver.jpg  used on input line 9. on input line 9.
-
-Package pdftex.def Info: Requested size: 162.00484pt x 127.67668pt on input lin
-e 9.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-<fig/dtu/dtu.png, id=102, 1063.975pt x 478.78876pt>
+<fig/dtu/dtu.png, id=101, 1063.975pt x 478.78876pt>
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
-Package pdftex.def Info: fig/dtu/dtu.png  used on input line 17. on input line 
-17.
+Package pdftex.def Info: fig/dtu/dtu.png  used on input line 11. on input line 
+11.
 Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
- 17.
+ 11.
 
 Package Fancyhdr Warning: \footskip is too small (30.0pt): 
  Make it at least 128.0374pt.
@@ -1274,20 +1269,19 @@ Package Fancyhdr Warning: \footskip is too small (30.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 11.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 \tableofcontents
-                      [1 <./fig/TROver.jpg> <./fig/dtu/dtu.png>] (./16_del3.toc
-)
+l.11 \tableofcontents
+                      [1 <./fig/dtu/dtu.png>] (./16_del3.toc)
 \tf@toc=\write4
 \openout4 = `16_del3.toc'.
 
@@ -1306,7 +1300,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 74.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 74.
- [2] (./analyseSecondary.tex
+ [2]
+(./analyseSecondary.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -1392,55 +1387,34 @@ Overfull \hbox (37.22632pt too wide) in paragraph at lines 144--161
  [] 
  []
 
-
-./analyseSecondary.tex:162: LaTeX Error: \begin{document} ended by \end{enumera
-te}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162         \end{enumerate}
-                             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./analyseSecondary.tex:162: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.162         \end{enumerate}
-                             
-Things are pretty mixed up, but I think the worst is over.
-
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
-Package pdftex.def Info: fig/dtu/dtu.png  used on input line 170. on input line
- 170.
+Package pdftex.def Info: fig/dtu/dtu.png  used on input line 169. on input line
+ 169.
 Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
- 170.
+ 169.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 169.
 [6]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 170.
-<fig/UCDpart2.jpg, id=174, 1489.565pt x 924.45375pt>
+(babel)             in language  on input line 169.
+<fig/UCDpart2.jpg, id=172, 1489.565pt x 924.45375pt>
 File: fig/UCDpart2.jpg Graphic file (type jpg)
 <use fig/UCDpart2.jpg>
-Package pdftex.def Info: fig/UCDpart2.jpg  used on input line 173. on input lin
-e 173.
+Package pdftex.def Info: fig/UCDpart2.jpg  used on input line 172. on input lin
+e 172.
 Package pdftex.def Info: Requested size: 483.69684pt x 300.19pt on input line 1
-73.
+72.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 173--174
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 172--173
  [][] 
  []
 
@@ -1468,7 +1442,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
-<fig/Designklassediagram(3).jpg, id=180, 1575.8875pt x 1053.9375pt>
+<fig/Designklassediagram(3).jpg, id=178, 1575.8875pt x 1053.9375pt>
 File: fig/Designklassediagram(3).jpg Graphic file (type jpg)
 <use fig/Designklassediagram(3).jpg>
 Package pdftex.def Info: fig/Designklassediagram(3).jpg  used on input line 8. 
@@ -1499,7 +1473,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 16.
-<fig/Sekvensdiagram(1).jpg, id=186, 901.3675pt x 794.97pt>
+<fig/Sekvensdiagram(1).jpg, id=184, 901.3675pt x 794.97pt>
 File: fig/Sekvensdiagram(1).jpg Graphic file (type jpg)
 <use fig/Sekvensdiagram(1).jpg>
 Package pdftex.def Info: fig/Sekvensdiagram(1).jpg  used on input line 19. on i
@@ -1530,7 +1504,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 26.
-<fig/SSD.jpg, id=192, 599.23875pt x 412.54124pt>
+<fig/SSD.jpg, id=190, 599.23875pt x 412.54124pt>
 File: fig/SSD.jpg Graphic file (type jpg)
 <use fig/SSD.jpg>
 Package pdftex.def Info: fig/SSD.jpg  used on input line 29. on input line 29.
@@ -1555,7 +1529,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 36.
-<fig/domainemodel.PNG, id=198, 641.39626pt x 319.69438pt>
+<fig/domainemodel.PNG, id=196, 641.39626pt x 319.69438pt>
 File: fig/domainemodel.PNG Graphic file (type png)
 <use fig/domainemodel.PNG>
 Package pdftex.def Info: fig/domainemodel.PNG  used on input line 39. on input 
@@ -1591,30 +1565,13 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 2.
-<fig/types_of_inheritance.jpg, id=206, 451.6875pt x 374.90062pt>
+<fig/types_of_inheritance.jpg, id=204, 451.6875pt x 374.90062pt>
 File: fig/types_of_inheritance.jpg Graphic file (type jpg)
 <use fig/types_of_inheritance.jpg>
 Package pdftex.def Info: fig/types_of_inheritance.jpg  used on input line 9. on
  input line 9.
 Package pdftex.def Info: Requested size: 227.62204pt x 188.93146pt on input lin
 e 9.
-
-./dokumentation.tex:12: Missing $ inserted.
-<inserted text> 
-                $
-l.12 ...orialspoint.com/java/java_inheritance.htm}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./dokumentation.tex:12: Missing $ inserted.
-<inserted text> 
-                $
-l.12 ...orialspoint.com/java/java_inheritance.htm}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining danish shorthand "~
@@ -1633,7 +1590,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 16.
-[12 <./fig/types_of_inheritance.jpg>]
+ [12 <./fig/types_of_inheritance.jpg>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
@@ -1646,7 +1603,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 25.
-<fig/JunitTest.jpg, id=222, 1252.68pt x 748.7975pt>
+<fig/JunitTest.jpg, id=216, 1252.68pt x 748.7975pt>
 File: fig/JunitTest.jpg Graphic file (type jpg)
 <use fig/JunitTest.jpg>
 Package pdftex.def Info: fig/JunitTest.jpg  used on input line 32. on input lin
@@ -1899,220 +1856,352 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 105--105
+Underfull \hbox (badness 2951) in paragraph at lines 101--101
 \OT1/cmr/m/n/12 n^^War de pas-se-re
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
 []|\OT1/cmr/m/n/12 Spillerens ba-lan-ce sti-ger
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 107--107
+Underfull \hbox (badness 2334) in paragraph at lines 103--103
 \OT1/cmr/m/n/12 f^^Zngsel og mi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 []|\OT1/cmr/m/n/12 N^^War en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 \OT1/cmr/m/n/12 spil-ler
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 \OT1/cmr/m/n/12 lan-der p^^Wa
  []
 
 
-Overfull \hbox (13.0091pt too wide) in paragraph at lines 107--107
+Overfull \hbox (13.0091pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/n/12 "F^^]NGSEL"| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
 []|\OT1/cmr/m/n/12 Skal spil-le-ren
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
 \OT1/cmr/m/n/12 nings-kort el-ler
  []
 
 
-Underfull \hbox (badness 3579) in paragraph at lines 109--109
+Underfull \hbox (badness 3579) in paragraph at lines 105--105
 \OT1/cmr/m/n/12 be-ta-le 1M n^^War
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
 \OT1/cmr/m/n/12 han/hun er i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
 []|\OT1/cmr/m/n/12 N^^War en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
 \OT1/cmr/m/n/12 spil-ler
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
 \OT1/cmr/m/n/12 er p^^Wa
  []
 
 
-Overfull \hbox (39.44632pt too wide) in paragraph at lines 109--109
+Overfull \hbox (39.44632pt too wide) in paragraph at lines 105--105
 \OT1/cmr/m/n/12 "F^^]NGSEL"feltet| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--111
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/12 Virker chan-ce-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--111
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/12 N^^War en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--111
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 \OT1/cmr/m/n/12 spil-ler
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 []|\OT1/cmr/m/n/12 N^^War en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 \OT1/cmr/m/n/12 spil-ler
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 \OT1/cmr/m/n/12 lan-der p^^Wa
  []
 
 
-Overfull \hbox (11.20908pt too wide) in paragraph at lines 114--114
+Overfull \hbox (11.20908pt too wide) in paragraph at lines 110--110
 \OT1/cmr/m/n/12 "Bes^^\g"feltet| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 []|\OT1/cmr/m/n/12 N^^War spil-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \OT1/cmr/m/n/12 ler-ne har
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \OT1/cmr/m/n/12 v^^Zret en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \OT1/cmr/m/n/12 run-de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \OT1/cmr/m/n/12 rundt p^^Wa
  []
 
 
-Overfull \hbox (137.052pt too wide) in paragraph at lines 98--121
+Overfull \hbox (137.052pt too wide) in paragraph at lines 98--117
  [] 
  []
 
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
-Package pdftex.def Info: fig/dtu/dtu.png  used on input line 123. on input line
- 123.
+Package pdftex.def Info: fig/dtu/dtu.png  used on input line 119. on input line
+ 119.
 Package pdftex.def Info: Requested size: 284.51715pt x 128.0374pt on input line
- 123.
+ 119.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 123.
-[17])
-Runaway argument?
-{ | {1cm} | m{2cm}| m{2cm}| m{5cm}| m{5cm}| {1cm} \\ Spiller & slutte\ETC.
-c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex:78: File e
-nded while scanning use of \@@array.
-<inserted text> 
-                \par 
-l.78         \input{dokumentation.tex}
-                                      
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
+(babel)             in language  on input line 119.
+[17]
 
+./dokumentation.tex:120: Package array Error:  Illegal pream-token (1cm): `c' u
+sed.
 
-c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex:81: LaTeX 
-Error: \begin{tabular} on input line 124 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
+See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81     \end{document}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.120 ...| m{2cm}| m{2cm}| m{5cm}| m{5cm}| {1cm} }
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
-c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex:81: Missin
-g $ inserted.
-<inserted text> 
-                $
-l.81     \end{document}
-                       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex:81: Missin
-g } inserted.
-<inserted text> 
-                }
-l.81     \end{document}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+./dokumentation.tex:120: Package array Error:  Illegal pream-token (1cm): `c' u
+sed.
 
-c:/Users/nicki/OneDrive/Documents/GitHub/16_del3/Rapport/16_del3.tex:81: Improp
-er \prevdepth.
-\newpage ...everypar {}\fi \par \ifdim \prevdepth 
-                                                  >\z@ \vskip -\ifdim \prevd...
-l.81     \end{document}
-                       
-You can refer to \spacefactor only in horizontal mode;
-you can refer to \prevdepth only in vertical mode; and
-neither of these is meaningful inside \write. So
-I'm forgetting what you said and using zero instead.
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ...| m{2cm}| m{2cm}| m{5cm}| m{5cm}| {1cm} }
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[]|\OT1/cmr/m/n/12 slutter
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 den f^^\rste
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 spil-ler g^^War
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 121--121
+[]|\OT1/cmr/m/n/12 k^^\rer spil-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 let ind-til
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 en spil-ler
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 har nul
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 121--121
+\OT1/cmr/m/n/12 el-ler f^^Zr-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\OT1/cmr/m/n/12 Sker der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 in-gen-ting,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 og tu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 ren gi-ves
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 vi-de-re,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 hvis man
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 lan-der p^^Wa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 "gra-tis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\OT1/cmr/m/n/12 Spiller
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 ram-mer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\OT1/cmr/m/n/12 "Gra-tis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 "Til-lyk-ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 (spil-ler),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 du har
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 vun-det",
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 n^^War spil-let
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 125--125
+[]|\OT1/cmr/m/n/12 k^^\rer spil-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 let ind-til
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 en spil-ler
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 har nul
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 125--125
+\OT1/cmr/m/n/12 el-ler f^^Zr-re
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+[]|\OT1/cmr/m/n/12 Der bli-ver prin-tet den
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\OT1/cmr/m/n/12 spil-les p^^Wa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\OT1/cmr/m/n/12 DTU's
+ []
+
+
+Overfull \hbox (103.37708pt too wide) in paragraph at lines 120--130
+ [] 
+ []
+
+)
 File: fig/dtu/dtu.png Graphic file (type png)
 <use fig/dtu/dtu.png>
 Package pdftex.def Info: fig/dtu/dtu.png  used on input line 81. on input line 
@@ -2127,7 +2216,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
-[18]
+ [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (./16_del3.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
@@ -2139,33 +2229,27 @@ Package rerunfilecheck Info: File `16_del3.out' has not changed.
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
- )
-(\end occurred inside a group at level 2)
-
-### semi simple group (level 2) entered at line 124 (\begingroup)
-### semi simple group (level 1) entered at line 123 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 19983 strings out of 492990
- 369044 string characters out of 6136333
- 430614 words of memory out of 5000000
- 23223 multiletter control sequences out of 15000+600000
+ 19973 strings out of 492990
+ 369052 string characters out of 6136334
+ 430503 words of memory out of 5000000
+ 23216 multiletter control sequences out of 15000+600000
  543324 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,14n,72p,10440b,809s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c
-:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on 16_del3.pdf (19 pages, 1233753 bytes).
+ 35i,14n,72p,10489b,799s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2017/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
+b>
+Output written on 16_del3.pdf (19 pages, 1190954 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 
