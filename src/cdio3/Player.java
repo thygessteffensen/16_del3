@@ -1,7 +1,7 @@
 package cdio3;
 
 /**
- * @author Simon og Mathias
+ * @author Simon
  */
 public class Player 
 {

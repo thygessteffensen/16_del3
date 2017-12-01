@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>GameBoard.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Run (01-Dec-2017 11:49:03)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">GameBoard.java</span></div><h1>GameBoard.java</h1><pre class="source lang-java linenums">package cdio3;
+
+import java.awt.Color;
+import java.io.IOException;
+
+import gui_fields.GUI_Chance;
+import gui_fields.GUI_Field;
+import gui_fields.GUI_Jail;
+import gui_fields.GUI_Refuge;
+import gui_fields.GUI_Shipping;
+import gui_fields.GUI_Start;
+import gui_fields.GUI_Street;
+
+/**
+ * 
+ * @author thyge
+ * @version 30.11.2017
+ */
+<span class="fc" id="L19">public class GameBoard {</span>
+<span class="fc" id="L20">	GUI_Field[] fields = new GUI_Field[24];</span>
+	
+	/**
+	 * Indeholder alle felterne til brættet
+	 * @return Retunerer GUI_Field[]
+	 * @throws IOException
+	 */
+	public GUI_Field[] getFields() throws IOException {
+<span class="fc" id="L28">		fields[0] = new GUI_Start(&quot;Start&quot;, &quot;&quot;, &quot;Hver gang du passere start, modtager du M2.&quot;, Color.GREEN, Color.BLACK);</span>
+<span class="fc" id="L29">        fields[1] = new GUI_Street(&quot;Burgerbaren&quot;,&quot;1M&quot;, &quot;Dette felt er ejet af:\n&quot;,  &quot;1&quot;, Color.YELLOW.brighter(), Color.BLACK);</span>
+<span class="fc" id="L30">        fields[2] = new GUI_Street(&quot;Pizzariaet&quot;, &quot;1M&quot;, &quot;&quot;, &quot;1&quot;, Color.YELLOW.brighter(), Color.BLACK);</span>
+<span class="fc" id="L31">        fields[3] = new GUI_Chance(&quot;?&quot;, &quot;&quot;, &quot;Træk en chance kort!&quot;, Color.WHITE, Color.BLACK);</span>
+<span class="fc" id="L32">        fields[4] = new GUI_Street(&quot;Slikbutikken&quot;, &quot;1M&quot;, &quot;&quot;, &quot;1&quot;, Color.ORANGE, Color.BLACK);</span>
+<span class="fc" id="L33">        fields[5] = new GUI_Street(&quot;Iskiosken&quot;, &quot;1M&quot;, &quot;&quot;, &quot;1&quot;, Color.ORANGE, Color.BLACK);</span>
+<span class="fc" id="L34">        fields[6] = new GUI_Jail(); fields[6].setSubText(&quot;&quot;);</span>
+<span class="fc" id="L35">        fields[7] = new GUI_Street(&quot;Museet&quot;, &quot;2M&quot;, &quot;&quot;, &quot;2&quot;, Color.MAGENTA, Color.BLACK);</span>
+<span class="fc" id="L36">        fields[8] = new GUI_Street(&quot;Biblioteket&quot;, &quot;2M&quot;, &quot;&quot;, &quot;2&quot;, Color.MAGENTA, Color.BLACK);</span>
+<span class="fc" id="L37">        fields[9] = new GUI_Chance(&quot;?&quot;, &quot;&quot;, &quot;Træk en chance kort!&quot;, Color.WHITE, Color.BLACK);</span>
+<span class="fc" id="L38">        fields[10] = new GUI_Street(&quot;Skaterparken&quot;, &quot;2M&quot;, &quot;&quot;, &quot;2&quot;, Color.PINK, Color.BLACK);</span>
+<span class="fc" id="L39">        fields[11] = new GUI_Street(&quot;SvÃ¸mmingpoolen&quot;, &quot;2M&quot;, &quot;&quot;, &quot;2&quot;, Color.PINK, Color.BLACK);</span>
+<span class="fc" id="L40">        fields[12] = new GUI_Refuge(); fields[12].setTitle(&quot;Gratis parkering&quot;); fields[12].setSubText(&quot;&quot;);</span>
+<span class="fc" id="L41">        fields[13] = new GUI_Street(&quot;Spillehallen&quot;, &quot;3M&quot;, &quot;&quot;, &quot;3&quot;, Color.RED, Color.BLACK);</span>
+<span class="fc" id="L42">        fields[14] = new GUI_Street(&quot;Biografen&quot;, &quot;3M&quot;, &quot;&quot;, &quot;3&quot;, Color.RED, Color.BLACK);</span>
+<span class="fc" id="L43">        fields[15] = new GUI_Chance(&quot;?&quot;, &quot;&quot;, &quot;Træk en chance kort!&quot;, Color.WHITE, Color.BLACK);</span>
+<span class="fc" id="L44">        fields[16] = new GUI_Street(&quot;Legetøjsbutikken&quot;, &quot;3M&quot;, &quot;&quot;, &quot;3&quot;, Color.CYAN, Color.BLACK);</span>
+<span class="fc" id="L45">        fields[17] = new GUI_Street(&quot;Dyrehandlen&quot;, &quot;3M&quot;, &quot;&quot;, &quot;3&quot;, Color.CYAN, Color.BLACK);</span>
+<span class="fc" id="L46">        fields[18] = new GUI_Shipping(); fields[18].setTitle(&quot;Gå i fængsel&quot;); fields[18].setSubText(&quot;&quot;);</span>
+<span class="fc" id="L47">        fields[19] = new GUI_Street(&quot;Bowlinghallen&quot;, &quot;4M&quot;, &quot;&quot;, &quot;4&quot;, Color.GREEN.darker(), Color.BLACK);</span>
+<span class="fc" id="L48">        fields[20] = new GUI_Street(&quot;Zoo&quot;, &quot;4M&quot;, &quot;&quot;, &quot;4&quot;, Color.GREEN.darker(), Color.BLACK);</span>
+<span class="fc" id="L49">        fields[21] = new GUI_Chance(&quot;?&quot;, &quot;&quot;, &quot;Træk en chance kort!&quot;, Color.WHITE, Color.BLACK);</span>
+<span class="fc" id="L50">        fields[22] = new GUI_Street(&quot;Vandlandet&quot;, &quot;5M&quot;, &quot;&quot;, &quot;5&quot;, Color.BLUE, Color.WHITE);</span>
+<span class="fc" id="L51">        fields[23] = new GUI_Street(&quot;Strandpromenaden&quot;, &quot;5M&quot;, &quot;&quot;, &quot;5&quot;, Color.BLUE, Color.WHITE);</span>
+<span class="fc" id="L52">		return fields;</span>
+	}
+	
+	public String toString() {
+<span class="nc" id="L56">		String temp = &quot;&quot;;</span>
+<span class="nc bnc" id="L57" title="All 2 branches missed.">		for (int i = 0; i &lt; fields.length; i++) {</span>
+<span class="nc" id="L58">			temp += fields[i].toString();</span>
+<span class="nc" id="L59">			temp += &quot; \n&quot;;</span>
+		}
+<span class="nc" id="L61">		return temp;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Run (01-Dec-2017 11:49:03)</div></body></html>
