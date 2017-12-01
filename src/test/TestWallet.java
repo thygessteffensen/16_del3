@@ -24,11 +24,15 @@ public class TestWallet {
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 	}
-
+	
+	/**
+	 * Tester Wallet for hhv. 3 og 4 spillere.
+	 */
+	
 	@Test
 	public void testWallet() {
-		assertEquals(20, test3.getBalance());
-		assertEquals(20, test4.getBalance());
+		assertEquals(18, test3.getBalance()); //Tester balance for 3 spillere.
+		assertEquals(16, test4.getBalance()); //Tester balance for 4 spillere.
 	}
 	/**
 	 * Tester getBalance
