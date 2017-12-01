@@ -249,7 +249,6 @@ INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT fig/TROver.jpg
 INPUT ./fig/TROver.jpg
 INPUT ./fig/TROver.jpg
-<<<<<<< HEAD
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
@@ -264,37 +263,26 @@ INPUT analyseSecondary.tex
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT UseCases.tex
 INPUT UseCases.tex
-<<<<<<< HEAD
-=======
->>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-=======
->>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-<<<<<<< HEAD
-=======
-INPUT 16_del3.toc
-INPUT 16_del3.toc
-INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-OUTPUT 16_del3.toc
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-INPUT analyseSecondary.tex
-INPUT analyseSecondary.tex
-INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT fig/dtu/dtu.png
+INPUT ./fig/dtu/dtu.png
+INPUT fig/dtu/dtu.png
+INPUT ./fig/dtu/dtu.png
+INPUT fig/dtu/dtu.png
+INPUT ./fig/dtu/dtu.png
+INPUT fig/dtu/dtu.png
+INPUT ./fig/dtu/dtu.png
 INPUT UseCases.tex
 INPUT UseCases.tex
->>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-INPUT fig/UC-cdio3.jpg
-INPUT ./fig/UC-cdio3.jpg
-INPUT ./fig/UC-cdio3.jpg
-INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/UC-cdio3.jpg
@@ -303,10 +291,6 @@ INPUT ./fig/UC-cdio3.jpg
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-INPUT fig/UC-cdio3.jpg
-INPUT ./fig/UC-cdio3.jpg
-INPUT ./fig/UC-cdio3.jpg
-INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT designSecondaray.tex
@@ -331,29 +315,8 @@ INPUT dokumentation.tex
 INPUT dokumentation.tex
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-INPUT fig/JUnitTestDice.jpg
-INPUT ./fig/JUnitTestDice.jpg
-INPUT ./fig/JUnitTestDice.jpg
-=======
-=======
->>>>>>> 80653f595c5290349d98a062999656c5144bf36c
-INPUT fig/types_of_inheritance.jpg
-INPUT ./fig/types_of_inheritance.jpg
-INPUT ./fig/types_of_inheritance.jpg
-=======
->>>>>>> parent of 3c7c507... + billede
-=======
->>>>>>> parent of 3c7c507... + billede
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
-<<<<<<< HEAD
->>>>>>> 80653f595c5290349d98a062999656c5144bf36c
-=======
->>>>>>> 80653f595c5290349d98a062999656c5144bf36c
 INPUT fig/dtu/dtu.png
 INPUT ./fig/dtu/dtu.png
 INPUT fig/dtu/dtu.png
@@ -372,16 +335,6 @@ INPUT ./16_del3.out
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-<<<<<<< HEAD
-<<<<<<< HEAD
-INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-=======
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
->>>>>>> 80653f595c5290349d98a062999656c5144bf36c
-=======
-INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
->>>>>>> 80653f595c5290349d98a062999656c5144bf36c
