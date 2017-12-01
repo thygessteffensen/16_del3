@@ -152,8 +152,11 @@ public class Main {
 						}
 					}
 					else if((location[j] % 6) == 3) {
-//						ui.showText(afe.getChangeMessage());
-						System.out.println(afe.getChangeMessage());
+						try {
+							ui.showText(afe.getChangeMessage());
+						} catch (Exception e) {
+							ui.showText("Intet gyldig tekst");
+						}
 						
 					}
 					else if(!payer.equals(reciever))
