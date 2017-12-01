@@ -52,6 +52,10 @@ public class GameBoard {
 		return fields;
 	}
 	
+	public void setBorderColor(int fieldNumber, Color color) {
+		fields[fieldNumber].setForeGroundColor(color);		
+	}
+	
 	public String toString() {
 		String temp = "";
 		for (int i = 0; i < fields.length; i++) {
