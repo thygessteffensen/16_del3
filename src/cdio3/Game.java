@@ -5,36 +5,25 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 
- * 
- * * * * * * * * * * * * * * * * * * * * * *
- * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ *
- * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ *
- * \\\\                               \\\\ *
- * \\\\       Monopoly junoir         \\\\ *
- * \\\\     Udviklet af gruppe 16     \\\\ *
- * \\\\                               \\\\ *
- * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ *
- * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ *
- * * * * * * * * * * * * * * * * * * * * * *
- * 
- * 
+ 
  * 
  * @author thyge
  * @version 3011.2017
  */
 
-public class Main {
-	static Ui ui;
-	static Player[] player; // Player array der indeholder referrencer til player objekter.
-	static Wallet wallet;
-	static Reader reader;
-	static Dice dice;
-	static AssignFieldEffect afe;
-	static int[] location;
-	static int playerCount;
-	static String[] optPiece;
+public class Game {
+	 Ui ui;
+	 Player[] player; // Player array der indeholder referrencer til player objekter.
+	 Wallet wallet;
+	 Reader reader;
+	 Dice dice;
+	 AssignFieldEffect afe;
+	 int[] location;
+	 int playerCount;
+	 String[] optPiece;
 
-	public static void main(String[] args) throws IOException {
+	
+	public void playGame() throws IOException {
 		afe = new AssignFieldEffect();
 		ui = new Ui();
 		reader = new Reader();
@@ -46,13 +35,12 @@ public class Main {
 		gamePlay();
 	}
 
-
 	/**
 	 * Generer spille pladen og "vælger" antal spillere.
 	 * @throws IOException
 	 * 
 	 */
-	public static void startGame() throws IOException {
+	private void startGame() throws IOException {
 		optPiece = new String[]{reader.getString("skib", "brikker"), reader.getString("bil", "brikker")
 				,reader.getString("kat", "brikker"),reader.getString("hund", "brikker")};
 
@@ -66,7 +54,7 @@ public class Main {
 	 * Spillerne kan vølge brik og den bliver tilføjet til pladen.
 	 * @throws IOException
 	 */
-	public static void addPlayers() throws IOException {
+	private void addPlayers() throws IOException {
 		String taken = "none";
 		location = new int[playerCount];
 		for (int i = 0; i < playerCount ; i++) {
@@ -86,7 +74,7 @@ public class Main {
 	 * @param opt Den gamle liste af brikker
 	 * @return Ny liste af brikker.
 	 */
-	public static String[] availiblePieces(String taken, String[] opt) {
+	private String[] availiblePieces(String taken, String[] opt) {
 		String[] ap = new String[opt.length];
 		String temp = "";
 		for (int i = 0; i < opt.length; i++)
@@ -100,7 +88,7 @@ public class Main {
 	 * GamePlay
 	 * @throws IOException
 	 */
-	public static void gamePlay() throws IOException {
+	private void gamePlay() throws IOException {
 		int diceValue;
 		int oldLoc;
 		int j = 0;
@@ -110,7 +98,7 @@ public class Main {
 			while(true) {
 				for (j = 0; j < playerCount; j++) {
 					ui.getUserResponse(player[j].getPiece() +  " må slå", "Slå");
-					// Fix static
+					// Fix 
 					dice.roll();
 					diceValue = dice.getDiceValue1();
 					ui.setDice(diceValue);
@@ -186,7 +174,7 @@ public class Main {
 	 * @param piece Brikken på den aktuelle spiller
 	 * @throws IOException
 	 */
-	private static void endProgram(String piece) throws IOException{
+	private void endProgram(String piece) throws IOException{
 		ui.getUserResponse(piece + reader.getString("tabt", "spil"), "Luk spillet");
 		try {
 			TimeUnit.SECONDS.sleep(1);
