@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>TestWallet.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Main (30-Nov-2017 14:59:11)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">test</a> &gt; <span class="el_source">TestWallet.java</span></div><h1>TestWallet.java</h1><pre class="source lang-java linenums">package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import cdio3.Wallet;
+
+<span class="nc" id="L11">public class TestWallet {</span>
+<span class="nc" id="L12">	Wallet wallet = new Wallet(&quot;Bil&quot;, 2); // Instansiere en ny wallet som har brik bil, der er 2 spillere og de starter med 20 matadollars hver.</span>
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+<span class="nc" id="L15">	}</span>
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+<span class="nc" id="L19">	}</span>
+
+	@Test
+	public void testWallet() {
+<span class="nc" id="L23">		fail(&quot;Not yet implemented&quot;);</span>
+<span class="nc" id="L24">	}</span>
+
+	@Test
+	public void testGetBalance() {
+<span class="nc" id="L28">		assertEquals(20, wallet.getBalance()); //Tester om de 20 wallet er blevet instansieret med er de 20 jeg forventer de er</span>
+<span class="nc" id="L29">	}</span>
+
+	/**
+	 * 
+	 */
+	@Test
+	public void testSetBalance() {
+		/*
+		wallet.setBalance(30);
+		assertEquals(30, wallet.getBalance());
+		SetBalance sætter ikke nogen balance, men tjekker derimod om en spiller har under 0 på kontoen
+		 */
+<span class="nc" id="L41">		wallet.setBalance(); //Lige meget hvad sættes til da den kun trækker det med ned til if statement nedenunder i klassen.</span>
+		assertFalse(wallet.getPlayerLost()); //Forventer false da den ikke er negativ. 
+		wallet.setBalance(-5000); //-5000 trækkes med ned i if statement i klassen og gør at den bliver kørt
+		assertTrue(wallet.getPlayerLost());//Forventer True da -5000 er mindre end 0
+	}
+		
+
+	@Test
+	public void testGetPlayerLost() {
+		//fail(&quot;Not yet implemented&quot;);
+		//Bliver testet i testSetBalance
+<span class="nc" id="L52">	}</span>
+
+	@Test
+	public void testChangeBalance() {
+<span class="nc" id="L56">		wallet.changeBalance(5); //Tilføjer 5 til balancen</span>
+<span class="nc" id="L57">		assertEquals(25, wallet.getBalance()); //Tester om de 25 jeg har ændret balancen til også er de 25 jeg forventer.</span>
+<span class="nc" id="L58">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Main (30-Nov-2017 14:59:11)</div></body></html>

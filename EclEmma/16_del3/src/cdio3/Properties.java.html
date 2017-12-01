@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Properties.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Main (30-Nov-2017 14:59:11)</a> &gt; <a href="../../index.html" class="el_group">16_del3</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">cdio3</a> &gt; <span class="el_source">Properties.java</span></div><h1>Properties.java</h1><pre class="source lang-java linenums">package cdio3;
+
+/**
+ * 
+ * @author thyge
+ * @version 27.11.2017
+ */
+public class Properties {
+	// Nul baseret!
+	boolean[] owned;
+	int[] owner;
+<span class="fc" id="L12">	int fields = 24;</span>
+	int propValue;
+	int playerNumber;
+	int location;
+	String message;
+	//------------
+	int reciever;
+	int payer;
+	int amount;
+
+	/**
+	 * Konstruktør
+	 */
+<span class="fc" id="L25">	public Properties() {</span>
+		// generer arrays 
+<span class="fc bfc" id="L27" title="All 2 branches covered.">		for (int i = 1; i &lt; fields; i++) {</span>
+<span class="fc" id="L28">			owned = new boolean[fields];</span>
+<span class="fc" id="L29">			owner = new int[fields];</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">			if((i % 3) != 0)</span>
+<span class="fc" id="L31">				owned[i] = false;</span>
+		}
+<span class="fc" id="L33">	}</span>
+
+
+	/**
+	 * Finder ud af hvad der skal ske
+	 * @param location Lokationen hvor spilleren befinder sig. 0-baseret
+	 * @param propValue Værdien grunden har.
+	 * @param playerNumber Spillerens array index nummer
+	 */
+	public void getEffect(int location, int propValue, int playerNumber) {
+<span class="fc" id="L43">		this.propValue = propValue;</span>
+<span class="fc" id="L44">		this.location = location;</span>
+<span class="fc" id="L45">		this.playerNumber = playerNumber;</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">		if(owned[location] == false) {</span>
+<span class="fc" id="L47">			buy();</span>
+<span class="fc" id="L48">		}</span>
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">		else if(owned[location] == true) {</span>
+<span class="fc" id="L50">			pay();</span>
+<span class="fc" id="L51">		}</span>
+		else {
+<span class="nc" id="L53">			System.out.println(&quot;You shouldn't be here!&quot;);</span>
+		}
+<span class="fc" id="L55">	}</span>
+
+	/**
+	 * Håndterer scenariet hvor grunden er ejet.
+	 */
+	private void pay() {
+<span class="fc" id="L61">		payer = playerNumber;</span>
+<span class="fc" id="L62">		reciever = owner[location];</span>
+<span class="fc" id="L63">		amount = propValue;</span>
+<span class="fc" id="L64">	}</span>
+
+	/**
+	 * Håndterer scenariet hvor grunden skal købes
+	 */
+	private void buy() {
+<span class="fc" id="L70">		owner[location] = playerNumber;</span>
+<span class="fc" id="L71">		owned[location] = true;</span>
+<span class="fc" id="L72">		amount = propValue * -1;</span>
+<span class="fc" id="L73">		reciever = owner[location];</span>
+		//message = 
+<span class="fc" id="L75">	}</span>
+
+	/**
+	 * Returnerer modtageren.
+	 * @return Modtagerens plads i player arrayet.
+	 */
+	
+	public int getPayer() {
+<span class="nc" id="L83">		return payer;</span>
+	}
+
+	/**
+	 * Returnerer beløbet +- (\pm)
+	 * @return Beløbet er en int der både kan være negativ og positiv.
+	 */
+	public int getPayAmount() {
+<span class="nc" id="L91">		return -1 * amount;</span>
+	}
+	
+	public int getRecieveAmount() {
+<span class="fc" id="L95">		return amount;</span>
+	}
+	
+	public String getMessage() {
+<span class="nc" id="L99">		return message;</span>
+	}
+	
+	public int getReciever() {
+<span class="fc" id="L103">		return reciever;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>Main (30-Nov-2017 14:59:11)</div></body></html>
