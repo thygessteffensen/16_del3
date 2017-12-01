@@ -73,3 +73,62 @@ Derefter har du vinduet "Git Repositories", hvor der er en knap; "Clone a git re
 Ikonet er mappen i midten med en blå pil på, her trykker du.
 Hvis du huskede at kopiere URL'et trykker du nu "Next", hvorefter at alle branches bliver loaded. Når den har loaded trykker du next igen.
 Nu kommer du til det sidste vindue, hvor du trykker "Finish, og nu har du importeret(clonet) git repositoriet.
+
+\subsection{Brugertests}
+
+\begin{center}
+    \begin{tabular}{ | {1cm} | m{2cm}| m{2cm}| m{5cm}| m{5cm}| {1cm} }
+            \hline
+                Test person & Hvad man vil teste & Trin & Forventet resultat & Testresultat\\
+            \hline
+                Spillere & Antallet af spillere & Vælg antallet af spillere & Man kan være mellem 2 - 4 spillere & Pass  \\
+            \hline
+                Spillere & Går turen videre & Spillerne slår med terningerne & En spiller slår med terningerne og turen går videre efter & Pass \\
+            \hline
+                Spillere & Udskrives der tekst når en spiller lander på et felt & Når en spiller lander på et felt & Der bliver printet en tekst der fortæller om feltet & Pass \\
+            \hline
+                Spillere & Køber spilleren feltet når han/hun lander på det & Når spillet er i gang & Feltet bliver opkøbt & Pass \\
+            \hline
+                Spillere & Spilleren er tvunget til at betale ejeren af feltet han lander på & Når spillet er i gang & Spilleren betaler ham/hende der ejer feltet & Pass \\
+            \hline
+        \end{tabular}
+\end{center}           
+\pagebreak 
+\begin{center}
+    \begin{tabular}{ | {1cm} | m{3cm}| m{2cm}| m{5cm}| m{5cm}| {1cm} }
+                      
+           
+            
+        
+        
+            \hline
+                Spillere & Får spilleren 2M når de passere start feltet & Når spillet er i gang & Spillerens balance stiger med 2M & Pass \\
+            \hline
+                Spillere & Ryger spilleren i fængsel og mistes der 2M & Når en spiller lander på "FÆNGSEL" & Spilleren modtager ikke 2M & Pass \\
+            \hline
+                Spillere & Skal spilleren give sit omkostningskort eller betale 1M når han/hun er i fængsel & Når en spiller er på "FÆNGSEL" feltet & Spillerens mister sit omkostningskort eller betaler 1M hvis kortet er brugt & Fail \\
+            \hline
+                Spillere & Virker chancekort & Når en spiller trækker et chancekort & Spilleren trækker et chancekort og får en effekt & Fail \\
+            \hline
+            %12. krav
+                Spillere & Virker besøg feltet & Når en spiller lander på "Besøg" feltet & Der sker intet og turen går videre & Pass \\
+        
+        \hline
+            %16. krav
+        Spillere & Kan spillerne gå rundt om pladen & Når spillerne har været en runde rundt på pladen & Spillerne kan gå flere omgange rundt på pladen & Pass \\
+        \hline
+    \end{tabular}
+\end{center}
+\pagebreak
+        \begin{center}
+\begin{tabular}{ | {1cm} | m{2cm}| m{2cm}| m{5cm}| m{5cm}| {1cm} 
+\\          Spiller & slutter spillet, når den første spiller går bankerot & kører spillet indtil en spiller har nul eller færre M.& Spillet slutter & Pass \\
+        \hline
+            Spiller & Sker der ingenting, og turen gives videre, hvis man lander på "gratis parkering" & Spiller indtil man rammer "Gratis parkering" & Ingenting sker og turen går videre & Pass \\
+        \hline    
+            Spiller & Printes der "Tillykke (spiller), du har vundet", når spillet sluttes & kører spillet indtil en spiller har nul eller færre M. & Der bliver printet den ønskede tekst & Pass \\
+        \hline    
+            Spiller & Kan spillet spilles på DTU's databarer & åbner spillet på computeren & Spillet køres & pass \\
+        \hline
+    \end{tabular}
+\end{center}
