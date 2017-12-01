@@ -3,14 +3,13 @@
 
 Et af de vigtigste elementer i objektorienteret programmering er nedarvning, men hvad betyder nedarvning? At arve betyder i bund og grund at noget med en materiel værdi overdrages til noget eller nogle efterkommere. I programmerings verden ville man hellere definere arv som en eller flere egenskaber der overføres fra en generation til en anden generation, også sagt på en anden måde, at en klasse der får overført egenskaber fra en anden klasse. Den klasse der nedarves fra kaldes for en Superklasse (parent), hvor klassen der nedarver eller får egenskaber fra en Superklasse, kaldes for en Subklasse (child).
 Ved benyttelse af denne proces vil oplysningerne om de forskellige klasser ende op i en hierarkisk rækkefølge. 
-På figuren ses forskellige eksempler på typer af nedarvning der findes, men dog skal man være opmærksom på, at Java ikke understøtter flere nedarvninger. I Java kan en klasse kun have én Superklasse, dvs. at hver klasse kun kan nedarve fra én klasse
+På figur 7 ses forskellige eksempler på typer af nedarvning der findes, men dog skal man være opmærksom på, at Java ikke understøtter flere nedarvninger. I Java kan en klasse kun have én Superklasse, dvs. at hver klasse kun kan nedarve fra én klasse. \footnote{ Java Programmering - En bog for begyndere af Henrik Kressner}
 
 \begin{figure}[h]\label{fig:types_of_inheritance.jpg} 
-    \advance\leftskip-3cm
-    \includegraphics[width=6cm]{fig/types_of_inheritance.jpg}
+    \includegraphics[width=8cm]{fig/types_of_inheritance.jpg}
     \caption{eksempel på typer af arv}
 \end{figure}
-
+\footnote{https://www.tutorialspoint.com/java/java_inheritance.htm}
 \subsection{Forklar hvad abtract betyder}
 Den abstrakte klasse kører ingen metoder, og indeholder kun attributter. Klassen bruges som en slags ”over”-klasse, hvor andre klasser nedarver attributterne. Det anvendes i en situation, hvor man f.eks har to klasser, der har mange af de samme attributter. Så vil alle de attributter, som de har tilfælles stå i den abstrakte klasse.
 Hvis man f.eks har klasserne lærer og elev, kunne den abstrakte klasse til disse, hedde ”personer”, da både lærer og elever har en fødselsdato, køn, navn osv.
@@ -43,6 +42,28 @@ superklassen som hedder SurvivalRequirements, eftersom disse er metoder alle dyr
     \textbf{Whitebox test}: Her opstiller man tests på baggrund af koden og dens opbygning. Man vil med disse tests teste hele koden, altså alle instruktioner, forgreninger og stier, som koden kan blive udført i. Dette er ikke altid muligt med \textit{BlackBox testen}, da man her, ikke har et indblik i koden.
    
 \subsection{Dokumentation for overholdt GRASP}
+GRASP står for \textit{General Responsibility Assignment Software Patterns}. 
+GRASP bruges til at give det rigtige ansvar til de forskellige klasser, 
+der bliver oprettet under udviklingen af et program. GRASP indeholder 9 patterns. 
+Patterns bliver brugt til at strukturere et problem, samt at finde en passende løsning. De 9 patterns er:
+    \begin{enumerate}
+        \item Creator
+        \item Information expert
+        \item Low coupling
+        \item Controller
+        \item High cohesion
+        \item Indirection
+        \item Polymorphism
+        \item Protected variations
+        \item Pure fabrication
+    \end{enumerate}
+Disse patterns kan bruges som guidelines til at udvikle et software projekt.
+Her løser man problemer som ofte opstår under software udvikling, ved at gøre det overskueligt hvilken
+class der har ansvar for hvad. Vores Creator class er "GameController" som sørger for at "Player" class'ens
+information går videre til selve spillet. Information Expert er vores "Player" class, 
+da den indeholder antallet af spillere
+og deres brikker.
+
 
 \subsection{Vejledning til import af Git Repository til eclipse}
 Man skal i første omgang have et URL af det pågældende repository, som du kopierer.
