@@ -184,7 +184,13 @@ public class Game {
 	 * @throws IOException
 	 */
 	private void endProgram(String piece) throws IOException{
-		ui.getUserResponse(piece + reader.getString("tabt", "spil"), "Luk spillet");
+		
+		String winner = player[0].getPiece();
+		for (int i = 1; i < location.length; i++) {
+			if(player[i-1].wallet.getBalance() < player[i].wallet.getBalance())
+				winner = player[i].getPiece();
+		}
+		ui.getUserResponse(reader.getString("tillykke", "spil") + " " + winner + reader.getString("vandt", "spil"), "Luk spillet");
 		try {
 			TimeUnit.SECONDS.sleep(1);
 		} catch (InterruptedException e) {
